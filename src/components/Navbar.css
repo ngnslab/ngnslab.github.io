@@ -1,0 +1,73 @@
+/* src/components/NavBar.css */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+  background-color: #1e3a8a; /* Tailwind의 bg-blue-900 */
+  color: white;
+  padding: 0.1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.logo a {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+}
+
+.menu-toggle {
+  display: none;
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+.nav-links {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-item {
+  color: white;
+  text-decoration: none;
+  padding: 0.5rem;
+}
+
+.nav-item:hover {
+  color: #facc15; /* Tailwind의 yellow-300 */
+}
+
+.active {
+  font-weight: bold;
+  color: #facc15;
+}
+
+/* 모바일 반응형 */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 1rem;
+  }
+
+  .nav-links.open {
+    display: flex;
+  }
+
+  .nav-item {
+    padding: 0.5rem 0;
+  }
+}

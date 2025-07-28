@@ -1,0 +1,23 @@
+.member-card {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 1rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  transition: transform 0.2s;
+}
+
+.member-card:hover {
+  transform: translateY(-4px);
+}
+
+.member-card h3 {
+  font-size: 1.2rem;
+  color: #1e40af;
+  margin-bottom: 0.3rem;
+}
+
+.member-card p {
+  font-size: 0.9rem;
+  color: #555;
+}
