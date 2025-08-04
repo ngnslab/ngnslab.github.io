@@ -23,13 +23,16 @@ export default function Member() {
       {/* 지도교수 */}
       <section className="member-section">
         <h2 className="member-role-title">Professor</h2>
-        <div className="member-grid">
-          <div className="member-card">
-            <img src="../../public/prof.jpg" alt="김종현" className="professor-photo" />
-            <div className="member-info">
-              <h2>김종현 (Jonghyun Kim)</h2>
-              <p>E-mail : kjh@sejong.ac.kr</p>
-              <h3>Education</h3>
+        <div className="prof-grid">
+          <div className="prof-card">
+            <img src="/prof.jpg" alt="김종현" className="professor-photo" />
+            <div className="prof-info">
+              <h2 className="prof-name">김종현 (Jonghyun Kim)</h2>
+              <h3 className="prof-contact-title">Contact</h3>
+              <p className="prof-email">
+                Email : <a href="mailto:kjh@sejong.ac.kr" className="member-email-link"> kjh@sejong.ac.kr</a>
+              </p>
+              <h3 className="member-education-title">Education</h3>
 
             </div>
           </div>
