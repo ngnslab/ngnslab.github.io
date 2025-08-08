@@ -1,0 +1,20 @@
+[
+  {
+    "name": "김민규",
+    "email": "mingyu.kim@sejong.ac.kr",
+    "image": "/prof.jpg",
+    "position": "PhD"
+  },
+  {
+    "name": "김준식",
+    "email": "kjs4072@sju.ac.kr",
+    "image": "/prof.jpg",
+    "position": "Bachelor"
+  },
+  {
+    "name": "서예린",
+    "email": "yerin.seo@sejong.ac.kr",
+    "image": "/prof.jpg",
+    "position": "Master"
+  }
+]

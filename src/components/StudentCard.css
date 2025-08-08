@@ -1,23 +1,39 @@
 .member-card {
   background-color: white;
   border: 1px solid #ddd;
-  border-radius: 12px;
-  padding: 1rem;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-  transition: transform 0.2s;
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  transition: all 0.2s ease;
+  cursor: pointer;
 }
 
 .member-card:hover {
-  transform: translateY(-4px);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+  border-color: #1e40af;
 }
 
-.member-card h3 {
+.student-name {
   font-size: 1.2rem;
+  font-weight: bold;
   color: #1e40af;
-  margin-bottom: 0.3rem;
+  margin-bottom: 0.5rem;
 }
 
-.member-card p {
+.student-email {
+  margin: 0;
   font-size: 0.9rem;
-  color: #555;
+  color: #666;
+}
+
+.email-link {
+  color: #244cce;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.email-link:hover {
+  color: #1e40af;
+  text-decoration: underline;
 }

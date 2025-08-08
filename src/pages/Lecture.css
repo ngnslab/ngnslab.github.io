@@ -1,0 +1,134 @@
+/* src/pages/Lecture.css */
+
+.lecture-container {
+  width: 100%;
+  max-width: none;
+  padding: 2rem 2rem;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.lecture-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+  color: #ffffff;
+}
+
+.lecture-section {
+  margin-bottom: 3rem;
+}
+
+.lecture-year-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+  color: #1e40af;
+  border-bottom: 2px solid #1e40af;
+  padding-bottom: 0.5rem;
+}
+
+.lecture-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 1.5rem;
+}
+
+.lecture-card {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  position: relative;
+}
+
+.lecture-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+}
+
+.lecture-type {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  padding: 0.25rem 0.75rem;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.lecture-card.undergraduate .lecture-type {
+  background-color: #3b82f6;
+  color: white;
+}
+
+.lecture-card.graduate .lecture-type {
+  background-color: #8b5cf6;
+  color: white;
+}
+
+.course-name {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #1e40af;
+  margin-bottom: 1rem;
+  margin-right: 4rem;
+}
+
+.course-details {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  font-size: 0.9rem;
+  color: #6b7280;
+}
+
+.course-department {
+  font-weight: bold;
+  color: #374151;
+  font-size: 1rem;
+}
+
+.course-department::before {
+  content: "🏫 ";
+}
+
+.course-code::before {
+  content: "📝 ";
+}
+
+.course-credits::before {
+  content: "🎓 ";
+}
+
+.course-grade::before {
+  content: "📊 ";
+}
+
+.course-language::before {
+  content: "🌐 ";
+}
+
+/* 반응형 디자인 */
+@media (max-width: 768px) {
+  .lecture-container {
+    padding: 1rem;
+  }
+  
+  .lecture-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .lecture-card {
+    padding: 1rem;
+  }
+  
+  .course-name {
+    margin-right: 2rem;
+    font-size: 1.1rem;
+  }
+}
