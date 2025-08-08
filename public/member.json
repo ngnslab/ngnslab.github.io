@@ -3,18 +3,21 @@
     "name": "김민규",
     "email": "mingyu.kim@sejong.ac.kr",
     "image": "/prof.jpg",
-    "position": "PhD"
+    "position": "PhD",
+    "interests": ["네트워크 보안", "5G 보안", "AI 보안"]
   },
   {
     "name": "김준식",
     "email": "kjs4072@sju.ac.kr",
     "image": "/prof.jpg",
-    "position": "Bachelor"
+    "position": "Bachelor",
+    "interests": ["웹 보안", "모바일 보안", "암호학"]
   },
   {
     "name": "서예린",
     "email": "yerin.seo@sejong.ac.kr",
     "image": "/prof.jpg",
-    "position": "Master"
+    "position": "Master",
+    "interests": ["UAV 보안", "딥러닝", "IoT 보안"]
   }
 ]

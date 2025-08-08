@@ -45,7 +45,14 @@ export default function Member({ members }) {
         <h2 className="member-role-title">PhD</h2>
         <div className="student-grid">
           {phdMembers.map((member, index) => (
-            <StudentCard key={`phd-${index}`} name={member.name} email={member.email} />
+            <StudentCard 
+              key={`phd-${index}`} 
+              name={member.name} 
+              email={member.email}
+              image={member.image}
+              position={member.position}
+              interests={member.interests}
+            />
           ))}
         </div>
         <hr className="member-divider" />
@@ -56,7 +63,14 @@ export default function Member({ members }) {
         <h2 className="member-role-title">Master</h2>
         <div className="student-grid">
           {masterMembers.map((member, index) => (
-            <StudentCard key={`master-${index}`} name={member.name} email={member.email} />
+            <StudentCard 
+              key={`master-${index}`} 
+              name={member.name} 
+              email={member.email}
+              image={member.image}
+              position={member.position}
+              interests={member.interests}
+            />
           ))}
         </div>
         <hr className="member-divider" />
@@ -67,7 +81,14 @@ export default function Member({ members }) {
         <h2 className="member-role-title">Undergraduate</h2>
         <div className="student-grid">
           {bachelorMembers.map((member, index) => (
-            <StudentCard key={`bachelor-${index}`} name={member.name} email={member.email} />
+            <StudentCard 
+              key={`bachelor-${index}`} 
+              name={member.name} 
+              email={member.email}
+              image={member.image}
+              position={member.position}
+              interests={member.interests}
+            />
           ))}
         </div>
       </section>

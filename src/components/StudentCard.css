@@ -1,11 +1,15 @@
 .member-card {
   background-color: white;
   border: 1px solid #ddd;
-  border-radius: 8px;
+  border-radius: 12px;
   padding: 1.5rem;
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
   transition: all 0.2s ease;
   cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 
 .member-card:hover {
@@ -14,17 +18,44 @@
   border-color: #1e40af;
 }
 
+.student-photo {
+  margin-bottom: 1rem;
+}
+
+.student-image {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #1e40af;
+  transition: transform 0.2s ease;
+}
+
+.member-card:hover .student-image {
+  transform: scale(1.05);
+}
+
+.student-info {
+  width: 100%;
+}
+
 .student-name {
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   font-weight: bold;
   color: #1e40af;
   margin-bottom: 0.5rem;
 }
 
-.student-email {
-  margin: 0;
+.student-position {
   font-size: 0.9rem;
-  color: #666;
+  color: #6b7280;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+
+.student-email {
+  margin: 0.5rem 0;
+  font-size: 0.9rem;
 }
 
 .email-link {
@@ -36,4 +67,52 @@
 .email-link:hover {
   color: #1e40af;
   text-decoration: underline;
+}
+
+.student-interests {
+  margin-top: 1rem;
+  text-align: left;
+}
+
+.student-interests h4 {
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: #374151;
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+.interests-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.3rem;
+}
+
+.interest-item {
+  background-color: #f3f4f6;
+  color: #374151;
+  padding: 0.2rem 0.6rem;
+  border-radius: 12px;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+/* 반응형 디자인 */
+@media (max-width: 768px) {
+  .member-card {
+    padding: 1rem;
+  }
+  
+  .student-image {
+    width: 100px;
+    height: 100px;
+  }
+  
+  .student-name {
+    font-size: 1.1rem;
+  }
 }
