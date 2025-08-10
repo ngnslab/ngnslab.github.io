@@ -22,7 +22,7 @@ function App() {
   const [error, setError] = useState(null);
 
   useEffect(() => {
-    fetch('/member.json')
+    fetch('/data/member.json')
       .then(res => {
         if (!res.ok) {
           throw new Error('Failed to fetch members');

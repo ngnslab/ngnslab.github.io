@@ -26,7 +26,7 @@ export default function Member({ members }) {
         <h2 className="member-role-title">Professor</h2>
         <div className="prof-grid">
           <div className="prof-card">
-            <img src="/prof.jpg" alt="김종현 교수님" className="professor-photo" />
+            <img src="/images/members/prof.jpg" alt="김종현 교수님" className="professor-photo" />
             <div className="prof-info">
               <h2 className="prof-name">김종현 (Jonghyun Kim)</h2>
               <h3 className="prof-contact-title">Contact</h3>

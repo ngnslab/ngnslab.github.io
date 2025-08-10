@@ -15,7 +15,7 @@ export default function Home() {
           </p>
         </div>
         <div className="hero-image">
-          <img src="/lab.png" alt="NGNS Lab" className="lab-image" />
+          <img src="/lab/lab.png" alt="NGNS Lab" className="lab-image" />
         </div>
       </section>
 

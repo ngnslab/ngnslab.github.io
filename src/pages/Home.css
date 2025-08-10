@@ -28,7 +28,7 @@
 .hero-title {
   font-size: 3rem;
   font-weight: bold;
-  color: #ffffff;
+  color: #1e40af;
   margin: 0;
   line-height: 1.2;
 }
@@ -42,7 +42,7 @@
 
 .hero-description {
   font-size: 1.1rem;
-  color: #e5e7eb;
+  color: #000000;
   line-height: 1.6;
   margin: 0;
 }
@@ -69,7 +69,7 @@
 .features-title {
   font-size: 2rem;
   font-weight: bold;
-  color: #ffffff;
+  color: #1e40af;
   margin-bottom: 2rem;
   text-align: center;
 }
@@ -122,7 +122,7 @@
 .stats-title {
   font-size: 2rem;
   font-weight: bold;
-  color: #ffffff;
+  color: #1e40af;
   margin-bottom: 2rem;
   text-align: center;
 }
