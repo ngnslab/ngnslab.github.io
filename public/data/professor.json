@@ -1,0 +1,19 @@
+{
+  "name": "Jonghyun Kim, Ph.D.",
+  "position": "Professor",
+  "department": "Dept. of Computer and Information Security",
+  "address": "209 Neungdong-ro, Gwangjin-gu, Seoul 05006, Korea",
+  "contact": {
+    "tel": "+82-2-3408-3712",
+    "fax": "+82-2-3408-0001",
+    "email": "jhk@sejong.ac.kr"
+  },
+  "biography": "Jonghyun Kim received the Ph.D. degree in computer science from the University of Oklahoma, USA in 2005. He was a researcher with the Samsung Electronics in 1995-1997. He was a principal researcher with the Electronics Telecommunications Research Institute in 2005-2024, He is currently a Professor at the Department of Computer and Information Security at Sejong University, Seoul, Korea. He was also involved in standardization activities as a vice chair of WP1 and a rapporteur of Q.4 (cybersecurity) in ITU-T Study Group 17. His research interests include information Security, Cyber Security, Cloud Security (SECaaS), AI/ML-based malware detection and 5G/6G security and Standardization.",
+  "professionalExperience": [
+    "2024.09 ~ Current: Professor, Department of Computer and Information Security, Sejong University",
+    "2021.02 ~ 2024.08: Professor, University of Science and Technology (UST), South Korea",
+    "2005.07 ~ 2024.08: Researcher & Manager, Electronics and Telecommunications Research Institute (ETRI), South Korea",
+    "2020.05 ~ 2020.12: System Engineer, Samsung SDS Co., Ltd.",
+    "1995.02 ~ 1997.12: Researcher, Samsung Electronics Co., Ltd."
+  ]
+}

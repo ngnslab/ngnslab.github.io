@@ -15,6 +15,7 @@ import Contact from './pages/Contact'
 
 // package import
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Professor from './pages/Professor'
 
 function App() {
   const [members, setMembers] = useState([]);
@@ -32,11 +33,13 @@ function App() {
       .then(data => {
         setMembers(data);
         setLoading(false);
+        console.log("📦 멤버 데이터 로드 완료:", loading);
       })
       .catch(err => {
         console.error("😢 오류 발생:", err);
         setError(err.message);
         setLoading(false);
+        console.log("📦 멤버 데이터 로드 실패:", error);
       });
   }, []);
   
@@ -46,6 +49,7 @@ function App() {
       <div style={{ paddingTop: "70px" }}>
         <Routes>
           <Route path='/' element={<Home />} />
+          <Route path='/professor' element={<Professor />} />
           <Route path='/member' element={<Member members={members} />} />
           <Route path='/projects' element={<Projects />} />
           <Route path='/activities' element={<Activities />} />

@@ -1,0 +1,93 @@
+/* src/pages/Professor.css */
+
+.professor-container {
+  width: 100%;
+  max-width: none;
+  padding: 2rem 2rem;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.professor-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+  color: #ffffff;
+}
+
+.professor-main-content {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  margin-bottom: 2rem;
+}
+
+.professor-photo-container {
+  flex-shrink: 0;
+}
+
+.professor-photo {
+  width: 250px;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.professor-info-details {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.prof-name {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #ffffff;
+  margin: 0;
+}
+
+.prof-position,
+.prof-department,
+.prof-address,
+.prof-contact,
+.prof-email {
+  font-size: 1rem;
+  color: #898989;
+  margin: 0;
+}
+
+.prof-email a {
+  color: #1e40af;
+  text-decoration: none;
+}
+
+.prof-email a:hover {
+  text-decoration: underline;
+}
+
+.section-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: #ffffff;
+  border-bottom: 2px solid #ffffff;
+  padding-bottom: 0.5rem;
+}
+
+.biography-section,
+.experience-section {
+  margin-bottom: 3rem;
+}
+
+/* 반응형 디자인 */
+@media (max-width: 768px) {
+  .professor-main-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .professor-info-details {
+    align-items: center;
+  }
+}

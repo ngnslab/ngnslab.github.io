@@ -21,7 +21,7 @@ export default function Member({ members }) {
     <div className="member-container">
       <h1 className="member-title">Member</h1>
       
-      {/* 지도교수 */}
+      {/* 교수님 */}
       <section className="member-section">
         <h2 className="member-role-title">Professor</h2>
         <div className="prof-grid">
