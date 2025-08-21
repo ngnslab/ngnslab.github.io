@@ -1,6 +1,8 @@
+/* src/components/StudentCard.css */
+
 .member-card {
-  background-color: white;
-  border: 1px solid #ddd;
+  background-color: #0e4961; /* Darker blue-green */
+  border: 1px solid #1e5c78;
   border-radius: 12px;
   padding: 2rem;
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
@@ -9,19 +11,19 @@
   display: flex;
   align-items: center;
   text-align: left;
-  width: 100%; /* 가로 꽉 채움 */
-  margin-bottom: 1rem; /* 카드 간 간격 */
+  width: 100%;
+  margin-bottom: 1rem;
 }
 
 .member-card:hover {
   transform: translateY(-2px);
   box-shadow: 0 4px 8px rgba(0,0,0,0.15);
-  border-color: #1e40af;
+  border-color: #facc15; /* Highlight color */
 }
 
 .student-photo {
   margin-right: 2.5rem;
-  flex-shrink: 0; /* 사진 크기 고정 */
+  flex-shrink: 0;
 }
 
 .student-image {
@@ -29,7 +31,7 @@
   height: 120px;
   border-radius: 50%;
   object-fit: cover;
-  border: 3px solid #1e40af;
+  border: 3px solid #facc15; /* Highlight color */
   transition: transform 0.2s ease;
 }
 
@@ -48,13 +50,13 @@
 .student-name {
   font-size: 1.4rem;
   font-weight: bold;
-  color: #1e40af;
+  color: #e5e7eb; /* Changed to light gray */
   margin: 0;
 }
 
 .student-position {
   font-size: 1rem;
-  color: #6b7280;
+  color: #a3b1c6; /* Changed to light blue-gray */
   margin: 0;
   font-weight: 500;
 }
@@ -65,13 +67,13 @@
 }
 
 .email-link {
-  color: #244cce;
+  color: #a3b1c6; /* Changed to light blue-gray */
   text-decoration: none;
   transition: color 0.2s ease;
 }
 
 .email-link:hover {
-  color: #1e40af;
+  color: #facc15; /* yellow-300 */
   text-decoration: underline;
 }
 
@@ -82,7 +84,7 @@
 .student-interests h4 {
   font-size: 0.9rem;
   font-weight: bold;
-  color: #374151;
+  color: #a3b1c6; /* Changed to light blue-gray */
   margin: 0 0 0.5rem 0;
 }
 
@@ -96,8 +98,8 @@
 }
 
 .interest-item {
-  background-color: #f3f4f6;
-  color: #374151;
+  background-color: #0e4056; /* Match Navbar color */
+  color: #e5e7eb; /* light gray */
   padding: 0.3rem 0.8rem;
   border-radius: 15px;
   font-size: 0.85rem;

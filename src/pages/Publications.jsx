@@ -1,78 +1,72 @@
+
 import './Publications.css';
+import { useEffect, useState } from 'react';
 
 export default function Publications() {
-  const internationalPapers = [
-    {
-      title: "Trajectory-Driven Deep Learning for UAV Location Integrity Checks",
-      journal: "IEEE ACCESS",
-      volume: "12",
-      year: "2024",
-      type: "international"
-    },
-    {
-      title: "Flying Base Station Channel Capacity Limits: Dependent on Stationary Base Station and Independent of Positioning",
-      journal: "ELECTRONICS",
-      volume: "13",
-      year: "2024",
-      type: "international"
-    }
-  ];
+  const [internationalPapers, setInternationalPapers] = useState([]);
+  const [domesticPapers, setDomesticPapers] = useState([]);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
 
-  const domesticPapers = [
-    {
-      title: "A study of the relationship of malware detection mechanisms using Artificial Intelligence",
-      journal: "ICT Express",
-      volume: "10",
-      year: "2024",
-      type: "domestic"
-    },
-    {
-      title: "Base station gateway to secure user channel access at the first hop edge",
-      journal: "Computer Networks",
-      volume: "240",
-      year: "2024",
-      type: "domestic"
-    }
-  ];
+  useEffect(() => {
+    fetch('/data/publications.json')
+      .then(res => {
+        if (!res.ok) throw new Error('데이터를 불러오지 못했습니다');
+        return res.json();
+      })
+      .then(data => {
+        setInternationalPapers(data.internationalPapers || []);
+        setDomesticPapers(data.domesticPapers || []);
+        setLoading(false);
+      })
+      .catch(err => {
+        setError(err.message);
+        setLoading(false);
+      });
+  }, []);
+
+  if (loading) {
+    return <div className="professor-container"><h1 className="professor-title">Publications</h1><div style={{color:'#fff'}}>로딩 중...</div></div>;
+  }
+  if (error) {
+    return <div className="professor-container"><h1 className="professor-title">Publications</h1><div style={{color:'red'}}>에러: {error}</div></div>;
+  }
 
   return (
-    <div className="publications-container">
-      <h1 className="publications-title">Publications</h1>
-      
+    <div className="professor-container">
+      <h1 className="professor-title">Publications</h1>
       {/* 국외 논문 */}
-      <section className="publication-section">
-        <h2 className="publication-section-title">국외 논문</h2>
-        <div className="publication-list">
-          {internationalPapers.map((paper, index) => (
-            <div key={index} className="publication-card international">
-              <div className="publication-type international">국외</div>
-              <h3 className="publication-title">{paper.title}</h3>
-              <div className="publication-details">
-                <span className="publication-journal">{paper.journal}</span>
-                <span className="publication-volume">Vol. {paper.volume}</span>
-                <span className="publication-year">{paper.year}</span>
-              </div>
-            </div>
+      <section className="biography-section">
+        <h2 className="section-title">International Journel</h2>
+        
+        <ul style={{color:'#fff', paddingLeft: '1.5rem'}}>
+          {internationalPapers.map((paper, idx) => (
+            <li key={idx} style={{marginBottom: '1.2em', lineHeight: 1.6}}>
+              <span style={{fontWeight:'bold', color:'#fff'}}>[{idx+1}]</span> {paper.title}
+              {paper.authors && <> / <span style={{color:'#b5e0ff'}}>{paper.authors}</span></>}
+              {paper.journal && <> / <span style={{color:'#b5e0ff'}}>{paper.journal}</span></>}
+              {paper.volume && <> / Vol.{paper.volume}</>}
+              {paper.pages && <> / pp.{paper.pages}</>}
+              {paper.year && <> / {paper.year}</>}
+            </li>
           ))}
-        </div>
+        </ul>
       </section>
-
       {/* 국내 논문 */}
-      <section className="publication-section">
-        <h2 className="publication-section-title">국내 논문</h2>
-        <div className="publication-list">
-          {domesticPapers.map((paper, index) => (
-            <div key={index} className="publication-card domestic">
-              <div className="publication-type domestic">국내</div>
-              <h3 className="publication-title">{paper.title}</h3>
-              <div className="publication-details">
-                <span className="publication-journal">{paper.journal}</span>
-                <span className="publication-volume">Vol. {paper.volume}</span>
-                <span className="publication-year">{paper.year}</span>
-              </div>
-            </div>
+      <section className="experience-section">
+        <h2 className="section-title">Domestic Journel</h2>
+        <ol style={{color:'#fff', paddingLeft: '1.5rem'}}>
+          {domesticPapers.map((paper, idx) => (
+            <li key={idx} style={{marginBottom: '1.2em', lineHeight: 1.6}}>
+              <span style={{fontWeight:'bold', color:'#fff'}}>[{idx+1}]</span> {paper.title}
+              {paper.authors && <> / <span style={{color:'#b5e0ff'}}>{paper.authors}</span></>}
+              {paper.journal && <> / <span style={{color:'#b5e0ff'}}>{paper.journal}</span></>}
+              {paper.volume && <> / Vol.{paper.volume}</>}
+              {paper.pages && <> / pp.{paper.pages}</>}
+              {paper.year && <> / {paper.year}</>}
+            </li>
           ))}
-        </div>
+        </ol>
       </section>
     </div>
   );

@@ -1,48 +1,50 @@
 /* src/pages/Projects.css */
 
-.projects-container {
+/* Professor 스타일 통일 */
+.professor-container {
   width: 100%;
   max-width: none;
   padding: 2rem 2rem;
   display: flex;
   flex-direction: column;
   text-align: left;
+  background: #0c3243;
 }
 
-.projects-title {
+.professor-title {
   font-size: 2rem;
   font-weight: bold;
   margin-bottom: 1.5rem;
-  color: #1e40af;
+  color: #fff;
 }
 
-.project-section {
+.biography-section, .experience-section {
   margin-bottom: 3rem;
 }
 
-.project-section-title {
+.section-title {
   font-size: 1.5rem;
   font-weight: bold;
   margin-bottom: 1.5rem;
-  color: #1e40af;
-  border-bottom: 2px solid #1e40af;
+  color: #fff;
+  border-bottom: 2px solid #fff;
   padding-bottom: 0.5rem;
 }
 
-.project-grid {
+.professor-main-content {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   gap: 1.5rem;
 }
 
 .project-card {
-  background-color: white;
+  background-color: #fff;
   border: 1px solid #ddd;
   border-radius: 12px;
   padding: 1.5rem;
   box-shadow: 0 2px 6px rgba(0,0,0,0.1);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
-  position: relative;
+  color: #0c3243;
 }
 
 .project-card:hover {
@@ -50,16 +52,18 @@
   box-shadow: 0 8px 16px rgba(0,0,0,0.15);
 }
 
-.project-status {
-  position: absolute;
-  top: 1rem;
-  right: 1rem;
-  padding: 0.25rem 0.75rem;
-  border-radius: 20px;
-  font-size: 0.8rem;
+.prof-name {
+  font-size: 1.3rem;
   font-weight: bold;
-  text-transform: uppercase;
+  margin-bottom: 0.5rem;
 }
+
+.prof-position, .prof-contact {
+  font-size: 1rem;
+  color: #333;
+  margin: 0.2rem 0;
+}
+
 
 .project-status.ongoing {
   background-color: #fbbf24;

@@ -7,7 +7,7 @@ import NavBar from './components/Navbar'
 // page import 
 import Home from './pages/Home'
 import Member from './pages/Member'
-import Projects from './pages/Projects'
+import Research from './pages/Research'
 import Activities from './pages/Activities'
 import Publications from './pages/Publications'
 import Lecture from './pages/Lecture'
@@ -51,7 +51,7 @@ function App() {
           <Route path='/' element={<Home />} />
           <Route path='/professor' element={<Professor />} />
           <Route path='/member' element={<Member members={members} />} />
-          <Route path='/projects' element={<Projects />} />
+          <Route path='/research' element={<Research />} />
           <Route path='/activities' element={<Activities />} />
           <Route path='/publications' element={<Publications />} />
           <Route path='/lecture' element={<Lecture />} />

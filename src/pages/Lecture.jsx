@@ -72,26 +72,36 @@ export default function Lecture() {
   return (
     <div className="lecture-container">
       <h1 className="lecture-title">Lecture</h1>
-      
       {lectures.map((yearData, yearIndex) => (
         <section key={yearIndex} className="lecture-section">
           <h2 className="lecture-year-title">{yearData.year}년 강의</h2>
-          <div className="lecture-grid">
-            {yearData.courses.map((course, courseIndex) => (
-              <div key={courseIndex} className={`lecture-card ${course.type}`}>
-                <div className="lecture-type">
-                  {course.type === 'undergraduate' ? '학부' : '대학원'}
-                </div>
-                <h3 className="course-name">{course.courseName}</h3>
-                <div className="course-details">
-                  <p className="course-department">{course.department}</p>
-                  <p className="course-code">학수번호: {course.courseCode}-{course.section}</p>
-                  <p className="course-credits">학점: {course.credits}</p>
-                  {course.grade && <p className="course-grade">학년: {course.grade}</p>}
-                  <p className="course-language">강의언어: {course.language}</p>
-                </div>
-              </div>
-            ))}
+          <div className="lecture-table-wrapper">
+            <table className="lecture-table">
+              <thead>
+                <tr>
+                  <th>구분</th>
+                  <th>과목명</th>
+                  <th>학과</th>
+                  <th>학수번호</th>
+                  <th>학점</th>
+                  <th>학년</th>
+                  <th>언어</th>
+                </tr>
+              </thead>
+              <tbody>
+                {yearData.courses.map((course, courseIndex) => (
+                  <tr key={courseIndex} className={course.type}>
+                    <td>{course.type === 'undergraduate' ? '학부' : '대학원'}</td>
+                    <td>{course.courseName}</td>
+                    <td>{course.department}</td>
+                    <td>{course.courseCode}-{course.section}</td>
+                    <td>{course.credits}</td>
+                    <td>{course.grade || '-'}</td>
+                    <td>{course.language}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
           </div>
         </section>
       ))}

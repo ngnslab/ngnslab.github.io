@@ -1,89 +1,61 @@
+
 import './Activities.css';
+import { useEffect, useState } from 'react';
 
 export default function Activities() {
-  const activities = [
-    {
-      title: "학술대회 참여",
-      description: "국내외 주요 학술대회에서 연구 결과 발표",
-      period: "2024 - 현재",
-      type: "ongoing"
-    },
-    {
-      title: "연구 협력",
-      description: "산업계 및 학계와의 연구 협력 활동",
-      period: "2024 - 현재",
-      type: "ongoing"
-    }
-  ];
+  const [majorActivities, setMajorActivities] = useState([]);
+  const [awards, setAwards] = useState([]);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
 
-  const presentations = [
-    {
-      title: "Fake Base Station Detection and Blacklisting",
-      conference: "2024 33rd International Conference on Computer Communications and Networks (ICCCN)",
-      organization: "IEEE",
-      date: "2024-07",
-      type: "international"
-    },
-    {
-      title: "Wireless Link Routing to Secure Against Fake Base Station in 5G",
-      conference: "2024 Silicon Valley Cybersecurity Conference (SVCC)",
-      organization: "Silicon Valley Cybersecurity Institute",
-      date: "2024-06",
-      type: "international"
-    },
-    {
-      title: "Analyzing the container security threat on the 5G Core Network",
-      conference: "2024 Silicon Valley Cybersecurity Conference (SVCC)",
-      organization: "Silicon Valley Cybersecurity Institute", 
-      date: "2024-06",
-      type: "international"
-    },
-    {
-      title: "Flying Base Station Channel Capacity",
-      conference: "SNTA '24: Seventh International Workshop on Systems and Network Telemetry and Analytics",
-      organization: "ACM HPDC",
-      date: "2024-06",
-      type: "international"
-    }
-  ];
+  useEffect(() => {
+    fetch('/data/activities.json')
+      .then(res => {
+        if (!res.ok) throw new Error('데이터를 불러오지 못했습니다');
+        return res.json();
+      })
+      .then(data => {
+        setMajorActivities(data.majorActivities || []);
+        setAwards(data.awards || []);
+        setLoading(false);
+      })
+      .catch(err => {
+        setError(err.message);
+        setLoading(false);
+      });
+  }, []);
+
+  if (loading) {
+    return <div className="professor-container"><h1 className="professor-title">Activities</h1><div style={{color:'#fff'}}>Loading ...</div></div>;
+  }
+  if (error) {
+    return <div className="professor-container"><h1 className="professor-title">Activities</h1><div style={{color:'red'}}>Error</div></div>;
+  }
 
   return (
-    <div className="activities-container">
-      <h1 className="activities-title">Activities</h1>
-      
-      {/* 현재 활동 */}
-      <section className="activity-section">
-        <h2 className="activity-section-title">현재 활동</h2>
-        <div className="activity-grid">
-          {activities.map((activity, index) => (
-            <div key={index} className="activity-card ongoing">
-              <div className="activity-status ongoing">진행중</div>
-              <h3 className="activity-title">{activity.title}</h3>
-              <p className="activity-description">{activity.description}</p>
-              <div className="activity-details">
-                <span className="activity-period">기간: {activity.period}</span>
-              </div>
-            </div>
+    <div className="professor-container">
+      <h1 className="professor-title">Activities</h1>
+      {/* 주요 활동 */}
+      <section className="biography-section">
+        <h2 className="section-title">Major Activities</h2>
+        <ul style={{ color: '#fff', paddingLeft: '1.5rem' }}>
+          {majorActivities.map((item, i) => (
+            <li key={i} style={{ marginBottom: '1em', lineHeight: 1.6 }}>
+              <span style={{ fontWeight: 'bold', color: '#fff' }}>{`[${i + 1}]`}</span> {item}
+            </li>
           ))}
-        </div>
+        </ul>
       </section>
-
-      {/* 학술발표 */}
-      <section className="activity-section">
-        <h2 className="activity-section-title">학술발표</h2>
-        <div className="presentation-list">
-          {presentations.map((presentation, index) => (
-            <div key={index} className="presentation-card">
-              <div className="presentation-type international">국제</div>
-              <h3 className="presentation-title">{presentation.title}</h3>
-              <p className="presentation-conference">{presentation.conference}</p>
-              <div className="presentation-details">
-                <span className="presentation-organization">{presentation.organization}</span>
-                <span className="presentation-date">{presentation.date}</span>
-              </div>
-            </div>
+      {/* 수상 */}
+      <section className="experience-section">
+        <h2 className="section-title">Awards</h2>
+        <ul style={{ color: '#fff', paddingLeft: '1.5rem' }}>
+          {awards.map((item, i) => (
+            <li key={i} style={{ marginBottom: '1em', lineHeight: 1.6 }}>
+              <span style={{ fontWeight: 'bold', color: '#fff' }}>{`[${i + 1}]`}</span> {item}
+            </li>
           ))}
-        </div>
+        </ul>
       </section>
     </div>
   );

@@ -1,0 +1,461 @@
+{
+  "internationalPapers": [
+    {
+        "title": "Descriptor: 5G Wireless Network Intrusion Detection Dataset (5G-NIDD)",
+        "authors": "Siriwardhana, Y., Samarakoon, S., Porambage, P., Liyanage, M., Chang, S., Kim, J., Kim, J. & Ylianttila, M.",
+        "journal": "IEEE Data Descriptions",
+        "pages": "1-12",
+        "year": 2025
+    },
+    {
+        "title": "Deep Defense Against Mal-Doc: Utilizing Transformer and SeqGAN for Detecting and Classifying Document Type Malware",
+        "authors": "Martin, G., Lee, S., Kim, J., Jeong, Y., Kang, A. & Woo, J.",
+        "journal": "Applied Science. v.15 no.6",
+        "pages": "2978",
+        "year": 2025
+    },
+    {
+        "title": "Trajectory-Driven Deep Learning for UAV Location Integrity Checks",
+        "authors": "Shin, M., Chang, S. Y., Kim, J., Park, K. & Kim, J.",
+        "journal": "IEEE Access. v.12",
+        "pages": "178789-178804",
+        "year": 2024
+    },
+    {
+        "title": "A Study of the Relationship of Malware Detection Mechanisms using Artificial Intelligence",
+        "authors": "Song, J., Choi, S., Kim, J., Park, K., Park, C., Kim, J. & Kim, I.",
+        "journal": "ICT EXPRESS, v.10, no.3",
+        "pages": "632-649",
+        "year": 2024
+    },
+    {
+        "title": "Base station gateway to secure user channel access at the first hop edge",
+        "authors": "Chang, S., Sarker, A., Wuthier, S., Kim, J., Kim, J. & Zhou, X.",
+        "journal": "Computer Networks. v.240",
+        "pages": "110165",
+        "year": 2024
+    },
+    {
+        "title": "Blockchain Handshaking with Software Assurance: Version++ Protocol for Bitcoin Cryptocurrency",
+        "authors": "Sarker, A., Wuthier, S., Kim, J., Kim, J. & Chang, S.",
+        "journal": "v.13, no.19",
+        "pages": "3857",
+        "year": 2024
+    },
+    {
+        "title": "Distributed Software Build Assurance for Software Supply Chain Integrity",
+        "authors": "Lew, K., Sarker, A., Wuthier, S., Kim, J., Kim, J. & Chang, S.",
+        "journal": "Applied Sciences. v.14, no.20",
+        "pages": "9262",
+        "year": 2024
+    },
+    {
+        "title": "Flying Base Station Channel Capacity Limits: Dependent on Stationary Base Station and Independent of Positioning",
+        "authors": "Chang, S., Park, K., Kim, J. & Kim, J.",
+        "journal": "v.13, no.12",
+        "pages": "2234",
+        "year": 2024
+    },
+    {
+        "title": "Fake Base Station Detection and Link Routing Defense",
+        "authors": "Purification, S., Kim, J., Kim, J. & Chang, S.",
+        "journal": "v.13, no.17",
+        "pages": "3474",
+        "year": 2024
+    },
+    {
+        "title": "Automated, Reliable Zero-Day Malware Detection Based on Autoencoding Architecture",
+        "authors": "Kim, C., Chang, S., Kim, J., Lee, D. & Kim, J.",
+        "journal": "IEEE Transactions on Network and Service Management. v.20, no.3",
+        "pages": "3900-3914",
+        "year": 2023
+    },
+    {
+        "title": "Distributed and Lightweight Software Assurance in Cellular Broadcasting Handshake and Connection Establishment",
+        "authors": "Purification, S., Kim, J., Kim, J., Kim, I. & Chang, S.",
+        "journal": "v.12, no.18",
+        "pages": "3782",
+        "year": 2023
+    },
+    {
+        "title": "On the Effect of Malicious User on D2D Cluster: CSI Forgery and Countermeasures",
+        "authors": "Bang, I., Manya, V., Kim, J. & Kim, T.",
+        "journal": "IEEE Access. v.11",
+        "pages": "5517-5527",
+        "year": 2023
+    },
+    {
+        "title": "Reliable Detection of Location Spoofing and Variation Attacks",
+        "authors": "Kim, C., Chang, S., Lee, D., Kim, J., Park, K. & Kim, J.",
+        "journal": "IEEE Access. v.11",
+        "pages": "10813-10825",
+        "year": 2023
+    },
+    {
+        "title": "Securing UAV Flying Base Station for Mobile Networking: A Review",
+        "authors": "Chang, S., Park, K., Kim, J. & Kim, J.",
+        "journal": "Future Internet. v.15, no.5",
+        "pages": "176",
+        "year": 2023
+    },
+    {
+        "title": "Malware Detection Using Byte Streams of Different File Formats",
+        "authors": "Jeong, Y., Lee, S., Kim, J., Woo, J. & Kang, A.",
+        "journal": "IEEE Access, v.10",
+        "pages": "51041-51047",
+        "year": 2022
+    },
+    {
+        "title": "Dynamic ID randomization for user privacy in mobile network",
+        "authors": "Sarker, A., Byun, S., Raavi, M., Kim, J., Kim, J. & Chang, S.",
+        "journal": "ETRI Journal. v.44, no.6",
+        "pages": "903-914",
+        "year": 2022
+    },
+    {
+        "title": "Physical-layer security enhancement using artificial noise for D2D communication in vehicular platooning networks",
+        "authors": "Bang, I., Kim, J. & Kim, T.",
+        "journal": "ICT Express. v.8, no.4",
+        "pages": "600-605",
+        "year": 2022
+    },
+    {
+        "title": "Evaluations of AI‐based malicious PowerShell detection with feature optimizations",
+        "authors": "Song, J., Kim, J., Choi, S., Kim, J. & Kim, I.",
+        "journal": "ETRI Journal, v.43, no.3",
+        "pages": "549-560",
+        "year": 2021
+    },
+    {
+        "title": "Automated feature selection for anomaly detection in network traffic data",
+        "authors": "Nakashima, M., Sim, A., Kim, Y., Kim, J. & Kim, J.",
+        "journal": "ACM Transactions on Management Information Systems. v.12, no.3",
+        "pages": "3446636",
+        "year": 2021
+    },
+    {
+        "title": "Attention-based automated feature extraction for malware analysis",
+        "authors": "Choi, S., Bae, J., Lee, C., Kim, Y. & Kim, J.",
+        "journal": "v.20, no.10",
+        "pages": "2893",
+        "year": 2020
+    },
+    {
+        "title": "Cyber Threat Detection Based on Artificial Neural Networks Using Event Profiles",
+        "authors": "Lee, J., Kim, J., Kim, I. & Han, K.",
+        "journal": "IEEE Access, v.7",
+        "pages": "165607-165626",
+        "year": 2019
+    },
+    {
+        "title": "Design of Network Threat Detection and Classification based on Machine Learning on Cloud Computing",
+        "authors": "Kim, H., Kim, J., Kim, Y., Kim, I. & Kim, K.",
+        "journal": "Cluster Computing, v.22, no.Supp.1",
+        "pages": "2341-2350",
+        "year": 2019
+    },
+    {
+        "title": "Improvement of Malware Detection and Classification using API Call Sequence Alignment and Visualization",
+        "authors": "Kim, H., Kim, J., Kim, Y., Kim, I., Kim, K. & Kim, H.",
+        "journal": "Cluster Computing, v.22, no.Supp.1",
+        "pages": "921-929",
+        "year": 2019
+    },
+    {
+        "title": "PrIDE: A Protocol-Independent De-Duplication Engine for Packet Recording",
+        "authors": "Shin, S., Lee, J., Jeong, J., Kim, H., Kim, J., Kim, I. & Yoon, M.",
+        "journal": "IEEE Network, v.30, no.6",
+        "pages": "42-48",
+        "year": 2016
+    },
+    {
+        "title": "Hash Table with Expanded-Key for High-Speed Networking",
+        "authors": "Shin, S., Lee, J., Kim, J., Kim, I. & Yoon, M.",
+        "journal": "IEICE Transactions on Information and Systems, v.E99.D, no.3",
+        "pages": "747-750",
+        "year": 2016
+    },
+    {
+        "title": "Feature-Chain Based Malware Detection Using Multiple Sequence Alignment of API Call",
+        "authors": "Kim, H., Kim, J., Kim, J., Kim, I. & Chung, T.",
+        "journal": "IEICE Transactions on Information and Systems, v.E99.D, no.4",
+        "pages": "1071-1080",
+        "year": 2016
+    },
+    {
+        "title": "Performance comparison of relational databases and columnar databases using bitmap index for fast search of 10Gbps network flows",
+        "authors": "Choi, S., Park, H., Lee, J., Kim, J. & Kim, I.",
+        "journal": "Lecture Notes in Electrical Engineering. v.373",
+        "pages": "171-175",
+        "year": 2015
+    },
+    {
+        "title": "Architecture for Dynamic Security Services in Overlay Network Environments",
+        "authors": "Seo, D., Kim, J., Lee, B. & Baek, J.",
+        "journal": "Information: An International Interdisciplinary Journal, v.17, no.5",
+        "pages": "1877-1884",
+        "year": 2014
+    },
+    {
+        "title": "Quality of Protection for Multimedia Services via Wireless Mesh Networks",
+        "authors": "Lim, S., Yi, O. & Kim, J.",
+        "journal": "Information: An International Interdisciplinary Journal, v.16, no.7(B)",
+        "pages": "5145-5158",
+        "year": 2013
+    },
+    {
+        "title": "Network Modeling and Energy-Efficiency Optimization for Advanced Machine-to-Machine Sensor Networks",
+        "authors": "Jung, S., Kim, J. & Kim, S.",
+        "journal": "Sensors, v.12, no.11",
+        "pages": "14851-14861",
+        "year": 2012
+    },
+    {
+        "title": "Research on a Denial of Service (DoS) Detection System Based on Global Interdependent Behaviors in a Sensor Network Environment",
+        "authors": "Song, J., Jung, S., Kim, J., Seo, D. & Kim, S.",
+        "journal": "Sensors, v.10, no.11",
+        "pages": "10376-10386",
+        "year": 2010
+    },
+    {
+        "title": "Cost Optimization in SIS Model of Worm Infection",
+        "authors": "Kim, J., Radhakrishnan, S. & Jang, J.",
+        "journal": "ETRI Journal, v.28, no.5",
+        "pages": "692-695",
+        "year": 2006
+    }
+  ],
+  "domesticPapers": [
+    {
+        "title": "Design of a Security Architecture and Prototype Implementation for UxNB in 6G Mobile Networks",
+        "authors": "Kim, J., & Park, K.",
+        "journal": "Journal of the Korean Internet and Information Society, v.26, no.3",
+        "pages": "35–46",
+        "year": 2025
+    },
+    {
+        "title": "QoS Degradation Attack in D2D Multicasting Networks: Analysis and Countermeasure",
+        "authors": "Manya, V., Kim, T., Kim, J., & Bang, I.",
+        "journal": "Journal of the Korean Institute of Communications and Information Sciences, v.49, no.6",
+        "pages": "807–815",
+        "year": 2024
+    },
+    {
+        "title": "Study on Trusted Models and Intelligent Intrusion Detection Systems for 6G Mobile Networks",
+        "authors": "Park, C., Park, K., Song, J., Kim, J., & Kim S.",
+        "journal": "Electronics and Telecommunications Trends (ETRI), v.39, no.5",
+        "pages": "74–85",
+        "year": 2024
+    },
+    {
+        "title": "Secrecy Rate Analysis of Physical-Layer Security Technique for Cluster-Based D2D Communications",
+        "authors": "Bang I., Kim J., & Kim T.",
+        "journal": "Journal of the Korean Institute of Communications and Information Sciences, v.48, no.10",
+        "pages": "1215–1218",
+        "year": 2023
+    },
+    {
+        "title": "Study on UxNB Network Deployment Method toward Mobile IAB",
+        "authors": "Kim, K., Kim, J., Park, K., & Park, T.",
+        "journal": "Journal of The Korea Society of Computer and Information, v.28, no.12",
+        "pages": "105–114",
+        "year": 2023
+    },
+    {
+        "title": "Standardization Trends and Prospects for IMT-2030 Intelligent Security Monitoring",
+        "authors": "Nah, J., Kim, J., & Park, J.",
+        "journal": "Journal of the Korean Institute of Information Security and Cryptology, v.33, no.4",
+        "pages": "95–102",
+        "year": 2023
+    },
+    {
+        "title": "Physical-Layer Security for Vehicular Platooning Networks: Artificial Noise Generation with Optimal Power Allocation",
+        "authors": "Bang, I., Kim, J., & Kim, T.",
+        "journal": "Journal of Korean Institute of Communications and Information Sciences, v.47, no.5",
+        "pages": "756–759",
+        "year": 2022
+    },
+    {
+        "title": "Performance Analysis of Secure Relaying Protocol Against an Untrusted Relay Node in V2V Networks",
+        "authors": "Bang, I., Kim, J., Lee, S., & Kim, T.",
+        "journal": "Journal of Korean Institute of Communications and Information Sciences, v.46, no.12",
+        "pages": "2180–2183",
+        "year": 2021
+    },
+    {
+        "title": "A Study on Improving the Demonstration Process in the Defense Area with AI Anti-virus System R&D Products",
+        "authors": "Yoon, S., Kim, J., Lee, S., & Kang, J.",
+        "journal": "Journal of Korea Convergence Security, v.21, no.4",
+        "pages": "31–39",
+        "year": 2021
+    },
+    {
+        "title": "Features and Major Enhancements of 3GPP 5G Security Architecture",
+        "authors": "Park, J., Kim, J., Moon, D., & Kim, I.",
+        "journal": "Journal of the Korean Institute of Information Security and Cryptology, v.29, no.5",
+        "pages": "21–30",
+        "year": 2019
+    },
+    {
+        "title": "Trends in Hyper-Connected Intelligent Infrastructure Security Technologies: Focus on Mobile Communication Security in the 5G Era",
+        "authors": "Park, J., Kim, J., Kim, I., & Jin, S.",
+        "journal": "Electronics and Telecommunications Trends (ETRI), v.34, no.1",
+        "pages": "36–48",
+        "year": 2019
+    },
+    {
+        "title": "Malware Detection Model Using Skip-Connected LSTM RNN",
+        "authors": "Bae, J., Lee, C., Choi, S., & Kim, J.",
+        "journal": "Journal of the Korean Institute of Information Science, v.45, no.12",
+        "pages": "1233–1239",
+        "year": 2018
+    },
+    {
+        "title": "Detection of Malicious PDF Based on Document Structure Features and Stream Objects",
+        "authors": "Kang, A., Jeong, Y., Kim, S., Kim, J., Woo, J., & Choi, S.",
+        "journal": "Journal of The Korea Society of Computer and Information, v.23, no.11",
+        "pages": "85–93",
+        "year": 2018
+    },
+    {
+        "title": "Extended Processor Trace Decoder Architecture for Malware Detection",
+        "authors": "Kang, S., Kim, Y., Kim, J., & Kim, H.",
+        "journal": "Journal of Convergence Security, v.18, no.5",
+        "pages": "19–24",
+        "year": 2018
+    },
+    {
+        "title": "A Study on Implementation of Real-Time Multiprocess Trace Stream Decoder",
+        "authors": "Kim, H., Kim, Y., & Kim, J.",
+        "journal": "Journal of Convergence Security, v.18, no.5",
+        "pages": "67–73",
+        "year": 2018
+    },
+    {
+        "title": "Research Trends in Malware Detection Using Deep Learning",
+        "authors": "Choi, S., Kim, Y., Kim, J., & Kim, I.",
+        "journal": "Journal of the Korean Institute of Information Security and Cryptology, v.27, no.3",
+        "pages": "5–11",
+        "year": 2017
+    },
+    {
+        "title": "Machine Learning-Based Intrusion Detection System for Class Imbalanced Data",
+        "authors": "Jeong, Y., Park, K., Kim, H., Kim, J., & Hyun, S.",
+        "journal": "Journal of the Korean Institute of Information Security and Cryptology, v.27, no.6",
+        "pages": "1385–1395",
+        "year": 2017
+    },
+    {
+        "title": "Trends in Cyber-Genomic Technologies for Responding to Malware",
+        "authors": "Kim, J., Kim, H., & Kim, I.",
+        "journal": "Electronics and Telecommunications Trends (ETRI), v.30, no.5",
+        "pages": "118–128",
+        "year": 2015
+    },
+    {
+        "title": "10Gbps Network Traffic Storage and Real-Time Index Generation",
+        "authors": "Choi, S., Lee, J., Choi, Y., Kim, J., & Kim, I.",
+        "journal": "Electronics and Telecommunications Trends (ETRI), v.30, no.4",
+        "pages": "181–190",
+        "year": 2015
+    },
+    {
+        "title": "Trends in Cyber Attack Traceback Techniques",
+        "authors": "Kim, J., Han, M., Lee, J., & Kim, I.",
+        "journal": "Electronics and Telecommunications Trends (ETRI), v.29, no.1",
+        "pages": "93–103",
+        "year": 2014
+    },
+    {
+        "title": "Cyber Attack Response Technologies and Standardization",
+        "authors": "Kim, J.",
+        "journal": "OSIA Standards & Technology Review Journal, v.27, no.2",
+        "pages": "76–88",
+        "year": 2014
+    },
+    {
+        "title": "Technical Trends of Cyber Security with Big Data",
+        "authors": "Kim, J., Lim, S., Kim, I., Cho, H., & Roh, B.",
+        "journal": "Electronics and Telecommunications Trends (ETRI), v.28, no.3",
+        "pages": "19–29",
+        "year": 2013
+    },
+    {
+        "title": "Trends in International Standardization of Cybersecurity at ITU-T SG17",
+        "authors": "Kim, J., & Kim, I.",
+        "journal": "Journal of the Korean Institute of Information Security and Cryptology, v.23, no.3",
+        "pages": "19–27",
+        "year": 2013
+    },
+    {
+        "title": "A Security Monitoring System for Security Information Sharing and Cooperative Countermeasure",
+        "authors": "Kim, K., Lee, S., Kim, J., & Lee, B.",
+        "journal": "Journal of the Institute of Electronics Engineers of Korea, v.50, no.2",
+        "pages": "60–69",
+        "year": 2013
+    },
+    {
+        "title": "Feature Selection with PCA Based on DNS Query for Malicious Domain Classification",
+        "authors": "Lim, S., Cho, J., Kim, J., & Lee, B.",
+        "journal": "Journal of KIPS: Computer and Communication Systems, v.1, no.1",
+        "pages": "55–60",
+        "year": 2012
+    },
+    {
+        "title": "Detecting Cyber Threat Domains Based on DNS Traffic",
+        "authors": "Lim, S., Kim, J., & Lee, B.",
+        "journal": "Journal of the Korean Institute of Communications and Information Sciences, v.37B, no.11",
+        "pages": "1082–1089",
+        "year": 2012
+    },
+    {
+        "title": "Development and Standardization Trends of Cybersecurity Information Exchange Technologies",
+        "authors": "Kim, J., Seo, D., & An, G.",
+        "journal": "Journal of the Korean Institute of Information Security and Cryptology, v.22, no.2",
+        "pages": "7–14",
+        "year": 2012
+    },
+    {
+        "title": "ESCORT: Secure P2P Protocol for Global Cooperation in Overlay Network Services",
+        "authors": "Seo, D., An, G., Kim, J., & Seo, D.",
+        "journal": "Journal of Security Engineering, v.8, no.6",
+        "pages": "673–692",
+        "year": 2011
+    },
+    {
+        "title": "Design of Collaborative Response Framework Based on the Security Information Sharing in the Inter-domain Environments",
+        "authors": "Lee, Y., An, G., & Kim, J.",
+        "journal": "Journal of the Korea Institute of Information and Communication Engineering, v.15, no.3",
+        "pages": "605–612",
+        "year": 2011
+    },
+    {
+        "title": "Design and Implementation of Mechanism for Effectively Exchanging Cybersecurity Information between Independent Security Management Domains",
+        "authors": "An, G., Seo, D., Lim, S., Kim, J.",
+        "journal": "Journal of Korean Institute of Communications and Information Sciences, v.36, no.12",
+        "pages": "1489–1497",
+        "year": 2011
+    },
+    {
+        "title": "Technical Trends of DDoS Attacks and Defense in Cellular Network",
+        "authors": "Yi, S., Kim, J., & Seo, D.",
+        "journal": "Electronics and Telecommunications Trends (ETRI), v.26, no.6",
+        "pages": "154–163",
+        "year": 2011
+    },
+    {
+        "title": "Trends in Standardization of Integrated Security Management and Cyber Traceback Technologies",
+        "authors": "Yu, J., Kim, J., & Na, J.",
+        "journal": "TTA Journal",
+        "pages": "66–74",
+        "year": 2008
+    },
+    {
+        "title": "Cyber Attack Traceback Technologies",
+        "authors": "Yu, J., Kim, G., Kim, J., & Na, J.",
+        "journal": "Weekly Technology Trends, v.1328",
+        "pages": "16–22",
+        "year": 2007
+    }
+]
+}

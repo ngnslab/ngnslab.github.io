@@ -9,7 +9,7 @@ export default function NavBar() {
     { to: "/", label: "Home" },
     { to: "/professor", label: "Professor" },
     { to: "/member", label: "Member" },
-    { to: "/projects", label: "Projects" },
+    { to: "/research", label: "Research" },
     { to: "/activities", label: "Activities" },
     { to: "/publications", label: "Publications" },
     { to: "/lecture", label: "Lecture" },
