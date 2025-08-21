@@ -1,0 +1,521 @@
+{
+  "ongoingProjects": [
+    {
+      "title": "Development of Security Threat Response and Privacy Protection Technologies and International Cooperation for Establishing a Trusted Global Ecosystem in 6G NTN",
+      "description": "IITP (Institute of Information & Communications Technology Planning & Evaluation)",
+      "period": "2025.07.01. ~ 2027.12.31."
+    },
+    {
+      "title": "Research and international collaboration on trust model-based intelligent incident response technologies in 6G open network environment",
+      "description": "IITP (Institute of Information & Communications Technology Planning & Evaluation)",
+      "period": "2024.07.01. ~ 2026.12.31."
+    }
+  ],
+  "completedProjects": [
+    {
+      "title": "Research on Foundational Technologies for 6G Autonomous Security-by-Design to Guarantee Constant Quality of Security",
+      "description": "IITP (Institute of Information & Communications Technology Planning & Evaluation)",
+      "period": "2021.04.01. ~ 2024.12.31."
+    },
+    {
+      "title": "Collaborative research on element Technologies for 6G Security-by-Design and standardization-based international cooperation",
+      "description": "IITP (Institute of Information & Communications Technology Planning & Evaluation)",
+      "period": "2021.07.01. ~ 2024.12.31."
+    },
+    {
+      "title": "Development of 5G Edge Security Technology for Ensuring 5G+ Service Stability and Availability",
+      "description": "IITP (Institute of Information & Communications Technology Planning & Evaluation)",
+      "period": "2020.04.01. ~ 2021.12.31."
+    },
+    {
+      "title": "ICT infrastructure protection against intelligent malware threats",
+      "description": "IITP (Institute of Information & Communications Technology Planning & Evaluation)",
+      "period": "2019.04.01. ~ 2022.12.31."
+    },
+    {
+      "title": "Cloud based Security Intelligence Technology Development for the Customized Security Service Provisioning",
+      "description": "IITP (Institute of Information & Communications Technology Planning & Evaluation)",
+      "period": "2016.04.01. ~ 2019.12.31."
+    },
+    {
+      "title": "Developing threat analysis and response technology based on Security Analytics for Heterogeneous security solution",
+      "description": "IITP (Institute of Information & Communications Technology Planning & Evaluation)",
+      "period": "2017.04.01. ~ 2018.12.31."
+    },
+    {
+      "title": "The Development of Cyber Blackbox and Integrated Security Analysis Technology for Proactive and Reactive Cyber Incident Response",
+      "description": "IITP (Institute of Information & Communications Technology Planning & Evaluation)",
+      "period": "2014.04.01. ~ 2017.02.28."
+    },
+    {
+      "title": "Cyber targeted attack recognition and trace-back technology based-on long-term historic analysis of multi-source data",
+      "description": "IITP (Institute of Information & Communications Technology Planning & Evaluation)",
+      "period": "2013.03.01. ~ 2017.02.28."
+    },
+    {
+      "title": "Development of global collaborative integrated security control system",
+      "description": "KCA (Korea Communications Agency)",
+      "period": "2010.03.01. ~ 2013.02.28."
+    },
+    {
+      "title": "Development of Intelligent Cyber Attack Monitoring and Tracking System in All-IP Environment",
+      "description": "",
+      "period": "2007.03.01. ~ 2010.02.28."
+    },
+    {
+      "title": "Development of Anomaly Sign Collection and Analysis System",
+      "description": "",
+      "period": "2005.07.01. ~ 2007.02.28."
+    }
+  ],
+  "internationalPatents": [
+    {
+      "title": "Apparatus and method for rewarding reconfigurable intelligent surface infrastructure sharing based on blockchain",
+      "applicationNumber": "18/408765",
+      "applicationDate": "2024-01-10",
+      "country": "U.S.A."
+    },
+    {
+      "title": "Apparatus and method for updating internet-based malware detection engine using scaling control of virtual machine",
+      "applicationNumber": "18/335813",
+      "applicationDate": "2023-06-15",
+      "country": "U.S.A."
+    },
+    {
+      "title": "Method and apparatus for detecting unknown malware based on an assembly language model",
+      "applicationNumber": "18/056141",
+      "applicationDate": "2022-11-16",
+      "country": "U.S.A."
+    },
+    {
+      "title": "Apparatus for detecting unknown malware using variable opcode sequence and method using the same",
+      "applicationNumber": "17/461337",
+      "applicationDate": "2021-08-30",
+      "patentNumber": "11790085",
+      "patentDate": "2023-10-17",
+      "country": "U.S.A."
+    },
+    {
+      "title": "Apparatus and method for detecting malicious script",
+      "applicationNumber": "17/100541",
+      "applicationDate": "2020-11-20",
+      "patentNumber": "11783034",
+      "patentDate": "2023-10-10",
+      "country": "U.S.A."
+    },
+    {
+      "title": "Method and apparatus for detecting cyber threats using deep neural network",
+      "applicationNumber": "16/202869",
+      "applicationDate": "2018-11-28",
+      "country": "U.S.A."
+    },
+    {
+      "title": "Method and apparatus for analyzing traffic based on flow in cloud system",
+      "applicationNumber": "16/206662",
+      "applicationDate": "2018-11-30",
+      "patentNumber": "10841194",
+      "patentDate": "2020-11-17",
+      "country": "U.S.A."
+    },
+    {
+      "title": "Ransomware detections apparatus and operating method thereof",
+      "applicationNumber": "15/963906",
+      "applicationDate": "2018-04-26",
+      "country": "U.S.A."
+    },
+    {
+      "title": "Ransomware detections apparatus and operating method thereof",
+      "applicationNumber": "18169793.9",
+      "applicationDate": "2018-04-27",
+      "patentNumber": "3428826",
+      "patentDate": "2020-12-02",
+      "country": "U.K./E.P.O/GERMANY"
+    },
+    {
+      "title": "Ransomware detections apparatus and operating method thereof",
+      "applicationNumber": "201810397736.5",
+      "applicationDate": "2018-04-28",
+      "patentNumber": "ZL201810397736.5",
+      "patentDate": "2021-11-30",
+      "country": "CHINA"
+    },
+    {
+      "title": "Apparatus and method for visualization of sequential data for comparison and characterization",
+      "applicationNumber": "15/860828",
+      "applicationDate": "2018-01-03",
+      "patentNumber": "10509796",
+      "patentDate": "2019-12-17",
+      "country": "U.S.A."
+    },
+    {
+      "title": "Apparatus and method for detecting malware code",
+      "applicationNumber": "15/240319",
+      "applicationDate": "2016-08-18",
+      "patentNumber": "10007789",
+      "patentDate": "2018-06-26",
+      "country": "U.S.A."
+    },
+    {
+      "title": "System and method for interlocking of intrusion information",
+      "applicationNumber": "15/246027",
+      "applicationDate": "2016-08-24",
+      "country": "U.S.A."
+    },
+    {
+      "title": "Apparatus and method for recording network traffic",
+      "applicationNumber": "15/360957",
+      "applicationDate": "2016-11-23",
+      "country": "U.S.A."
+    },
+    {
+      "title": "Apparatus and method for real-time reconstruction of transmitted file in broadband network environment",
+      "applicationNumber": "15/331436",
+      "applicationDate": "2016-10-21",
+      "patentNumber": "10404782",
+      "patentDate": "2019-09-03",
+      "country": "U.S.A."
+    },
+    {
+      "title": "Evidence data storing apparatus for incident analysis and method thereof",
+      "applicationNumber": "14/937498",
+      "applicationDate": "2015-11-10",
+      "country": "U.S.A."
+    },
+    {
+      "title": "Apparatus and method for generating process activity profile",
+      "applicationNumber": "14/802688",
+      "applicationDate": "2015-07-17",
+      "country": "U.S.A."
+    },
+    {
+      "title": "Method and system for network connection-chain traceback using network flow data",
+      "applicationNumber": "14/635962",
+      "applicationDate": "2015-03-02",
+      "patentNumber": "9537887",
+      "patentDate": "2017-01-03",
+      "country": "U.S.A."
+    },
+    {
+      "title": "Apparatus for analyzing the attack feature DNA and method thereof",
+      "applicationNumber": "14/596188",
+      "applicationDate": "2015-01-13",
+      "country": "U.S.A."
+    },
+    {
+      "title": "Method and apparatus for quantifying threat status for recognizing network threat",
+      "applicationNumber": "13/902069",
+      "applicationDate": "2013-05-24",
+      "country": "U.S.A."
+    },
+    {
+      "title": "Method and apparatus for visualizing network security state",
+      "applicationNumber": "13/721236",
+      "applicationDate": "2012-12-20",
+      "patentNumber": "9130981",
+      "patentDate": "2015-09-08",
+      "country": "U.S.A."
+    },
+    {
+      "title": "Agent device and method for sharing security information based on anonymous identifier between security management domains",
+      "applicationNumber": "13/493120",
+      "applicationDate": "2012-06-11",
+      "patentNumber": "8789200",
+      "patentDate": "2014-07-22",
+      "country": "U.S.A."
+    },
+    {
+      "title": "Cyber threat prior prediction apparatus and method",
+      "applicationNumber": "13/451375",
+      "applicationDate": "2012-04-19",
+      "country": "U.S.A."
+    },
+    {
+      "title": "Information sharing system and method between heterogeneous service provider",
+      "applicationNumber": "13/473515",
+      "applicationDate": "2012-05-16",
+      "country": "U.S.A."
+    },
+    {
+      "title": "Apparatus for controlling security condition of a global network",
+      "applicationNumber": "13/295359",
+      "applicationDate": "2011-11-14",
+      "country": "U.S.A."
+    },
+    {
+      "title": "Apparatus and method for quantitatively evaluating security policy",
+      "applicationNumber": "13/324482",
+      "applicationDate": "2011-12-13",
+      "country": "U.S.A."
+    },
+    {
+      "title": "Apparatus for sharing security information among network domains and method for the same",
+      "applicationNumber": "13/182972",
+      "applicationDate": "2011-07-14",
+      "country": "U.S.A."
+    },
+    {
+      "title": "Method and apparatus for visualizing network security state",
+      "applicationNumber": "13/198215",
+      "applicationDate": "2011-08-04",
+      "country": "U.S.A."
+    },
+    {
+      "title": "Apparatus and method of managing objects and events by using vector based geographic information system",
+      "applicationNumber": "12/782891",
+      "applicationDate": "2010-05-19",
+      "country": "U.S.A."
+    },
+    {
+      "title": "Apparatus for detecting network attack based on visual data analysis and its method thereof",
+      "applicationNumber": "12/630672",
+      "applicationDate": "2009-12-03",
+      "country": "U.S.A."
+    },
+    {
+      "title": "Apparatus and method for detecting user connection information by client-side script",
+      "applicationNumber": "12/603010",
+      "applicationDate": "2009-10-21",
+      "country": "U.S.A."
+    },
+    {
+      "title": "Apparatus for monitoring the security status in wireless network and method thereof",
+      "applicationNumber": "12/482716",
+      "applicationDate": "2009-06-11",
+      "country": "U.S.A."
+    },
+    {
+      "title": "Web based traceback system and method by using reverse caching proxy",
+      "applicationNumber": "12/467462",
+      "applicationDate": "2009-05-18",
+      "patentNumber": "8341721",
+      "patentDate": "2012-12-25",
+      "country": "U.S.A."
+    },
+    {
+      "title": "Web based traceback system and method by using reverse caching proxy",
+      "applicationNumber": "111201",
+      "applicationDate": "2009-04-30",
+      "patentNumber": "5001976",
+      "patentDate": "2012-05-25",
+      "country": "JAPAN"
+    },
+    {
+      "title": "GIS based network information monitoring system",
+      "applicationNumber": "12/471005",
+      "applicationDate": "2009-05-22",
+      "country": "U.S.A."
+    },
+    {
+      "title": "Apparatus and method for divided visualizing IP address",
+      "applicationNumber": "PCT/KR2008/005175",
+      "applicationDate": "2008-09-03",
+      "country": "PCT"
+    },
+    {
+      "title": "Apparatus and method for divided visualizing IP address",
+      "applicationNumber": "12/808890",
+      "applicationDate": "2010-06-17",
+      "country": "U.S.A."
+    },
+    {
+      "title": "Apparatus and method for visualizing network state by using geographic information",
+      "applicationNumber": "PCT/KR2007/005903",
+      "applicationDate": "2007-11-22",
+      "country": "PCT"
+    },
+    {
+      "title": "Apparatus and method for visualizing network state by using geographic information",
+      "applicationNumber": "12/679294",
+      "applicationDate": "2010-03-19",
+      "patentNumber": "8266278",
+      "patentDate": "2012-09-11",
+      "country": "U.S.A."
+    },
+    {
+      "title": "Log-based traceback system and method by using the centroid decomposition technique",
+      "applicationNumber": "PCT/KR2007/005859",
+      "applicationDate": "2007-11-21",
+      "country": "PCT"
+    },
+    {
+      "title": "Log-based traceback system and method by using the centroid decomposition technique",
+      "applicationNumber": "12/669633",
+      "applicationDate": "2010-01-19",
+      "patentNumber": "8307441",
+      "patentDate": "2012-11-06",
+      "country": "U.S.A."
+    },
+    {
+      "title": "Apparatus and method for sampling based on contents of security events",
+      "applicationNumber": "PCT/KR2007/005797",
+      "applicationDate": "2007-11-19",
+      "country": "PCT"
+    },
+    {
+      "title": "Apparatus of content-based sampling for security events and method thereof",
+      "applicationNumber": "12/667130",
+      "applicationDate": "2009-12-29",
+      "patentNumber": "8140671",
+      "patentDate": "2012-03-20",
+      "country": "U.S.A."
+    },
+    {
+      "title": "Method and apparatus for indicating network state",
+      "applicationNumber": "PCT/KR2008/001298",
+      "applicationDate": "2008-03-07",
+      "country": "PCT"
+    },
+    {
+      "title": "Method and apparatus for indicating network state",
+      "applicationNumber": "12/530193",
+      "applicationDate": "2010-02-19",
+      "country": "U.S.A."
+    },
+    {
+      "title": "Apparatus for visualizing network state by using traffic flow-radar and method thereof",
+      "applicationNumber": "PCT/KR2007/005258",
+      "applicationDate": "2007-10-24",
+      "country": "PCT"
+    },
+    {
+      "title": "Apparatus for visualizing network state by using traffic flow-radar and method thereof",
+      "applicationNumber": "12/517091",
+      "applicationDate": "2009-06-01",
+      "patentNumber": "8019865",
+      "patentDate": "2011-09-13",
+      "country": "U.S.A."
+    },
+    {
+      "title": "Apparatus and method for visualizing network situation using security cube",
+      "applicationNumber": "PCT/KR2007/004043",
+      "applicationDate": "2007-08-23",
+      "country": "PCT"
+    },
+    {
+      "title": "Apparatus and method for visualizing network situation using security cube",
+      "applicationNumber": "12/516494",
+      "applicationDate": "2009-05-27",
+      "patentNumber": "8014310",
+      "patentDate": "2011-09-06",
+      "country": "U.S.A."
+    }
+  ],
+  "domesticPatents": [
+    { "title": "도커 컨테이너를 위한 eBPF/XDP 기반 네트워크 침입 탐지 방법", "applicationNumber": "0039417", "applicationDate": "2024-03-21" },
+    { "title": "Open RAN에서의 ARP 스푸핑 방지를 위한 ARP 테이블 관리 장치 및 서비스", "applicationNumber": "0039415", "applicationDate": "2024-03-21" },
+    { "title": "5G-Advanced SA 코어 네트워크 과부하 방지를 위한 NF 컨테이너 인스턴스 생성 방법", "applicationNumber": "0031999", "applicationDate": "2024-03-06" },
+    { "title": "Open RAN에서의 응용 프로그램 검증 방법 및 시스템", "applicationNumber": "0152645", "applicationDate": "2023-11-07" },
+    { "title": "드론 기지국에서의 전력 소모량 모니터링을 통한 포지셔닝 방해 공격 인식 방법", "applicationNumber": "0141138", "applicationDate": "2023-10-20" },
+    { "title": "블록체인 기반 RIS 인프라 공유에 대한 보상 시스템 및 방법", "applicationNumber": "0117466", "applicationDate": "2023-09-05" },
+    { "title": "Open RAN에서의 신규 응용 프로그램 도입 검증 방법 및 시스템", "applicationNumber": "0177803", "applicationDate": "2023-12-08" },
+    { "title": "악성코드 분류 시각화 장치 및 방법", "applicationNumber": "0022995", "applicationDate": "2023-02-21" },
+    { "title": "가상 머신 스케일링을 이용한 인터넷 기반 악성 코드 탐지 엔진 업데이트 장치 및 방법", "applicationNumber": "0123255", "applicationDate": "2022-09-28" },
+    { "title": "악성코드 탐지 방법 및 장치", "applicationNumber": "0082551", "applicationDate": "2022-07-05" },
+    { "title": "어셈블리 언어 모델 기반 악성코드 탐지 방법 및 장치", "applicationNumber": "0059945", "applicationDate": "2022-05-17" },
+    { "title": "다중 학습 모델을 이용한 5G 엣지 네트워크 침입 탐지 장치 및 이를 이용한 방법", "applicationNumber": "0146690", "applicationDate": "2021-10-29", "patentNumber": "2604380", "patentDate": "2023-11-16" },
+    { "title": "가변 길이 명령코드를 이용한 알려지지 않은 악성코드 탐지 장치 및 이를 이용한 방법", "applicationNumber": "0060608", "applicationDate": "2021-05-11", "patentNumber": "2524207", "patentDate": "2023-04-18" },
+    { "title": "대규모 범주형 값에 대한 Spatial Pyramid Average Pooling", "applicationNumber": "0095391", "applicationDate": "2020-07-30" },
+    { "title": "시계열 데이터 분석을 이용한 네트워크 이상징후 탐지 방법 및 장치", "applicationNumber": "0032547", "applicationDate": "2020-03-17" },
+    { "title": "실환경에서 악성 파일을 탐지하는 시스템 및 악성 파일의 탐지를 위한 데이터 세트 생성 방법", "applicationNumber": "0159678", "applicationDate": "2019-12-04" },
+    { "title": "악성 스크립트 탐지 장치 및 방법", "applicationNumber": "0013795", "applicationDate": "2020-02-05", "patentNumber": "2665757", "patentDate": "2024-05-08" },
+    { "title": "STIX/TAXII를 이용한 엔드포인트 비정상행위 탐지 및 분석 시스템", "applicationNumber": "0153005", "applicationDate": "2018-11-30" },
+    { "title": "악성 파일 탐지 방법 및 장치", "applicationNumber": "0153916", "applicationDate": "2018-12-03" },
+    { "title": "보안 이벤트를 처리하기 위한 위협 티켓 발행 방법 및 장치", "applicationNumber": "0078435", "applicationDate": "2018-07-05" },
+    { "title": "심층 신경망을 이용한 사이버 위협 탐지 방법 및 장치", "applicationNumber": "0071694", "applicationDate": "2018-06-21", "patentNumber": "2153992", "patentDate": "2020-09-03" },
+    { "title": "클라우드 환경에서 서비스 체이닝을 제공하는 방법 및 장치", "applicationNumber": "0075047", "applicationDate": "2018-06-28", "patentNumber": "2071031", "patentDate": "2020-01-21" },
+    { "title": "넷플로우 정보를 이용한 클라우드 기반 암호화 트래픽 분석 시스템 및 그 방법", "applicationNumber": "0045289", "applicationDate": "2018-04-18", "patentNumber": "2045844", "patentDate": "2019-11-12" },
+    { "title": "보안 장비, 보안 위협 분석 장치 및 방법", "applicationNumber": "0164302", "applicationDate": "2017-12-01", "patentNumber": "2384672", "patentDate": "2022-04-05" },
+    { "title": "악성코드 이미지와 딥러닝을 이용한 악성코드 탐지장치", "applicationNumber": "0130810", "applicationDate": "2017-10-11" },
+    { "title": "암호화 프로세싱 인지를 통한 랜섬웨어 실시간 탐지 기법 및 그 장치", "applicationNumber": "0047591", "applicationDate": "2018-04-24", "patentNumber": "2145289", "patentDate": "2020-08-11" },
+    { "title": "네트워크 패킷 검색 장치 및 방법", "applicationNumber": "0029410", "applicationDate": "2017-03-08" },
+    { "title": "네트워크 패킷의 중복 데이터 제거 장치 및 그 방법, 중복제거파일 복원 장치", "applicationNumber": "0026173", "applicationDate": "2017-02-28" },
+    { "title": "침해사고 증거 수집 및 보존을 위한 사이버 블랙박스 장치", "applicationNumber": "0030729", "applicationDate": "2017-03-10" },
+    { "title": "네트워크 유사 악성행위 탐지 장치 및 방법", "applicationNumber": "0028369", "applicationDate": "2017-03-06" },
+    { "title": "네트워크 보안 기능 가상화 기반의 클라우드 보안 분석 장치, 보안 정책 관리 장치 및 보안 정책 관리 방법", "applicationNumber": "0010978", "applicationDate": "2017-01-24", "patentNumber": "2088308", "patentDate": "2020-03-06" },
+    { "title": "순차적 데이터의 비교 및 특징화를 위한 순차적 데이터 시각화 장치 및 방법", "applicationNumber": "0012135", "applicationDate": "2017-01-25", "patentNumber": "2575974", "patentDate": "2023-09-04" },
+    { "title": "네트워크 기반의 악성 파일 탐지 장치 및 방법", "applicationNumber": "0010974", "applicationDate": "2017-01-24" },
+    { "title": "네트워크 악성행위 분석 장치 및 방법", "applicationNumber": "0134971", "applicationDate": "2016-10-18" },
+    { "title": "악성 코드 탐지 장치 및 방법", "applicationNumber": "0032041", "applicationDate": "2016-03-17" },
+    { "title": "침해사고 정보 연동 시스템 및 방법", "applicationNumber": "0018460", "applicationDate": "2016-02-17" },
+    { "title": "네트워크 트래픽 기록 장치 및 그 방법", "applicationNumber": "0017135", "applicationDate": "2016-02-15", "patentNumber": "1953548", "patentDate": "2019-02-25" },
+    { "title": "광대역 네트워크 환경을 위한 실시간 전송 파일 재구성 장치 및 방법", "applicationNumber": "0016959", "applicationDate": "2016-02-15", "patentNumber": "1948622", "patentDate": "2019-02-11" },
+    { "title": "시그니처 클러스터링 및 생성 장치", "applicationNumber": "0015058", "applicationDate": "2016-02-05" },
+    { "title": "악성 코드를 탐지하기 위한 전자 시스템 및 방법", "applicationNumber": "0020976", "applicationDate": "2015-02-11", "patentNumber": "2045772", "patentDate": "2019-11-12" },
+    { "title": "사이버 블랙박스 시스템 및 그 방법", "applicationNumber": "0006016", "applicationDate": "2015-01-13", "patentNumber": "2059688", "patentDate": "2019-12-19" },
+    { "title": "사이버 블랙박스에 기반한 공격 원인 분석 알고리즘", "applicationNumber": "0002821", "applicationDate": "2015-01-08" },
+    { "title": "사이버 침해 사고 조사 장치 및 방법", "applicationNumber": "0009473", "applicationDate": "2015-01-20", "patentNumber": "2061833", "patentDate": "2019-12-26" },
+    { "title": "프로세스 행위 프로파일 생성 장치 및 방법", "applicationNumber": "0170485", "applicationDate": "2014-12-02", "patentNumber": "2128047", "patentDate": "2020-06-23" },
+    { "title": "네트워크 플로우 데이터를 이용한 네트워크 연결 체인 역추적 방법 및 시스템", "applicationNumber": "0027202", "applicationDate": "2014-03-07", "patentNumber": "1889500", "patentDate": "2018-08-10" },
+    { "title": "공격특성 DNA 분석 장치 및 그 방법", "applicationNumber": "0012271", "applicationDate": "2014-02-03", "patentNumber": "1940512", "patentDate": "2019-01-15" },
+    { "title": "학습 가능한 ＤＮＳ 분석기 및 분석 방법", "applicationNumber": "0102239", "applicationDate": "2012-09-14" },
+    { "title": "실시간 공격 근원지 및 유포지 추적을 위한 파일 다중 분석 장치 및 방법", "applicationNumber": "0102177", "applicationDate": "2012-09-14", "patentNumber": "1523934", "patentDate": "2015-05-22" },
+    { "title": "네트워크 위협 사전인지를 위한 위협상황 정량화 방법 및 장치", "applicationNumber": "0022675", "applicationDate": "2013-03-04" },
+    { "title": "네트워크 보안 상황 시각화 방법 및 그 장치", "applicationNumber": "0074733", "applicationDate": "2012-07-09", "patentNumber": "1868893", "patentDate": "2018-06-12" },
+    { "title": "비정상 호스트의 비정상도 정량화 장치 및 그 방법", "applicationNumber": "0073225", "applicationDate": "2012-07-05" },
+    { "title": "보안관리 도메인들 간에 익명 식별자 기반의 보안정보를 공유하기 위한 에이전트 장치 및 방법", "applicationNumber": "0124760", "applicationDate": "2011-11-28", "patentNumber": "1575282", "patentDate": "2015-12-01" },
+    { "title": "네트워크 공격 탐지 및 대응 장치, 네트워크 공격 탐지 및 대응 방법", "applicationNumber": "0117300", "applicationDate": "2011-11-11", "patentNumber": "1775514", "patentDate": "2017-08-31" },
+    { "title": "공격 근원지 및 공격 유포지 추적 방법 및 시스템", "applicationNumber": "0114286", "applicationDate": "2011-11-04" },
+    { "title": "사이버 위협 사전 예측 장치 및 방법", "applicationNumber": "0103255", "applicationDate": "2011-10-10", "patentNumber": "1538374", "patentDate": "2015-07-15" },
+    { "title": "이기종 서비스 제공자간의 정보 공유 시스템 및 방법", "applicationNumber": "0094309", "applicationDate": "2011-09-19" },
+    { "title": "전역 네트워크 보안상황 제어 장치 및 방법", "applicationNumber": "0134108", "applicationDate": "2010-12-23" },
+    { "title": "정량적 보안 정책 평가 장치 및 방법", "applicationNumber": "0132217", "applicationDate": "2010-12-22" },
+    { "title": "네트워크 도메인간 보안정보 공유 장치 및 방법", "applicationNumber": "0107238", "applicationDate": "2010-10-29", "patentNumber": "1425107", "patentDate": "2014-07-24" },
+    { "title": "네트워크 보안관제 시스템 및 방법, 네트워크 보안관제를 위한 보안 이벤트 처리 장치 및 시각화 처리 장치", "applicationNumber": "0118632", "applicationDate": "2010-11-26" },
+    { "title": "백터 기반 GIS를 이용한 객체 및 이벤트 관리 장치 및 방법", "applicationNumber": "0114752", "applicationDate": "2009-11-25" },
+    { "title": "위치 송출 기능이 없는 장비의 건물 내 위치 표시 장치 및 방법", "applicationNumber": "0105114", "applicationDate": "2009-11-02" },
+    { "title": "지리 정보를 이용한 도메인 보안 상황 표시 장치 및 표시 방법", "applicationNumber": "0100758", "applicationDate": "2009-10-22" },
+    { "title": "공격자 패킷 역추적 방법 및 이를 위한 시스템", "applicationNumber": "0097313", "applicationDate": "2009-10-13" },
+    { "title": "비주얼 데이터 분석 기반의 네트워크 공격 탐지 장치 및 그 방법", "applicationNumber": "0069418", "applicationDate": "2009-07-29", "patentNumber": "1219538", "patentDate": "2013-01-02" },
+    { "title": "클라이언트 기반 스크립트를 이용한 사용자 정보 추출 장치 및 방법", "applicationNumber": "0032429", "applicationDate": "2009-04-14" },
+    { "title": "웹 서버를 이용한 사용자 단말기의 인증, 및 IP 위조 검출 방법", "applicationNumber": "0116357", "applicationDate": "2008-11-21", "patentNumber": "1554340", "patentDate": "2015-09-14" },
+    { "title": "무선 네트워크에서 보안 상황 감시 장치", "applicationNumber": "0131716", "applicationDate": "2008-12-22", "patentNumber": "1003104", "patentDate": "2010-12-15" },
+    { "title": "시스템 이상 상태 감시 장치 및 방법", "applicationNumber": "0128070", "applicationDate": "2008-12-16" },
+    { "title": "리버스 캐싱 프록시를 이용한 웹 기반의 역추적 시스템", "applicationNumber": "0074727", "applicationDate": "2008-07-30", "patentNumber": "0960111", "patentDate": "2010-05-19" },
+    { "title": "스파이 봇 에이전트를 이용한 네트워크 공격 위치 추적 방법 및 시스템", "applicationNumber": "0100299", "applicationDate": "2008-10-13", "patentNumber": "1003094", "patentDate": "2010-12-15" },
+    { "title": "도메인 간 협력을 이용하는 추적 시스템", "applicationNumber": "0099298", "applicationDate": "2008-10-09" },
+    { "title": "GIS 기반의 네트워크 정보 표시 장치", "applicationNumber": "0074726", "applicationDate": "2008-07-30", "patentNumber": "0979200", "patentDate": "2010-08-25" },
+    { "title": "아이피 주소 분할 표시 장치 및 방법", "applicationNumber": "0133083", "applicationDate": "2007-12-18", "patentNumber": "0949803", "patentDate": "2010-03-19" },
+    { "title": "지리 정보를 활용한 관리 도메인의 보안 상황 표시 장치 및 방법", "applicationNumber": "0108789", "applicationDate": "2007-10-29", "patentNumber": "0949805", "patentDate": "2010-03-19" },
+    { "title": "지리 정보를 이용한 네트워크 상태 표시 장치 및 방법", "applicationNumber": "0096537", "applicationDate": "2007-09-21", "patentNumber": "0925176", "patentDate": "2009-10-29" },
+    { "title": "중심점 분할 기법을 이용한 로그 기반의 역추적 시스템 및 방법", "applicationNumber": "0073059", "applicationDate": "2007-07-20", "patentNumber": "0922582", "patentDate": "2009-10-13" },
+    { "title": "보안 이벤트의 컨텐츠에 기반한 보안 이벤트 샘플링 장치 및 방법", "applicationNumber": "0067268", "applicationDate": "2007-07-04", "patentNumber": "0901696", "patentDate": "2009-06-02" },
+    { "title": "정책 기반 관리 프레임워크에서의 정책 관리 방법 및 그 장치", "applicationNumber": "0065556", "applicationDate": "2007-06-29" },
+    { "title": "침해사건 공유 장치 및 방법, 그리고 이를 포함하는 네트워크 보안 시스템", "applicationNumber": "0034102", "applicationDate": "2007-04-06", "patentNumber": "0862194", "patentDate": "2008-10-01" },
+    { "title": "네트워크 상태 표시 장치 및 방법", "applicationNumber": "0022971", "applicationDate": "2007-03-08", "patentNumber": "0856924", "patentDate": "2008-08-29" },
+    { "title": "네트워크 보안 상황 표시 장치 및 그 방법", "applicationNumber": "0121829", "applicationDate": "2006-12-04", "patentNumber": "0885293", "patentDate": "2009-02-17" },
+    { "title": "보안 큐브를 이용한 네트워크 상태 표시장치 및 그 방법", "applicationNumber": "0117566", "applicationDate": "2006-11-27", "patentNumber": "0826884", "patentDate": "2008-04-25" },
+    { "title": "정책 기반 관리 프레임워크에서 정책 클라이언트의 정책 적용 대상 결정 방법, 출원번호 0096570, 2006-09-29, 등록번호 0786392, 2007-12-10" },
+    { "title": "네트워크 수준의 웜, 바이러스 조기 탐지 방법 및 장치", "applicationNumber": "0107959", "applicationDate": "2006-11-02" },
+    { "title": "대규모 네트워크에서의 보안 관리 방법 및 장치", "applicationNumber": "0108893", "applicationDate": "2006-11-06", "patentNumber": "0832536", "patentDate": "2008-05-20" },
+    { "title": "보안 기능 시험을 위한 침입 탐지 이벤트 생성 방법 및 장치", "applicationNumber": "0112962", "applicationDate": "2006-11-15", "patentNumber": "0772177", "patentDate": "2007-10-25" }
+  ],
+  "technologyTransfers": [
+    { "title": "AI-LGBM기반 PE 악성코드 분석 및 시각화 기술", "year": 2022 },
+    { "title": "AI기반 PE 악성코드 분석 및 시각화 도구 기술", "year": 2021 },
+    { "title": "언어모델 기반 악성코드 정적 분석 기술", "year": 2021 },
+    { "title": "AI 기반 엣지 네트워크 침해위협 분석 및 탐지 플랫폼 기술", "year": 2021 },
+    { "title": "Hex-Opcode를 활용한 AI기반 PE 악성코드 분석 기술", "year": 2020 },
+    { "title": "실환경에서의 악성/정상파일 실시간 트레이스 자동 수집 및 AI 분석 기술", "year": 2019 },
+    { "title": "위지위그 기반 클라우드 보안 서비스 통합제어 기술", "year": 2018 },
+    { "title": "지능형 SIEM 을 위한 인공신경망기반 데이터 분석 및 탐지 기술", "year": 2018 },
+    { "title": "딥러닝을 이용한 악성파일 탐지기술", "year": 2017 },
+    { "title": "분산 환경 기반 대용량 보안이벤트 처리 및 연관성 분석 기술", "year": 2017 },
+    { "title": "네트워크 전송 실행파일 재구성 기술", "year": 2017 },
+    { "title": "네트워크 트래픽 수집 및 증거 보존을 위한 사이버 블랙박스 기술", "year": 2016 },
+    { "title": "사이버 표적공격 추적 기술", "year": 2016 },
+    { "title": "사이버블랙박스 기반의 침해사고 원인분석 도구", "year": 2015 },
+    { "title": "악성코드 비정상 행위 동적 분석 및 시각화 기술", "year": 2015 },
+    { "title": "사이버블랙박스의 실행파일 수집 및 재구성 기술", "year": 2014 },
+    { "title": "호스트 행위기반 악성코드 탐지 기술", "year": 2014 },
+    { "title": "인터넷레이더 3D 시각화 기술", "year": 2013 },
+    { "title": "3D 시각화 기반 네트워크 위협요소 인지 및 추적 기술", "year": 2012 },
+    { "title": "3D 시각화 기반 통합보안제어 기술", "year": 2010 },
+    { "title": "실공간 기반 와이파이망의 보안상황인지 기술", "year": 2010 },
+    { "title": "사이버공격 패턴 자동 검출 기반 감시 기술", "year": 2009 },
+    { "title": "웹 클라이언트 접속 경로 추적기", "year": 2008 },
+    { "title": "IP주소와 고정밀 GIS 정보와의 매핑기", "year": 2008 },
+    { "title": "지능형 사이버 공격 감시 기술", "year": 2007 },
+    { "title": "HD 시각화 기반의 네트워크 공격상황 분석 기술", "year": 2006 },
+    { "title": "LD 차원 시각화 기반의 네트워크 공격상황 분석 기술", "year": 2005 }
+  ]
+}
