@@ -1,0 +1,73 @@
+[
+  {
+    "date": "2024-01-20",
+    "type": "학사",
+    "title": "2024년 1학기 대학원 입학전형 안내",
+    "content": "2024년 1학기 대학원 입학전형 일정 및 지원 방법에 대해 안내드립니다. 지원서 접수는 1월 25일부터 시작됩니다.",
+    "important": true,
+    "link": "https://example.com/admission-info"
+  },
+  {
+    "date": "2024-01-18",
+    "type": "연구실",
+    "title": "연구실 안전교육 이수 안내",
+    "content": "모든 연구실 구성원은 안전교육을 필수로 이수해야 합니다. 미이수 시 연구실 출입이 제한될 수 있습니다.",
+    "important": true,
+    "attachment": {
+      "name": "안전교육_가이드라인.pdf",
+      "url": "/files/safety_guideline.pdf"
+    }
+  },
+  {
+    "date": "2024-01-15",
+    "type": "학술",
+    "title": "정보보호학회 동계학술대회 논문 발표 안내",
+    "content": "2024년 2월 15일-16일 개최되는 정보보호학회 동계학술대회에서 우리 연구실 논문 3편이 발표됩니다.",
+    "important": false,
+    "link": "https://example.com/conference-info"
+  },
+  {
+    "date": "2024-01-12",
+    "type": "장학",
+    "title": "2024년 1학기 연구장학생 선발 공고",
+    "content": "2024년 1학기 연구장학생을 선발합니다. 지원을 희망하는 학생은 1월 20일까지 지원서를 제출해 주시기 바랍니다.",
+    "important": false,
+    "attachment": {
+      "name": "연구장학생_지원서.docx",
+      "url": "/files/scholarship_application.docx"
+    }
+  },
+  {
+    "date": "2024-01-10",
+    "type": "연구실",
+    "title": "연구실 세미나 일정 변경 안내",
+    "content": "매주 수요일 오후 2시에 진행되던 연구실 세미나가 목요일 오후 3시로 변경됩니다. 1월 18일부터 적용됩니다.",
+    "important": false
+  },
+  {
+    "date": "2024-01-08",
+    "type": "행사",
+    "title": "NGNS Lab 신년회 개최 안내",
+    "content": "2024년 1월 25일(목) 오후 6시, 연구실 신년회를 개최합니다. 모든 연구실 구성원의 참석을 부탁드립니다.",
+    "important": false
+  },
+  {
+    "date": "2024-01-05",
+    "type": "학사",
+    "title": "2024년 1학기 수강신청 안내",
+    "content": "2024년 1학기 수강신청이 1월 29일부터 시작됩니다. 수강신청 전 지도교수와 상담을 받으시기 바랍니다.",
+    "important": false,
+    "link": "https://example.com/course-registration"
+  },
+  {
+    "date": "2023-12-28",
+    "type": "연구실",
+    "title": "연구실 도서 대출 규정 안내",
+    "content": "연구실 도서 대출 기간은 2주이며, 연장은 1회에 한해 가능합니다. 분실 시 동일 도서로 변상해야 합니다.",
+    "important": false,
+    "attachment": {
+      "name": "도서대출_규정.pdf",
+      "url": "/files/book_rental_rules.pdf"
+    }
+  }
+]
