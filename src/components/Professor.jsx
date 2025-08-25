@@ -35,8 +35,6 @@ export default function Professor() {
   
   return (
     <div className="professor-container">
-      <h1 className="professor-title">Professor</h1>
-      
       <div className="professor-main-content">
         <div className="professor-photo-container">
           <img 

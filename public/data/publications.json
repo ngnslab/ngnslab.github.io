@@ -5,21 +5,24 @@
         "authors": "Siriwardhana, Y., Samarakoon, S., Porambage, P., Liyanage, M., Chang, S., Kim, J., Kim, J. & Ylianttila, M.",
         "journal": "IEEE Data Descriptions",
         "pages": "1-12",
-        "year": 2025
+        "year": 2025,
+        "month": "July"
     },
     {
         "title": "Deep Defense Against Mal-Doc: Utilizing Transformer and SeqGAN for Detecting and Classifying Document Type Malware",
         "authors": "Martin, G., Lee, S., Kim, J., Jeong, Y., Kang, A. & Woo, J.",
         "journal": "Applied Science. v.15 no.6",
         "pages": "2978",
-        "year": 2025
+        "year": 2025,
+        "month": "January"
     },
     {
         "title": "Trajectory-Driven Deep Learning for UAV Location Integrity Checks",
         "authors": "Shin, M., Chang, S. Y., Kim, J., Park, K. & Kim, J.",
         "journal": "IEEE Access. v.12",
         "pages": "178789-178804",
-        "year": 2024
+        "year": 2024,
+        "month": "November"
     },
     {
         "title": "A Study of the Relationship of Malware Detection Mechanisms using Artificial Intelligence",

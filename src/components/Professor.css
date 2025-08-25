@@ -1,4 +1,4 @@
-/* src/pages/Professor.css */
+/* src/components/Professor.css */
 
 .professor-container {
   width: 100%;
@@ -13,7 +13,7 @@
   font-size: 2rem;
   font-weight: bold;
   margin-bottom: 1.5rem;
-  color: #ffffff;
+  color: #2d3748;
 }
 
 .professor-main-content {
@@ -43,7 +43,7 @@
 .prof-name {
   font-size: 1.8rem;
   font-weight: bold;
-  color: #ffffff;
+  color: #2d3748;
   margin: 0;
 }
 
@@ -53,12 +53,12 @@
 .prof-contact,
 .prof-email {
   font-size: 1rem;
-  color: #898989;
+  color: #4a5568;
   margin: 0;
 }
 
 .prof-email a {
-  color: #1e40af;
+  color: #2b6cb0;
   text-decoration: none;
 }
 
@@ -70,14 +70,31 @@
   font-size: 1.5rem;
   font-weight: bold;
   margin-bottom: 1rem;
-  color: #ffffff;
-  border-bottom: 2px solid #ffffff;
+  color: #2d3748;
+  border-bottom: 2px solid #e2e8f0;
   padding-bottom: 0.5rem;
 }
 
 .biography-section,
 .experience-section {
   margin-bottom: 3rem;
+}
+
+.biography-section p,
+.experience-section p {
+  color: #4a5568;
+  line-height: 1.6;
+  font-size: 1rem;
+}
+
+.experience-section ul {
+  color: #4a5568;
+  padding-left: 1.5rem;
+}
+
+.experience-section li {
+  margin-bottom: 0.5rem;
+  line-height: 1.6;
 }
 
 /* 반응형 디자인 */

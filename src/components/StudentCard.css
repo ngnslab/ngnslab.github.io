@@ -1,8 +1,8 @@
 /* src/components/StudentCard.css */
 
 .member-card {
-  background-color: #0e4961; /* Darker blue-green */
-  border: 1px solid #1e5c78;
+  background-color: #ffffff;
+  border: 1px solid #e2e8f0;
   border-radius: 12px;
   padding: 2rem;
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
@@ -18,7 +18,7 @@
 .member-card:hover {
   transform: translateY(-2px);
   box-shadow: 0 4px 8px rgba(0,0,0,0.15);
-  border-color: #facc15; /* Highlight color */
+  border-color: #2b6cb0;
 }
 
 .student-photo {
@@ -31,7 +31,7 @@
   height: 120px;
   border-radius: 50%;
   object-fit: cover;
-  border: 3px solid #facc15; /* Highlight color */
+  border: 3px solid #2b6cb0;
   transition: transform 0.2s ease;
 }
 
@@ -50,13 +50,13 @@
 .student-name {
   font-size: 1.4rem;
   font-weight: bold;
-  color: #e5e7eb; /* Changed to light gray */
+  color: #2d3748;
   margin: 0;
 }
 
 .student-position {
   font-size: 1rem;
-  color: #a3b1c6; /* Changed to light blue-gray */
+  color: #4a5568;
   margin: 0;
   font-weight: 500;
 }
@@ -67,13 +67,13 @@
 }
 
 .email-link {
-  color: #a3b1c6; /* Changed to light blue-gray */
+  color: #2b6cb0;
   text-decoration: none;
   transition: color 0.2s ease;
 }
 
 .email-link:hover {
-  color: #facc15; /* yellow-300 */
+  color: #2c5aa0;
   text-decoration: underline;
 }
 
@@ -84,7 +84,7 @@
 .student-interests h4 {
   font-size: 0.9rem;
   font-weight: bold;
-  color: #a3b1c6; /* Changed to light blue-gray */
+  color: #4a5568;
   margin: 0 0 0.5rem 0;
 }
 
@@ -98,8 +98,8 @@
 }
 
 .interest-item {
-  background-color: #0e4056; /* Match Navbar color */
-  color: #e5e7eb; /* light gray */
+  background-color: #edf2f7;
+  color: #4a5568;
   padding: 0.3rem 0.8rem;
   border-radius: 15px;
   font-size: 0.85rem;

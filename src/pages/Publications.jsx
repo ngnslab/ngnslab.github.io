@@ -26,47 +26,85 @@ export default function Publications() {
   }, []);
 
   if (loading) {
-    return <div className="professor-container"><h1 className="professor-title">Publications</h1><div style={{color:'#fff'}}>로딩 중...</div></div>;
+    return <div className="professor-container"><h1 className="professor-title">Publications</h1><div style={{color:'#4a5568'}}>로딩 중...</div></div>;
   }
   if (error) {
     return <div className="professor-container"><h1 className="professor-title">Publications</h1><div style={{color:'red'}}>에러: {error}</div></div>;
   }
+
+  // 표준 학술 논문 형식으로 포맷팅하는 함수
+  const formatPaper = (paper) => {
+    let formatted = "";
+    
+    // 저자
+    if (paper.authors) {
+      formatted += paper.authors + ", ";
+    }
+    
+    // 제목
+    if (paper.title) {
+      formatted += paper.title + ", ";
+    }
+    
+    // 저널 (이탤릭)
+    if (paper.journal) {
+      formatted += "*" + paper.journal + "*";
+    }
+    
+    // 페이지
+    if (paper.pages) {
+      formatted += ", pp." + paper.pages;
+    }
+    
+    // 월과 연도
+    if (paper.month && paper.year) {
+      formatted += ", " + paper.month + " " + paper.year;
+    } else if (paper.year) {
+      formatted += ", " + paper.year;
+    }
+    
+    return formatted;
+  };
 
   return (
     <div className="professor-container">
       <h1 className="professor-title">Publications</h1>
       {/* 국외 논문 */}
       <section className="biography-section">
-        <h2 className="section-title">International Journel</h2>
+        <h2 className="section-title">International Journal</h2>
         
-        <ul style={{color:'#fff', paddingLeft: '1.5rem'}}>
+        <ul className="publication-list">
           {internationalPapers.map((paper, idx) => (
-            <li key={idx} style={{marginBottom: '1.2em', lineHeight: 1.6}}>
-              <span style={{fontWeight:'bold', color:'#fff'}}>[{idx+1}]</span> {paper.title}
-              {paper.authors && <> / <span style={{color:'#b5e0ff'}}>{paper.authors}</span></>}
-              {paper.journal && <> / <span style={{color:'#b5e0ff'}}>{paper.journal}</span></>}
-              {paper.volume && <> / Vol.{paper.volume}</>}
-              {paper.pages && <> / pp.{paper.pages}</>}
-              {paper.year && <> / {paper.year}</>}
+            <li key={idx} className="publication-item">
+              {formatPaper(paper).split('*').map((part, index) => {
+                if (index % 2 === 1) {
+                  // 홀수 인덱스는 이탤릭 (저널명)
+                  return <em key={index} className="journal-name">{part}</em>;
+                } else {
+                  return <span key={index}>{part}</span>;
+                }
+              })}
             </li>
           ))}
         </ul>
       </section>
       {/* 국내 논문 */}
       <section className="experience-section">
-        <h2 className="section-title">Domestic Journel</h2>
-        <ol style={{color:'#fff', paddingLeft: '1.5rem'}}>
+        <h2 className="section-title">Domestic Journal</h2>
+        <ul className="publication-list">
           {domesticPapers.map((paper, idx) => (
-            <li key={idx} style={{marginBottom: '1.2em', lineHeight: 1.6}}>
-              <span style={{fontWeight:'bold', color:'#fff'}}>[{idx+1}]</span> {paper.title}
-              {paper.authors && <> / <span style={{color:'#b5e0ff'}}>{paper.authors}</span></>}
-              {paper.journal && <> / <span style={{color:'#b5e0ff'}}>{paper.journal}</span></>}
-              {paper.volume && <> / Vol.{paper.volume}</>}
-              {paper.pages && <> / pp.{paper.pages}</>}
-              {paper.year && <> / {paper.year}</>}
+            <li key={idx} className="publication-item">
+              {formatPaper(paper).split('*').map((part, index) => {
+                if (index % 2 === 1) {
+                  // 홀수 인덱스는 이탤릭 (저널명)
+                  return <em key={index} className="journal-name">{part}</em>;
+                } else {
+                  return <span key={index}>{part}</span>;
+                }
+              })}
             </li>
           ))}
-        </ol>
+        </ul>
       </section>
     </div>
   );

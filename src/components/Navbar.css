@@ -5,10 +5,10 @@
   left: 0;
   right: 0;
   z-index: 999;
-  /* background-color: #1e3a8a; Tailwind의 bg-blue-900 */
-  background-color: #0e4056; /* 로고 색깔이랑 같은거 */
-  background-color: #0c3243;
-  color: white;
+  background-color: #ffffff;
+  border-bottom: 1px solid #0c3243;
+  color: #2d3748;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
   padding: 0.1rem;
   display: flex;
   align-items: center;
@@ -19,7 +19,7 @@
 .logo a {
   font-size: 1.5rem;
   font-weight: bold;
-  color: white;
+  color: #2b6cb0;
   text-decoration: none;
 }
 
@@ -28,7 +28,7 @@
   font-size: 1.5rem;
   background: none;
   border: none;
-  color: white;
+  color: #2d3748;
   cursor: pointer;
 }
 
@@ -38,18 +38,22 @@
 }
 
 .nav-item {
-  color: white;
+  color: #4a5568;
   text-decoration: none;
   padding: 0.5rem;
+  border-radius: 6px;
+  transition: all 0.2s ease;
 }
 
 .nav-item:hover {
-  color: #facc15; /* Tailwind의 yellow-300 */
+  color: #2b6cb0;
+  background-color: #edf2f7;
 }
 
 .active {
   font-weight: bold;
-  color: #facc15;
+  color: hsl(211, 61%, 43%);
+  background-color: #ffffff;
 }
 
 /* 모바일 반응형 */

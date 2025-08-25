@@ -25,7 +25,7 @@ export default function Research() {
   }, []);
 
   if (loading) {
-    return <div className="professor-container"><h1 className="professor-title">Research</h1><div style={{color:'#fff'}}>로딩 중...</div></div>;
+    return <div className="professor-container"><h1 className="professor-title">Research</h1><div style={{color:'#4a5568'}}>로딩 중...</div></div>;
   }
   if (error) {
     return <div className="professor-container"><h1 className="professor-title">Research</h1><div style={{color:'red'}}>에러: {error}</div></div>;

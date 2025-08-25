@@ -7,12 +7,13 @@ export default function NavBar() {
 
   const menu = [
     { to: "/", label: "Home" },
-    { to: "/professor", label: "Professor" },
     { to: "/member", label: "Member" },
     { to: "/research", label: "Research" },
-    { to: "/activities", label: "Activities" },
     { to: "/publications", label: "Publications" },
+    { to: "/activities", label: "Activities" },
     { to: "/lecture", label: "Lecture" },
+    { to: "/news", label: "News" },
+    { to: "/notice", label: "Notice" },
     { to: "/contact", label: "Contact" },
   ];
 
@@ -31,7 +32,7 @@ export default function NavBar() {
   return (
     <nav className="navbar">
       <div className="logo">
-        <Link to="/">🏛️ NGNS Lab</Link>
+        <Link to="/">NGNS Lab</Link>
       </div>
 
       <button className="menu-toggle" onClick={() => setOpen(!open)}>

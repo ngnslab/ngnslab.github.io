@@ -13,7 +13,7 @@
   font-size: 2rem;
   font-weight: bold;
   margin-bottom: 1.5rem;
-  color: #a3b1c6; /* Changed to light gray for dark background */
+  color: #2d3748;
 }
 
 .member-section {
@@ -24,7 +24,7 @@
   font-size: 1.5rem;
   font-weight: bold;
   margin-bottom: 1rem;
-  color: #a3b1c6; /* Changed to light gray for dark background */
+  color: #2d3748;
 }
 
 .prof-grid {
@@ -41,8 +41,8 @@
 }
 
 .prof-card {
-  background-color: #0e4961; /* Darker blue-green */
-  border: 1px solid #1e5c78;
+  background-color: #ffffff;
+  border: 1px solid #e2e8f0;
   border-radius: 12px;
   padding: 1rem;
   box-shadow: 0 2px 6px rgba(0,0,0,0.1);
@@ -52,19 +52,19 @@
 
 .prof-card h2 {
   font-size: 1.4rem;
-  color: #e5e7eb; /* Changed to light gray */
+  color: #2d3748;
   margin-bottom: 0.3rem;
 }
 
 .prof-card h3 {
   font-size: 1.2rem;
-  color: #a3b1c6; /* Changed to light gray */
+  color: #4a5568;
   margin-bottom: 0.3rem;
 }
 
 .prof-card p {
   font-size: 1rem;
-  color: #e5e7eb; /* Changed to light gray */
+  color: #718096;
   margin-bottom: 0.3rem;
 }
 
@@ -85,8 +85,8 @@
 }
 
 .member-card {
-  background-color: #0e4961; /* Darker blue-green */
-  border: 1px solid #1e5c78;
+  background-color: #ffffff;
+  border: 1px solid #e2e8f0;
   border-radius: 8px;
   padding: 1rem;
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
@@ -101,7 +101,7 @@
 .student-name {
   font-size: 1.2rem;
   font-weight: bold;
-  color: #e5e7eb; /* Changed to light gray */
+  color: #2d3748;
   margin-bottom: 0.5rem;
 }
 
@@ -111,19 +111,19 @@
 }
 
 .email-link {
-  color: #a3b1c6; /* Changed to light blue-gray */
+  color: #2b6cb0;
   text-decoration: none;
   transition: color 0.2s ease;
 }
 
 .email-link:hover {
-  color: #facc15; /* yellow-300 */
+  color: #2c5aa0;
   text-decoration: underline;
 }
 
 .member-divider {
   border: none;
-  border-top: 2px solid #e5e7eb;
+  border-top: 2px solid #e2e8f0;
   margin: 2rem 0;
 }
 

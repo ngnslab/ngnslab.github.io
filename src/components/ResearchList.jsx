@@ -1,7 +1,7 @@
 import React from 'react';
 
-export default function ResearchList({ items, renderItem, color = '#fff', style = {} }) {
-  if (!items || items.length === 0) return <div style={{ color: '#aaa', ...style }}>데이터 없음</div>;
+export default function ResearchList({ items, renderItem, color = '#4a5568', style = {} }) {
+  if (!items || items.length === 0) return <div style={{ color: '#718096', ...style }}>데이터 없음</div>;
   return (
     <ul style={{ color, paddingLeft: '1.5rem', ...style }}>
       {items.map((item, i) => (

@@ -1,0 +1,45 @@
+/* src/pages/News.css */
+
+/* Professor 스타일 통일 */
+.professor-container {
+  width: 100%;
+  max-width: none;
+  padding: 2rem 2rem;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  background: #ffffff;
+}
+
+.professor-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+  color: #2d3748;
+}
+
+.biography-section {
+  margin-bottom: 3rem;
+}
+
+.section-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+  color: #2d3748;
+  border-bottom: 2px solid #e2e8f0;
+  padding-bottom: 0.5rem;
+}
+
+.news-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+/* 반응형 디자인 */
+@media (max-width: 768px) {
+  .professor-container {
+    padding: 1rem;
+  }
+}

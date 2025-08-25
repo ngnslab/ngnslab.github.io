@@ -11,11 +11,12 @@ import Research from './pages/Research'
 import Activities from './pages/Activities'
 import Publications from './pages/Publications'
 import Lecture from './pages/Lecture'
+import News from './pages/News'
+import Notice from './pages/Notice'
 import Contact from './pages/Contact'
 
 // package import
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Professor from './pages/Professor'
 
 function App() {
   const [members, setMembers] = useState([]);
@@ -49,12 +50,13 @@ function App() {
       <div style={{ paddingTop: "70px" }}>
         <Routes>
           <Route path='/' element={<Home />} />
-          <Route path='/professor' element={<Professor />} />
           <Route path='/member' element={<Member members={members} />} />
           <Route path='/research' element={<Research />} />
-          <Route path='/activities' element={<Activities />} />
           <Route path='/publications' element={<Publications />} />
+          <Route path='/activities' element={<Activities />} />
           <Route path='/lecture' element={<Lecture />} />
+          <Route path='/news' element={<News />} />
+          <Route path='/notice' element={<Notice />} />
           <Route path='/contact' element={<Contact />} />
         </Routes>
       </div>
