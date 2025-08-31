@@ -38,21 +38,23 @@ export default function Activities() {
       {/* 주요 활동 */}
       <section className="biography-section">
         <h2 className="section-title">Major Activities</h2>
-        <ul style={{ color: '#4a5568', paddingLeft: '1.5rem' }}>
+        <ul className="activity-list">
           {majorActivities.map((item, i) => (
-            <li key={i} style={{ marginBottom: '1em', lineHeight: 1.6 }}>
-              <span style={{ fontWeight: 'bold', color: '#2d3748' }}>{`[${i + 1}]`}</span> {item}
+            <li key={i} className="activity-item">
+              <span className="activity-number">[{i + 1}]</span>
+              <span className="activity-content">{item}</span>
             </li>
           ))}
         </ul>
       </section>
       {/* 수상 */}
-      <section className="experience-section">
+      <section className="biography-section">
         <h2 className="section-title">Awards</h2>
-        <ul style={{ color: '#4a5568', paddingLeft: '1.5rem' }}>
+        <ul className="activity-list">
           {awards.map((item, i) => (
-            <li key={i} style={{ marginBottom: '1em', lineHeight: 1.6 }}>
-              <span style={{ fontWeight: 'bold', color: '#2d3748' }}>{`[${i + 1}]`}</span> {item}
+            <li key={i} className="activity-item">
+              <span className="activity-number">[{i + 1}]</span>
+              <span className="activity-content">{item}</span>
             </li>
           ))}
         </ul>

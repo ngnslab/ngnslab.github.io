@@ -51,20 +51,20 @@ export default function Home() {
         <h2 className="features-title">주요 연구 분야</h2>
         <div className="features-grid">
           <div className="feature-card">
-            <h3>네트워크 보안</h3>
-            <p>5G 네트워크 보안, Fake Base Station 탐지 및 방어 기술</p>
+            <h3>차세대 이동통신 보안</h3>
+            <p>5G/6G 및 O-RAN, NTN 환경에서의 무선 및 코어 네트워크 보안 구조 설계, 이동통신 표준화 참여(ITU-T, TTA), 인증 기술, RIS 기반 보상 시스템</p>
           </div>
           <div className="feature-card">
             <h3>인공지능</h3>
-            <p>AI 기반 악성코드 탐지, 딥러닝을 활용한 보안 시스템</p>
+            <p>악성코드 탐지, 이상행위 탐지, Zero-day 공격 탐지, AODA 시스템 개발, 시계열 기반 분석(Chronicle)</p>
+          </div>
+          <div className="feature-card">
+            <h3>네트워크 보안</h3>
+            <p>고속 네트워크 환경에서의 포렌식 분석, 네트워크 플로우 기반 탐지, 증거 수집 및 공격 경로 추적 기술. 클라우드 기반 보안 관제, SIEM 시스템, Threat Visualization 및 자동화 대응 기술</p>
           </div>
           <div className="feature-card">
             <h3>UAV/드론</h3>
-            <p>드론 위치 무결성 검증, Flying Base Station 기술</p>
-          </div>
-          <div className="feature-card">
-            <h3>이동통신</h3>
-            <p>이동통신 보안, 채널 용량 및 성능 최적화</p>
+            <p>드론, 차량 간 통신(V2X), IoV 등에서의 물리계 기반 보안 연구. 드론 기지국의 위치 오차/전력 탐지, D2D 클러스터 내 위협 대응, V2V/V2I 통신 위협 분석</p>
           </div>
         </div>
       </section>

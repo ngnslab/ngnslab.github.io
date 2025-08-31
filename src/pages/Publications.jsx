@@ -76,32 +76,38 @@ export default function Publications() {
         <ul className="publication-list">
           {internationalPapers.map((paper, idx) => (
             <li key={idx} className="publication-item">
-              {formatPaper(paper).split('*').map((part, index) => {
-                if (index % 2 === 1) {
-                  // 홀수 인덱스는 이탤릭 (저널명)
-                  return <em key={index} className="journal-name">{part}</em>;
-                } else {
-                  return <span key={index}>{part}</span>;
-                }
-              })}
+              <span className="publication-number">[{idx + 1}]</span>
+              <span className="publication-content">
+                {formatPaper(paper).split('*').map((part, index) => {
+                  if (index % 2 === 1) {
+                    // 홀수 인덱스는 이탤릭 (저널명)
+                    return <em key={index} className="journal-name">{part}</em>;
+                  } else {
+                    return <span key={index}>{part}</span>;
+                  }
+                })}
+              </span>
             </li>
           ))}
         </ul>
       </section>
       {/* 국내 논문 */}
-      <section className="experience-section">
+      <section className="biography-section">
         <h2 className="section-title">Domestic Journal</h2>
         <ul className="publication-list">
           {domesticPapers.map((paper, idx) => (
             <li key={idx} className="publication-item">
-              {formatPaper(paper).split('*').map((part, index) => {
-                if (index % 2 === 1) {
-                  // 홀수 인덱스는 이탤릭 (저널명)
-                  return <em key={index} className="journal-name">{part}</em>;
-                } else {
-                  return <span key={index}>{part}</span>;
-                }
-              })}
+              <span className="publication-number">[{idx + 1}]</span>
+              <span className="publication-content">
+                {formatPaper(paper).split('*').map((part, index) => {
+                  if (index % 2 === 1) {
+                    // 홀수 인덱스는 이탤릭 (저널명)
+                    return <em key={index} className="journal-name">{part}</em>;
+                  } else {
+                    return <span key={index}>{part}</span>;
+                  }
+                })}
+              </span>
             </li>
           ))}
         </ul>

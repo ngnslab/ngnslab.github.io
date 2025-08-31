@@ -3,24 +3,27 @@ import './NewsCard.css';
 export default function NewsCard({ news }) {
   const formatDate = (dateString) => {
     const date = new Date(dateString);
-    return {
-      day: date.getDate(),
-      month: date.toLocaleDateString('ko-KR', { month: 'short' }),
-      year: date.getFullYear()
-    };
+    return date.toLocaleDateString('ko-KR', { 
+      year: 'numeric', 
+      month: 'long', 
+      day: 'numeric' 
+    });
   };
-
-  const { day, month, year } = formatDate(news.date);
 
   return (
     <div className="news-card">
-      <div className="news-date">
-        <div className="date-day">{day}</div>
-        <div className="date-month">{month}</div>
-        <div className="date-year">{year}</div>
+      <div className="news-image">
+        <img 
+          src={news.image || '/lab/lab.png'} 
+          alt={news.title}
+          className="news-thumbnail"
+        />
       </div>
       <div className="news-content">
-        <div className="news-category">{news.category}</div>
+        <div className="news-meta">
+          <span className="news-category">{news.category}</span>
+          <span className="news-date">{formatDate(news.date)}</span>
+        </div>
         <h3 className="news-title">{news.title}</h3>
         <p className="news-description">{news.description}</p>
         {news.link && (

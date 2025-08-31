@@ -3,7 +3,7 @@ import './Lecture.css';
 export default function Lecture() {
   const lectures = [
     {
-      year: "2024",
+      year: "2025",
       courses: [
         {
           department: "정보보호학과",
@@ -81,11 +81,7 @@ export default function Lecture() {
                 <tr>
                   <th>구분</th>
                   <th>과목명</th>
-                  <th>학과</th>
-                  <th>학수번호</th>
-                  <th>학점</th>
-                  <th>학년</th>
-                  <th>언어</th>
+                  
                 </tr>
               </thead>
               <tbody>
@@ -93,11 +89,7 @@ export default function Lecture() {
                   <tr key={courseIndex} className={course.type}>
                     <td>{course.type === 'undergraduate' ? '학부' : '대학원'}</td>
                     <td>{course.courseName}</td>
-                    <td>{course.department}</td>
-                    <td>{course.courseCode}-{course.section}</td>
-                    <td>{course.credits}</td>
-                    <td>{course.grade || '-'}</td>
-                    <td>{course.language}</td>
+                   
                   </tr>
                 ))}
               </tbody>

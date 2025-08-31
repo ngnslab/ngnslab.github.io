@@ -52,7 +52,6 @@ export default function Notice() {
                   <span className="notice-type">{notice.type}</span>
                   <span className="notice-date">{formatDate(notice.date)}</span>
                 </div>
-                {notice.important && <span className="notice-badge">중요</span>}
               </div>
               <h3 className="notice-title">{notice.title}</h3>
               <p className="notice-content">{notice.content}</p>

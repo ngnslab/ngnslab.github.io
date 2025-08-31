@@ -51,7 +51,7 @@ export default function Research() {
         />
       </section>
       {/* Patent */}
-      <section className="experience-section">
+      <section className="biography-section">
         <h2 className="section-title">International Patents</h2>
         <ResearchList
           items={data.internationalPatents}
@@ -67,7 +67,7 @@ export default function Research() {
           )}
         />
       </section>
-      <section className="experience-section">
+      <section className="biography-section">
         <h2 className="section-title">Domestic Patents</h2>
         <ResearchList
           items={data.domesticPatents}
@@ -83,7 +83,7 @@ export default function Research() {
         />
       </section>
       {/* 기술이전 */}
-      <section className="experience-section">
+      <section className="biography-section">
         <h2 className="section-title">Technology Transfers</h2>
         <ResearchList
           items={data.technologyTransfers}
