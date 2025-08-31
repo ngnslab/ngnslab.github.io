@@ -1,0 +1,150 @@
+/* src/pages/NewsDetail.css */
+
+.news-detail-container {
+  min-height: 100vh;
+  background-color: #ffffff;
+  padding: 0;
+}
+
+.news-detail-content {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: white;
+  padding: 0;
+}
+
+.back-button {
+  background: none;
+  border: none;
+  color: #4a5568;
+  cursor: pointer;
+  font-size: 24px;
+  padding: 20px;
+  transition: color 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.back-button:hover {
+  color: #2d3748;
+}
+
+.news-detail-article {
+  padding: 0 40px 40px 40px;
+}
+
+.news-detail-header {
+  margin-bottom: 30px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.news-detail-meta {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+.news-detail-category {
+  background-color: #3182ce;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.news-detail-date {
+  color: #718096;
+  font-size: 16px;
+}
+
+.news-detail-title {
+  font-size: 28px;
+  font-weight: 700;
+  color: #1a202c;
+  line-height: 1.4;
+  margin: 0;
+  margin-top: 15px;
+}
+
+.news-detail-image {
+  margin: 30px 0;
+  text-align: center;
+}
+
+.news-detail-thumbnail {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.news-detail-body {
+  line-height: 1.8;
+}
+
+.news-detail-description {
+  font-size: 16px;
+  color: #4a5568;
+  margin-bottom: 25px;
+  font-weight: 500;
+  border-bottom: 1px solid #e2e8f0;
+  padding-bottom: 20px;
+}
+
+.news-detail-full-content {
+  font-size: 16px;
+  color: #2d3748;
+  line-height: 1.8;
+  margin-bottom: 30px;
+}
+
+.news-detail-external-link {
+  margin-top: 30px;
+  padding-top: 20px;
+  border-top: 1px solid #e2e8f0;
+}
+
+.external-link-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: none;
+  color: #3182ce;
+  padding: 8px 0;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+  transition: color 0.3s ease;
+}
+
+.external-link-button:hover {
+  color: #2c5aa0;
+  text-decoration: underline;
+}
+
+/* 반응형 디자인 */
+@media (max-width: 768px) {
+  .news-detail-article {
+    padding: 0 20px 20px 20px;
+  }
+  
+  .news-detail-title {
+    font-size: 24px;
+  }
+  
+  .news-detail-meta {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+  
+  .back-button {
+    padding: 15px;
+    font-size: 20px;
+  }
+}

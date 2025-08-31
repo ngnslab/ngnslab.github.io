@@ -1,6 +1,8 @@
 import './NewsCard.css';
+import { useNavigate } from 'react-router-dom';
 
 export default function NewsCard({ news }) {
+  const navigate = useNavigate();
   const formatDate = (dateString) => {
     const date = new Date(dateString);
     return date.toLocaleDateString('ko-KR', { 
@@ -10,8 +12,14 @@ export default function NewsCard({ news }) {
     });
   };
 
+  const handleCardClick = () => {
+    if (news.id) {
+      navigate(`/news/${news.id}`);
+    }
+  };
+
   return (
-    <div className="news-card">
+    <div className="news-card" onClick={handleCardClick} style={{ cursor: 'pointer' }}>
       <div className="news-image">
         <img 
           src={news.image || '/lab/lab.png'} 
@@ -32,8 +40,9 @@ export default function NewsCard({ news }) {
             className="news-link" 
             target="_blank" 
             rel="noopener noreferrer"
+            onClick={(e) => e.stopPropagation()}
           >
-            자세히 보기 →
+            외부 링크 →
           </a>
         )}
       </div>

@@ -12,7 +12,9 @@ import Activities from './pages/Activities'
 import Publications from './pages/Publications'
 import Lecture from './pages/Lecture'
 import News from './pages/News'
+import NewsDetail from './pages/NewsDetail'
 import Notice from './pages/Notice'
+import NoticeDetail from './pages/NoticeDetail'
 import Contact from './pages/Contact'
 
 // package import
@@ -56,7 +58,9 @@ function App() {
           <Route path='/activities' element={<Activities />} />
           <Route path='/lecture' element={<Lecture />} />
           <Route path='/news' element={<News />} />
+          <Route path='/news/:id' element={<NewsDetail />} />
           <Route path='/notice' element={<Notice />} />
+          <Route path='/notice/:id' element={<NoticeDetail />} />
           <Route path='/contact' element={<Contact />} />
         </Routes>
       </div>

@@ -1,0 +1,163 @@
+/* src/pages/NoticeDetail.css */
+
+.notice-detail-container {
+  min-height: 100vh;
+  background-color: #ffffff;
+  padding: 0;
+}
+
+.notice-detail-content {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: white;
+  padding: 0;
+}
+
+.back-button {
+  background: none;
+  border: none;
+  color: #4a5568;
+  cursor: pointer;
+  font-size: 24px;
+  padding: 20px;
+  transition: color 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.back-button:hover {
+  color: #2d3748;
+}
+
+.notice-detail-article {
+  padding: 0 40px 40px 40px;
+}
+
+.notice-detail-header {
+  margin-bottom: 30px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.notice-detail-meta {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 15px;
+  flex-wrap: wrap;
+}
+
+.notice-detail-date {
+  color: #718096;
+  font-size: 16px;
+}
+
+.notice-detail-title {
+  font-size: 28px;
+  font-weight: 700;
+  color: #1a202c;
+  line-height: 1.4;
+  margin: 0;
+  margin-top: 15px;
+}
+
+.notice-detail-body {
+  line-height: 1.8;
+}
+
+.notice-detail-content-text {
+  font-size: 16px;
+  color: #2d3748;
+  line-height: 1.8;
+  margin-bottom: 30px;
+  white-space: pre-line;
+}
+
+.notice-detail-attachment {
+  margin: 30px 0;
+  padding: 20px;
+  background-color: #f7fafc;
+  border-radius: 8px;
+  border: 1px solid #e2e8f0;
+}
+
+.notice-detail-attachment h3 {
+  margin: 0 0 15px 0;
+  color: #2d3748;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.attachment-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.attachment-icon {
+  font-size: 20px;
+}
+
+.attachment-link {
+  color: #3182ce;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.attachment-link:hover {
+  color: #2c5aa0;
+  text-decoration: underline;
+}
+
+.notice-detail-external-link {
+  margin-top: 30px;
+  padding-top: 20px;
+  border-top: 1px solid #e2e8f0;
+}
+
+.external-link-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: none;
+  color: #3182ce;
+  padding: 8px 0;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+  transition: color 0.3s ease;
+}
+
+.external-link-button:hover {
+  color: #2c5aa0;
+  text-decoration: underline;
+}
+
+/* 반응형 디자인 */
+@media (max-width: 768px) {
+  .notice-detail-article {
+    padding: 0 20px 20px 20px;
+  }
+  
+  .notice-detail-title {
+    font-size: 24px;
+  }
+  
+  .notice-detail-meta {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+  
+  .back-button {
+    padding: 15px;
+    font-size: 20px;
+  }
+  
+  .notice-detail-attachment {
+    padding: 15px;
+  }
+}

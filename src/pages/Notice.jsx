@@ -1,7 +1,9 @@
 import './Notice.css';
 import { useEffect, useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 export default function Notice() {
+  const navigate = useNavigate();
   const [notices, setNotices] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
@@ -46,10 +48,14 @@ export default function Notice() {
         <h2 className="section-title">공지사항</h2>
         <div className="notice-list">
           {notices.map((notice, index) => (
-            <div key={index} className="notice-item">
+            <div 
+              key={index} 
+              className="notice-item" 
+              onClick={() => notice.id && navigate(`/notice/${notice.id}`)}
+              style={{ cursor: notice.id ? 'pointer' : 'default' }}
+            >
               <div className="notice-header">
                 <div className="notice-meta">
-                  <span className="notice-type">{notice.type}</span>
                   <span className="notice-date">{formatDate(notice.date)}</span>
                 </div>
               </div>
@@ -63,20 +69,11 @@ export default function Notice() {
                     className="attachment-link"
                     target="_blank" 
                     rel="noopener noreferrer"
+                    onClick={(e) => e.stopPropagation()}
                   >
                     {notice.attachment.name}
                   </a>
                 </div>
-              )}
-              {notice.link && (
-                <a 
-                  href={notice.link} 
-                  className="notice-link" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                >
-                  자세히 보기 →
-                </a>
               )}
             </div>
           ))}

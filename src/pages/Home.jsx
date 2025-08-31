@@ -1,8 +1,9 @@
 import './Home.css';
 import { useEffect, useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 export default function Home() {
+  const navigate = useNavigate();
   const [news, setNews] = useState([]);
   const [notices, setNotices] = useState([]);
   const [loading, setLoading] = useState(true);
@@ -82,7 +83,12 @@ export default function Home() {
                 <div className="board-loading">로딩 중...</div>
               ) : (
                 news.map((item, index) => (
-                  <div key={index} className="board-item">
+                  <div 
+                    key={index} 
+                    className="board-item"
+                    onClick={() => item.id && navigate(`/news/${item.id}`)}
+                    style={{ cursor: item.id ? 'pointer' : 'default' }}
+                  >
                     <span className="board-category">{item.category}</span>
                     <h3 className="board-item-title">{item.title}</h3>
                     <span className="board-date">{formatDate(item.date)}</span>
@@ -103,10 +109,13 @@ export default function Home() {
                 <div className="board-loading">로딩 중...</div>
               ) : (
                 notices.map((item, index) => (
-                  <div key={index} className="board-item">
-                    <span className="board-category">{item.type}</span>
+                  <div 
+                    key={index} 
+                    className="board-item"
+                    onClick={() => item.id && navigate(`/notice/${item.id}`)}
+                    style={{ cursor: item.id ? 'pointer' : 'default' }}
+                  >
                     <h3 className="board-item-title">
-                      {item.important && <span className="important-badge">중요</span>}
                       {item.title}
                     </h3>
                     <span className="board-date">{formatDate(item.date)}</span>

@@ -10,7 +10,6 @@ export default function Contact() {
           <h2 className="contact-section-title">Information</h2>
           <div className="contact-info">
             <div className="contact-item">
-              <div className="contact-icon">📍</div>
               <div className="contact-details">
                 <h3>위치</h3>
                 <p>세종대학교 광개토관 4xx호</p>
@@ -18,7 +17,6 @@ export default function Contact() {
             </div>
             
             <div className="contact-item">
-              <div className="contact-icon">📧</div>
               <div className="contact-details">
                 <h3>이메일</h3>
                 <p><a href="mailto:kjh@sejong.ac.kr" className="contact-link">kjh@sejong.ac.kr</a></p>
@@ -26,7 +24,6 @@ export default function Contact() {
             </div>
             
             <div className="contact-item">
-              <div className="contact-icon">📞</div>
               <div className="contact-details">
                 <h3>전화번호</h3>
                 <p>02-3408-XXXX</p>
