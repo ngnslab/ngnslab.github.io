@@ -18,7 +18,7 @@ import NoticeDetail from './pages/NoticeDetail'
 import Contact from './pages/Contact'
 
 // package import
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { HashRouter as Router, Routes, Route } from "react-router-dom";
 
 function App() {
   const [members, setMembers] = useState([]);
