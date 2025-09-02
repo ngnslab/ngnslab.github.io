@@ -85,33 +85,7 @@
   margin: 0 0 1rem 0;
 }
 
-.notice-attachment {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  margin-bottom: 1rem;
-  padding: 0.75rem;
-  background-color: #f8fafc;
-  border: 1px solid #e2e8f0;
-  border-radius: 8px;
-}
 
-.attachment-icon {
-  font-size: 1rem;
-}
-
-.attachment-link {
-  color: #2b6cb0;
-  text-decoration: none;
-  font-weight: 500;
-  font-size: 0.9rem;
-  transition: color 0.2s ease;
-}
-
-.attachment-link:hover {
-  color: #2c5aa0;
-  text-decoration: underline;
-}
 
 .notice-link {
   color: #2b6cb0;

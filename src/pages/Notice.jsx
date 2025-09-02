@@ -61,20 +61,6 @@ export default function Notice() {
               </div>
               <h3 className="notice-title">{notice.title}</h3>
               <p className="notice-content">{notice.content}</p>
-              {notice.attachment && (
-                <div className="notice-attachment">
-                  <span className="attachment-icon">📎</span>
-                  <a 
-                    href={notice.attachment.url} 
-                    className="attachment-link"
-                    target="_blank" 
-                    rel="noopener noreferrer"
-                    onClick={(e) => e.stopPropagation()}
-                  >
-                    {notice.attachment.name}
-                  </a>
-                </div>
-              )}
             </div>
           ))}
         </div>

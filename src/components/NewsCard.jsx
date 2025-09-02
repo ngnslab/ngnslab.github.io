@@ -29,7 +29,6 @@ export default function NewsCard({ news }) {
       </div>
       <div className="news-content">
         <div className="news-meta">
-          <span className="news-category">{news.category}</span>
           <span className="news-date">{formatDate(news.date)}</span>
         </div>
         <h3 className="news-title">{news.title}</h3>

@@ -72,7 +72,6 @@ export default function NewsDetail() {
         <article className="news-detail-article">
           <header className="news-detail-header">
             <div className="news-detail-meta">
-              <span className="news-detail-category">{news.category}</span>
               <span className="news-detail-date">{formatDate(news.date)}</span>
             </div>
             <h1 className="news-detail-title">{news.title}</h1>

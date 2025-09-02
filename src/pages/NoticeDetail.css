@@ -75,42 +75,7 @@
   white-space: pre-line;
 }
 
-.notice-detail-attachment {
-  margin: 30px 0;
-  padding: 20px;
-  background-color: #f7fafc;
-  border-radius: 8px;
-  border: 1px solid #e2e8f0;
-}
 
-.notice-detail-attachment h3 {
-  margin: 0 0 15px 0;
-  color: #2d3748;
-  font-size: 18px;
-  font-weight: 600;
-}
-
-.attachment-item {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
-.attachment-icon {
-  font-size: 20px;
-}
-
-.attachment-link {
-  color: #3182ce;
-  text-decoration: none;
-  font-weight: 500;
-  transition: color 0.3s ease;
-}
-
-.attachment-link:hover {
-  color: #2c5aa0;
-  text-decoration: underline;
-}
 
 .notice-detail-external-link {
   margin-top: 30px;

@@ -89,7 +89,6 @@ export default function Home() {
                     onClick={() => item.id && navigate(`/news/${item.id}`)}
                     style={{ cursor: item.id ? 'pointer' : 'default' }}
                   >
-                    <span className="board-category">{item.category}</span>
                     <h3 className="board-item-title">{item.title}</h3>
                     <span className="board-date">{formatDate(item.date)}</span>
                   </div>

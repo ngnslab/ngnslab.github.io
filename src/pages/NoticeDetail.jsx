@@ -81,23 +81,6 @@ export default function NoticeDetail() {
             <div className="notice-detail-content-text">
               {notice.content}
             </div>
-            
-            {notice.attachment && (
-              <div className="notice-detail-attachment">
-                <h3>첨부파일</h3>
-                <div className="attachment-item">
-                  <span className="attachment-icon">📎</span>
-                  <a 
-                    href={notice.attachment.url} 
-                    className="attachment-link"
-                    target="_blank" 
-                    rel="noopener noreferrer"
-                  >
-                    {notice.attachment.name}
-                  </a>
-                </div>
-              </div>
-            )}
 
             {notice.link && (
               <div className="notice-detail-external-link">

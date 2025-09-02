@@ -32,38 +32,37 @@ export default function Publications() {
     return <div className="professor-container"><h1 className="professor-title">Publications</h1><div style={{color:'red'}}>에러: {error}</div></div>;
   }
 
-  // 표준 학술 논문 형식으로 포맷팅하는 함수
-  const formatPaper = (paper) => {
-    let formatted = "";
-    
-    // 저자
-    if (paper.authors) {
-      formatted += paper.authors + ", ";
-    }
-    
-    // 제목
-    if (paper.title) {
-      formatted += paper.title + ", ";
-    }
-    
-    // 저널 (이탤릭)
-    if (paper.journal) {
-      formatted += "*" + paper.journal + "*";
-    }
-    
-    // 페이지
-    if (paper.pages) {
-      formatted += ", pp." + paper.pages;
-    }
-    
-    // 월과 연도
-    if (paper.month && paper.year) {
-      formatted += ", " + paper.month + " " + paper.year;
-    } else if (paper.year) {
-      formatted += ", " + paper.year;
-    }
-    
-    return formatted;
+  // 표준 학술 논문 인용 형식으로 렌더링하는 함수
+  const renderPaper = (paper) => {
+    return (
+      <>
+        {/* 저자 */}
+        {paper.authors && <span>{paper.authors}. </span>}
+        
+        {/* 제목 */}
+        {paper.title && <span>"{paper.title}." </span>}
+        
+        {/* 저널명 (이탤릭) */}
+        {paper.journal && (
+          <span style={{
+            fontStyle: 'italic', 
+            color: '#2b6cb0', 
+            fontWeight: 'normal',
+            fontFamily: '"Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif'
+          }}>
+            {paper.journal}
+          </span>
+        )}
+        
+        {/* 볼륨/호수 정보가 저널명에 포함되어 있지 않은 경우 */}
+        {paper.volume && <span> {paper.volume}</span>}
+        {paper.issue && <span>, no.{paper.issue}</span>}
+        
+        {/* 페이지 */}
+        {paper.pages && <span> ({paper.year}): {paper.pages}.</span>}
+        {!paper.pages && paper.year && <span> ({paper.year}).</span>}
+      </>
+    );
   };
 
   return (
@@ -73,44 +72,30 @@ export default function Publications() {
       <section className="biography-section">
         <h2 className="section-title">International Journal</h2>
         
-        <ul className="publication-list">
+        <div className="publication-list">
           {internationalPapers.map((paper, idx) => (
-            <li key={idx} className="publication-item">
-              <span className="publication-number">[{idx + 1}]</span>
+            <div key={idx} className="publication-item">
               <span className="publication-content">
-                {formatPaper(paper).split('*').map((part, index) => {
-                  if (index % 2 === 1) {
-                    // 홀수 인덱스는 이탤릭 (저널명)
-                    return <em key={index} className="journal-name">{part}</em>;
-                  } else {
-                    return <span key={index}>{part}</span>;
-                  }
-                })}
+                <span style={{color: '#2b6cb0', fontWeight: 'bold', marginRight: '0.5rem'}}>[{idx + 1}]</span>
+                {renderPaper(paper)}
               </span>
-            </li>
+            </div>
           ))}
-        </ul>
+        </div>
       </section>
       {/* 국내 논문 */}
       <section className="biography-section">
         <h2 className="section-title">Domestic Journal</h2>
-        <ul className="publication-list">
+        <div className="publication-list">
           {domesticPapers.map((paper, idx) => (
-            <li key={idx} className="publication-item">
-              <span className="publication-number">[{idx + 1}]</span>
+            <div key={idx} className="publication-item">
               <span className="publication-content">
-                {formatPaper(paper).split('*').map((part, index) => {
-                  if (index % 2 === 1) {
-                    // 홀수 인덱스는 이탤릭 (저널명)
-                    return <em key={index} className="journal-name">{part}</em>;
-                  } else {
-                    return <span key={index}>{part}</span>;
-                  }
-                })}
+                <span style={{color: '#2b6cb0', fontWeight: 'bold', marginRight: '0.5rem'}}>[{idx + 1}]</span>
+                {renderPaper(paper)}
               </span>
-            </li>
+            </div>
           ))}
-        </ul>
+        </div>
       </section>
     </div>
   );

@@ -193,17 +193,7 @@
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
-.board-category {
-  display: inline-block;
-  background-color: #edf2f7;
-  color: #4a5568;
-  padding: 0.2rem 0.6rem;
-  border-radius: 12px;
-  font-size: 0.75rem;
-  font-weight: 500;
-  text-transform: uppercase;
-  margin-bottom: 0.5rem;
-}
+
 
 .board-item-title {
   font-size: 0.95rem;
