@@ -81,19 +81,6 @@ export default function NoticeDetail() {
             <div className="notice-detail-content-text">
               {notice.content}
             </div>
-
-            {notice.link && (
-              <div className="notice-detail-external-link">
-                <a 
-                  href={notice.link} 
-                  className="external-link-button"
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                >
-                  →
-                </a>
-              </div>
-            )}
           </div>
         </article>
       </div>

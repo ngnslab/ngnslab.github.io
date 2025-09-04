@@ -6,7 +6,6 @@ export default function ResearchList({ items, renderItem, color = '#4a5568', sty
     <ul className="research-list" style={style}>
       {items.map((item, i) => (
         <li key={i} className="research-item">
-          <span className="research-number">[{i + 1}]</span>
           <span className="research-content">{renderItem(item)}</span>
         </li>
       ))}

@@ -41,7 +41,6 @@ export default function Activities() {
         <ul className="activity-list">
           {majorActivities.map((item, i) => (
             <li key={i} className="activity-item">
-              <span className="activity-number">[{i + 1}]</span>
               <span className="activity-content">{item}</span>
             </li>
           ))}
@@ -53,7 +52,6 @@ export default function Activities() {
         <ul className="activity-list">
           {awards.map((item, i) => (
             <li key={i} className="activity-item">
-              <span className="activity-number">[{i + 1}]</span>
               <span className="activity-content">{item}</span>
             </li>
           ))}

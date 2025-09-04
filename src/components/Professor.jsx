@@ -58,6 +58,9 @@ export default function Professor() {
             E-mail <a href={`mailto:${professorData.contact.email}`}>{professorData.contact.email}</a>
           </p>
         </div>
+        <div className="professor-info-details">
+         
+        </div>
       </div>
       
       <section className="biography-section">
