@@ -44,6 +44,9 @@ export default function Home() {
             <p className="hero-description">
             본 연구실은 급변하는 디지털 환경 속에서 발생하는 다양한 사이버 위협에 대응하고, 안전한 네트워크 환경 구축을 위한 핵심 보안 기술(사이버 공격대응, 클라우드 보안, 이동통신 보안 등)을 연구하고 있습니다. 연구와 더불어 다양한 국제표준화 활동에 참여하고 있습니다.
             </p>
+            <Link to="/contact" className="hero-contact-btn">
+              Contact Us
+            </Link>
           </div>
         </div>
       </section>

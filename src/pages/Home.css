@@ -68,7 +68,27 @@
   color: #f7fafc;
   line-height: 1.6;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  margin-bottom: 2rem;
 }
+
+.hero-contact-btn {
+  display: block;
+  background-color: #195da6;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  text-shadow: none;
+  width: 150px;
+  height: 40px;
+  text-align: center;
+  margin: 0 auto;
+}
+
 
 /* Hero Section */
 .hero-section {
@@ -300,6 +320,11 @@
   
   .hero-overlay .hero-description {
     font-size: 1rem;
+  }
+  
+  .hero-contact-btn {
+    padding: 0.4rem 0.4rem;
+    font-size: 0.8rem;
   }
   
   .features-section,

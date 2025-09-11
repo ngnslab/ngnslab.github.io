@@ -4,6 +4,7 @@ import "./NavBar.css";
 
 export default function NavBar() {
   const [open, setOpen] = useState(false);
+  const [isVisible, setIsVisible] = useState(true);
 
   const menu = [
     { to: "/", label: "Home" },
@@ -29,8 +30,30 @@ export default function NavBar() {
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
+  // ✅ 스크롤 이벤트 처리
+  useEffect(() => {
+    let lastScrollY = window.scrollY;
+
+    const handleScroll = () => {
+      const currentScrollY = window.scrollY;
+      
+      if (currentScrollY > lastScrollY && currentScrollY > 30) {
+        // 스크롤을 아래로 내릴 때 (100px 이상)
+        setIsVisible(false);
+      } else {
+        // 스크롤을 위로 올릴 때
+        setIsVisible(true);
+      }
+      
+      lastScrollY = currentScrollY;
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
-    <nav className="navbar">
+    <nav className={`navbar ${isVisible ? "visible" : "hidden"}`}>
       <div className="logo">
         <Link to="/">NGNS Lab</Link>
       </div>
