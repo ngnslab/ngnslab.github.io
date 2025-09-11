@@ -6,7 +6,7 @@
   right: 0;
   z-index: 999;
   background-color: #ffffff;
-  border-bottom: 1px solid #0c3243;
+  /* border-bottom: 1px solid #0c3243; */
   color: #2d3748;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
   padding: 0.1rem;
