@@ -89,11 +89,21 @@ export default function NewsDetail() {
 
           <div className="news-detail-body">
             <p className="news-detail-description">{news.description}</p>
-            
+
             {news.content && (
               <div className="news-detail-full-content">
                 {news.content}
               </div>
+            )}
+            {news.link && (
+              <a 
+                href={news.link} 
+                className="news-detail-link" 
+                target="_blank" 
+                rel="noopener noreferrer"
+              >
+                외부 링크 →
+              </a>
             )}
           </div>
         </article>

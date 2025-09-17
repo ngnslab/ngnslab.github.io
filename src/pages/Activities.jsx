@@ -3,8 +3,7 @@ import './Activities.css';
 import { useEffect, useState } from 'react';
 
 export default function Activities() {
-  const [majorActivities, setMajorActivities] = useState([]);
-  const [awards, setAwards] = useState([]);
+  const [seminars, setSeminars] = useState({});
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
 
@@ -15,8 +14,7 @@ export default function Activities() {
         return res.json();
       })
       .then(data => {
-        setMajorActivities(data.majorActivities || []);
-        setAwards(data.awards || []);
+        setSeminars(data.Seminars || {});
         setLoading(false);
       })
       .catch(err => {
@@ -35,24 +33,14 @@ export default function Activities() {
   return (
     <div className="professor-container">
       <h1 className="professor-title">Activities</h1>
-      {/* 주요 활동 */}
+      {/* 세미나 */}
       <section className="biography-section">
-        <h2 className="section-title">Major Activities</h2>
+        <h2 className="section-title">Seminars</h2>
         <ul className="activity-list">
-          {majorActivities.map((item, i) => (
+          {Object.entries(seminars).map(([title, content], i) => (
             <li key={i} className="activity-item">
-              <span className="activity-content">{item}</span>
-            </li>
-          ))}
-        </ul>
-      </section>
-      {/* 수상 */}
-      <section className="biography-section">
-        <h2 className="section-title">Awards</h2>
-        <ul className="activity-list">
-          {awards.map((item, i) => (
-            <li key={i} className="activity-item">
-              <span className="activity-content">{item}</span>
+              <div className="activity-title">{title}</div>
+              <div className="activity-content">{content}</div>
             </li>
           ))}
         </ul>

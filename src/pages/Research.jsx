@@ -34,7 +34,7 @@ export default function Research() {
 
   return (
     <div className="professor-container">
-      <h1 className="professor-title">Research</h1>
+      <h1 className="professor-title">Research & Projects</h1>
       {/* Project */}
       <section className="biography-section">
         <h2 className="section-title">Ongoing Projects</h2>

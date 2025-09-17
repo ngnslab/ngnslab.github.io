@@ -52,23 +52,25 @@ export default function Home() {
       </section>
 
       <section className="features-section">
-        <h2 className="features-title">주요 연구 분야</h2>
+        <h2 className="features-title">Main Research Fields</h2>
         <div className="features-grid">
           <div className="feature-card">
-            <h3>차세대 이동통신 보안</h3>
-            <p>5G/6G 및 O-RAN, NTN 환경에서의 무선 및 코어 네트워크 보안 구조 설계, 이동통신 표준화 참여(ITU-T, TTA), 인증 기술, RIS 기반 보상 시스템</p>
+            <h3>5G/6G Mobile  Comm. Security</h3>
+            <p>Secure architectures for 5G/6G, Open RAN, and NTN with ITU-T, ITU-R standardization
+            </p>
           </div>
           <div className="feature-card">
-            <h3>인공지능</h3>
-            <p>악성코드 탐지, 이상행위 탐지, Zero-day 공격 탐지, AODA 시스템 개발, 시계열 기반 분석(Chronicle)</p>
+            <h3>System Security using AI</h3>
+            <p>AI-based malware, Anomaly detection, Anti-Vaccine system development</p>
           </div>
           <div className="feature-card">
-            <h3>네트워크 보안</h3>
-            <p>고속 네트워크 환경에서의 포렌식 분석, 네트워크 플로우 기반 탐지, 증거 수집 및 공격 경로 추적 기술. 클라우드 기반 보안 관제, SIEM 시스템, Threat Visualization 및 자동화 대응 기술</p>
+            <h3>Cloud/Network Security</h3>
+            <p>Security for NW threat analysis and countermeasure development </p>
           </div>
           <div className="feature-card">
-            <h3>UAV/드론</h3>
-            <p>드론, 차량 간 통신(V2X), IoV 등에서의 물리계 기반 보안 연구. 드론 기지국의 위치 오차/전력 탐지, D2D 클러스터 내 위협 대응, V2V/V2I 통신 위협 분석</p>
+            <h3>UAV/Drones Security</h3>
+            <p>Security for UAVs, V2X, and D2D, Detection of UxNB  anomalies
+            </p>
           </div>
         </div>
       </section>

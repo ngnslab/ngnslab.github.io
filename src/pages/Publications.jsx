@@ -41,16 +41,16 @@ export default function Publications() {
     return (
       <>
         {/* 저자 */}
-        {paper.authors && <span>{paper.authors}. </span>}
+        {paper.authors && <span>{paper.authors}, </span>}
         
         {/* 제목 */}
-        {paper.title && <span>"{paper.title}." </span>}
+        {paper.title && <span>{paper.title}, </span>}
         
         {/* 저널명 (이탤릭) */}
         {paper.journal && (
           <span style={{
             fontStyle: 'italic', 
-            color: '#2b6cb0', 
+            color: '#4a5568', 
             fontWeight: 'normal',
             fontFamily: '"Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif'
           }}>
@@ -59,12 +59,15 @@ export default function Publications() {
         )}
         
         {/* 볼륨/호수 정보가 저널명에 포함되어 있지 않은 경우 */}
-        {paper.volume && <span> {paper.volume}</span>}
+        {paper.volume && <span>, {paper.volume}</span>}
         {paper.issue && <span>, no.{paper.issue}</span>}
         
         {/* 페이지 */}
-        {paper.pages && <span> ({paper.year}): {paper.pages}.</span>}
-        {!paper.pages && paper.year && <span> ({paper.year}).</span>}
+        {paper.pages && <span>, pp.{paper.pages}</span>}
+        
+        {/* 날짜 */}
+        {paper.month && paper.year && <span>, {paper.month} {paper.year}</span>}
+        {!paper.month && paper.year && <span>, {paper.year}</span>}
       </>
     );
   };

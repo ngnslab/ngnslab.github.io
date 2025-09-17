@@ -12,7 +12,7 @@ export default function Contact() {
             <div className="contact-item">
               <div className="contact-details">
                 <h3>위치</h3>
-                <p>세종대학교 광개토관 4xx호</p>
+                <p>세종대학교 광개토관 407A</p>
               </div>
             </div>
             
@@ -26,7 +26,7 @@ export default function Contact() {
             <div className="contact-item">
               <div className="contact-details">
                 <h3>전화번호</h3>
-                <p>02-3408-XXXX</p>
+                <p>02) 3408-3712 </p>
               </div>
             </div>
           </div>
@@ -37,16 +37,15 @@ export default function Contact() {
         <section className="contact-section">
           <h2 className="contact-section-title">Location</h2>
           <div style={{ marginTop: "2.5rem", width: "100%" }}>
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3163.1376618761283!2d127.07213557619265!3d37.551820324971345!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca4d054f9b19b%3A0xf9d4d6a6582adce7!2z7ISc7Jq47Yq567OE7IucIOq1sOyekOuPmSDshLjsooXrjIDtlZnqtZAg7Jqw7KCV64u5!5e0!3m2!1sko!2skr!4v1755787326716!5m2!1sko!2skr"
-            width="100%"
-            height="400"
-            style={{ border: 0, borderRadius: "16px" }}
-            allowFullScreen=""
-            loading="lazy"
-            referrerPolicy="no-referrer-when-downgrade"
-            title="연구실 위치"
-          ></iframe>
+          <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3163.2102393893542!2d127.07059607619276!3d37.55011022506931!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca4daa73c863f%3A0xd6bd626e0463b230!2z7IS47KKF64yA7ZWZ6rWQIOq0keqwnO2GoOq0gA!5e0!3m2!1sko!2skr!4v1758009932804!5m2!1sko!2skr" 
+            width="600" 
+            height="400" 
+            style={{border:0}} 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
         </div>
         </section>
       </div>

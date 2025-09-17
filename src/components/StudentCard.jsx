@@ -6,7 +6,7 @@ export default function StudentCard({ name, email, image, interests, position })
     <div className="member-card">
       <div className="student-photo">
         <img 
-          src={image || "/images/members/prof.jpg"} 
+          src={image || "/images/lab/lab.png"} 
           alt={`${name} 프로필`} 
           className="student-image"
         />

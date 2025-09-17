@@ -22,16 +22,15 @@
 }
 
 .student-photo {
-  margin-right: 2.5rem;
+  margin-right: 1.5rem;
   flex-shrink: 0;
 }
 
 .student-image {
-  width: 120px;
-  height: 120px;
-  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  border-radius: 0%;
   object-fit: cover;
-  border: 3px solid #2b6cb0;
   transition: transform 0.2s ease;
 }
 
@@ -120,8 +119,8 @@
   }
   
   .student-image {
-    width: 100px;
-    height: 100px;
+    width: 200px;
+    height: 200px;
   }
   
   .student-info {

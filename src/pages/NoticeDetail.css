@@ -43,7 +43,7 @@
 
 .notice-detail-meta {
   display: flex;
-  align-items: center;
+  align-items: left;
   gap: 15px;
   margin-bottom: 15px;
   flex-wrap: wrap;
@@ -61,10 +61,12 @@
   line-height: 1.4;
   margin: 0;
   margin-top: 15px;
+  text-align: left;
 }
 
 .notice-detail-body {
   line-height: 1.8;
+  text-align: left;
 }
 
 .notice-detail-content-text {
@@ -73,6 +75,7 @@
   line-height: 1.8;
   margin-bottom: 30px;
   white-space: pre-line;
+  text-align: left;
 }
 
 

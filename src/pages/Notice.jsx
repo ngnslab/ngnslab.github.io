@@ -60,7 +60,12 @@ export default function Notice() {
                 </div>
               </div>
               <h3 className="notice-title">{notice.title}</h3>
-              <p className="notice-content">{notice.content}</p>
+              <p className="notice-content">
+                {notice.content.length > 100 
+                  ? notice.content.substring(0, 100) + '...' 
+                  : notice.content
+                }
+              </p>
             </div>
           ))}
         </div>

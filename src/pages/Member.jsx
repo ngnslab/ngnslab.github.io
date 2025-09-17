@@ -16,6 +16,7 @@ export default function Member({ members }) {
   const phdMembers = members.filter(member => member.position.includes("PhD"));
   const masterMembers = members.filter(member => member.position.includes("Master"));
   const bachelorMembers = members.filter(member => member.position.includes("Bachelor"));
+  const internshipMembers = members.filter(member => member.position.includes("Internship"));
 
   return (
     <div className="member-container">
@@ -64,9 +65,25 @@ export default function Member({ members }) {
 
       {/* Undergraduate 학생들 */}
       <section className="member-section">
-        <h2 className="member-role-title">Undergraduate</h2>
+        <h2 className="member-role-title">Bachelor</h2>
         <div className="student-grid">
           {bachelorMembers.map((member, index) => (
+            <StudentCard 
+              key={`bachelor-${index}`} 
+              name={member.name} 
+              email={member.email}
+              image={member.image}
+              position={member.position}
+              interests={member.interests}
+            />
+          ))}
+        </div>
+      </section>
+      {/* 인턴 학생들 */}
+      <section className="member-section">
+        <h2 className="member-role-title">Internship(1st)</h2>
+        <div className="student-grid">
+          {internshipMembers.map((member, index) => (
             <StudentCard 
               key={`bachelor-${index}`} 
               name={member.name} 
