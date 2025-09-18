@@ -57,6 +57,11 @@ export default function Professor() {
           <p className="prof-email">
             E-mail <a href={`mailto:${professorData.contact.email}`}>{professorData.contact.email}</a>
           </p>
+          <p className="prof-homepage">
+            <a href={professorData.contact.homepage} target="_blank" rel="noopener noreferrer" className="homepage-link">
+              More Detail →
+            </a>
+          </p>
         </div>
         <div className="professor-info-details">
          
