@@ -74,7 +74,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-
+      <h2 className="features-title">News & Notice</h2>
       <section className="board-section">
         <div className="board-grid">
           {/* News 게시판 */}
