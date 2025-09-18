@@ -16,7 +16,7 @@
   {
     "name": "김준식",
     "email": "kjs4072@sju.ac.kr",
-    "image": "/images/members/default.png",
+    "image": "/images/members/Junsik.png",
     "position": "Bachelor",
     "interests": ["웹 보안", "모바일 보안", "암호학"]
   },
@@ -29,35 +29,35 @@
   },
   {
     "name": "차한솔",
-    "email": "kjs4072@sju.ac.kr",
+    "email": "sada26382@gmail.com",
     "image": "/images/members/Hansol.jpg",
     "position": "Bachelor",
     "interests": ["웹 보안", "모바일 보안", "암호학"]
   },
   {
     "name": "김가경",
-    "email": "kjs4072@sju.ac.kr",
-    "image": "/images/members/default.png",
+    "email": "xxxx@sju.ac.kr",
+    "image": "/images/members/Gagyeong.png",
     "position": "Internship",
     "interests": ["웹 보안", "모바일 보안", "암호학"]
   },
   {
     "name": "김민규",
-    "email": "kjs4072@sju.ac.kr",
-    "image": "/images/members/default.png",
+    "email": "axii@sju.ac.kr",
+    "image": "/images/members/Mingyu2.jpeg",
     "position": "Internship",
     "interests": ["웹 보안", "모바일 보안", "암호학"]
   }
   ,{
-    "name": "박상혁",
-    "email": "kjs4072@sju.ac.kr",
-    "image": "/images/members/default.png",
+    "name": "박성혁",
+    "email": "parkshpolaris@gmail.com",
+    "image": "/images/members/Sunghyeok.jpeg",
     "position": "Internship",
     "interests": ["웹 보안", "모바일 보안", "암호학"]
   },
   {
     "name": "최준서",
-    "email": "kjs4072@sju.ac.kr",
+    "email": "junsu0305@sju.ac.kr",
     "image": "/images/members/default.png",
     "position": "Internship",
     "interests": ["웹 보안", "모바일 보안", "암호학"]
