@@ -7,9 +7,16 @@
     "interests": ["네트워크 보안", "5G 보안", "AI 보안"]
   },
   {
-    "name": "신규섭(Part-time)",
-    "email": "newsub.shin@sejong.ac.kr",
+    "name": "김태준(Part-time)",
+    "email": "parkshpolaris@gmail.com",
     "image": "/images/members/default.png",
+    "position": "PhD",
+    "interests": ["네트워크 보안", "5G 보안", "AI 보안"]
+  },
+  {
+    "name": "신규섭(Part-time)",
+    "email": "justku0908@gmail.com",
+    "image": "/images/members/Gyuseob.jpeg",
     "position": "Master",
     "interests": ["UAV 보안", "딥러닝", "IoT 보안"]
   },
