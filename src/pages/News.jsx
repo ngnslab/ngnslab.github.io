@@ -37,9 +37,12 @@ export default function News() {
       <section className="biography-section">
         <h2 className="section-title">최신 소식</h2>
         <div className="news-grid">
-          {news.map((item, index) => (
+          {news.slice().reverse().map((item, index) => (
             <NewsCard key={index} news={item} />
           ))}
+          {/* {news.map((item, index) => (
+            <NewsCard key={index} news={item} />
+          ))} */}
         </div>
       </section>
     </div>

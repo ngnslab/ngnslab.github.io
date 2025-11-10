@@ -65,12 +65,15 @@
 }
 
 .news-detail-image {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   margin: 30px 0;
   text-align: center;
 }
 
 .news-detail-thumbnail {
-  max-width: 100%;
+  max-width: 50%;
   height: auto;
   border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);

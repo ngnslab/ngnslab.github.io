@@ -22,7 +22,7 @@ export default function NewsCard({ news }) {
     <div className="news-card" onClick={handleCardClick} style={{ cursor: 'pointer' }}>
       <div className="news-image">
         <img 
-          src={news.image || '/lab/lab.png'} 
+          src={news.image[0] || '/lab/lab.png'} 
           alt={news.title}
           className="news-thumbnail"
         />

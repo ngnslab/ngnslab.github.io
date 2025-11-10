@@ -10,12 +10,14 @@ export default function NewsDetail() {
   const [error, setError] = useState(null);
 
   useEffect(() => {
+    // 데이터 불러오기
     fetch('/data/news.json')
       .then(res => {
         if (!res.ok) throw new Error('데이터를 불러오지 못했습니다');
         return res.json();
       })
       .then(data => {
+        // ID에 해당하는 뉴스 찾기
         const foundNews = data.find(item => item.id === parseInt(id));
         if (foundNews) {
           setNews(foundNews);
@@ -30,6 +32,8 @@ export default function NewsDetail() {
       });
   }, [id]);
 
+  
+
   const formatDate = (dateString) => {
     const date = new Date(dateString);
     return date.toLocaleDateString('ko-KR', { 
@@ -38,6 +42,14 @@ export default function NewsDetail() {
       day: 'numeric' 
     });
   };
+  // // 이미지 배열 처리
+  // const images = news ? (
+  //   Array.isArray(news.image)
+  //     ? news.images
+  //     : news.image
+  //       ? [news.image]
+  //       : []  
+  // ) : [];
 
   if (loading) {
     return (
@@ -79,13 +91,26 @@ export default function NewsDetail() {
 
           {news.image && (
             <div className="news-detail-image">
+              {news.image.map((imgSrc, index) => (
+                <img 
+                  key={index}
+                  src={imgSrc} 
+                  alt={`${news.title} 이미지 ${index + 1}`}
+                  className="news-detail-thumbnail"
+                />  
+              ))}
+            </div>
+          )}
+
+          {/* {news.image && (
+            <div className="news-detail-image">
               <img 
                 src={news.image} 
                 alt={news.title}
                 className="news-detail-thumbnail"
               />
             </div>
-          )}
+          )} */}
 
           <div className="news-detail-body">
             <p className="news-detail-description">{news.description}</p>
