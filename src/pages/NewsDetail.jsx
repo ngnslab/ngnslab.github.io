@@ -8,7 +8,8 @@ export default function NewsDetail() {
   const [news, setNews] = useState(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
-
+  const [currentImageIndex, setCurrentImageIndex] = useState(0); // 현재 보고 있는 이미지 인덱스
+  
   useEffect(() => {
     // 데이터 불러오기
     fetch('/data/news.json')
@@ -51,6 +52,20 @@ export default function NewsDetail() {
   //       : []  
   // ) : [];
 
+    // 이전 이미지로 이동
+  const handlePrevImage = () => {
+    setCurrentImageIndex((prev) => 
+      prev === 0 ? news.image.length - 1 : prev - 1
+    );
+  };
+
+  // 다음 이미지로 이동
+  const handleNextImage = () => {
+    setCurrentImageIndex((prev) => 
+      prev === news.image.length - 1 ? 0 : prev + 1
+    );
+  };
+
   if (loading) {
     return (
       <div className="news-detail-container">
@@ -74,6 +89,9 @@ export default function NewsDetail() {
     );
   }
 
+  // 이미지가 여러 개인지 확인
+  const hasMultipleImages = news.image && news.image.length > 1;
+
   return (
     <div className="news-detail-container">
       <div className="news-detail-content">
@@ -88,8 +106,59 @@ export default function NewsDetail() {
             </div>
             <h1 className="news-detail-title">{news.title}</h1>
           </header>
+          {/* 이미지 슬라이더 */}
+          {news.image && news.image.length > 0 && (
+            <div className="news-detail-image-slider">
+              {/* 현재 선택된 이미지만 표시 */}
+              <img 
+                src={news.image[currentImageIndex]} 
+                alt={`${news.title} - ${currentImageIndex + 1}`}
+                className="news-detail-thumbnail"
+              />
+              
+              {/* 이미지가 2개 이상일 때만 슬라이드 컨트롤 표시 */}
+              {hasMultipleImages && (
+                <>
+                  {/* 이전 버튼 */}
+                  <button 
+                    className="slider-nav prev" 
+                    onClick={handlePrevImage}
+                    aria-label="이전 이미지"
+                  >
+                    ‹
+                  </button>
+                  
+                  {/* 다음 버튼 */}
+                  <button 
+                    className="slider-nav next" 
+                    onClick={handleNextImage}
+                    aria-label="다음 이미지"
+                  >
+                    ›
+                  </button>
+                  
+                  {/* 하단 인디케이터 (동그라미) */}
+                  <div className="slider-indicators">
+                    {news.image.map((_, index) => (
+                      <button
+                        key={index}
+                        className={`indicator ${index === currentImageIndex ? 'active' : ''}`}
+                        onClick={() => setCurrentImageIndex(index)}
+                        aria-label={`${index + 1}번째 이미지`}
+                      />
+                    ))}
+                  </div>
+                  
+                  {/* 이미지 카운터 (1/3) */}
+                  <div className="slider-counter">
+                    {currentImageIndex + 1} / {news.image.length}
+                  </div>
+                </>
+              )}
+            </div>
+          )}
 
-          {news.image && (
+          {/* {news.image && (
             <div className="news-detail-image">
               {news.image.map((imgSrc, index) => (
                 <img 
@@ -99,16 +168,6 @@ export default function NewsDetail() {
                   className="news-detail-thumbnail"
                 />  
               ))}
-            </div>
-          )}
-
-          {/* {news.image && (
-            <div className="news-detail-image">
-              <img 
-                src={news.image} 
-                alt={news.title}
-                className="news-detail-thumbnail"
-              />
             </div>
           )} */}
 
@@ -127,7 +186,7 @@ export default function NewsDetail() {
                 target="_blank" 
                 rel="noopener noreferrer"
               >
-                외부 링크 →
+                관련 링크 보기
               </a>
             )}
           </div>

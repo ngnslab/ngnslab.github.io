@@ -22,6 +22,17 @@
       "/images/news/news2-3.jpeg"
     ],
     "link": "https://www.manuscriptlink.com/society/ksii/conference/fall2025"
+  },
+  {
+    "id": 3,
+    "date": "2025-11-12",
+    "category": "연구",
+    "title": "학부 연구생 모집",
+    "description": "",
+    "content": "",
+    "image": [
+      "/images/news/news3-1.jpeg" 
+    ],
+    "link": "http://localhost:5173/#/notice/1"
   }
-  
 ]

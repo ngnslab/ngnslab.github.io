@@ -1,5 +1,6 @@
-/* src/pages/Home.css */
-
+/* ========================================
+   1. 컨테이너
+   ======================================== */
 .home-container {
   width: 100%;
   max-width: none;
@@ -9,29 +10,46 @@
   text-align: left;
 }
 
-/* 전체 화면 히어로 섹션 */
+/* ========================================
+   2. 전체 화면 히어로 섹션
+   ======================================== */
 .fullscreen-hero {
   position: relative;
   width: 100vw;
   height: 100vh;
-  background-image: url('/images/home/6G.png');
-  background-size: 95%;
-  background-position: center;
-  background-repeat: no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
   margin-left: calc(-50vw + 50%);
   margin-right: calc(-50vw + 50%);
+  overflow: hidden;
+}
+
+/* 배경 이미지 - object-fit으로 일관성 확보 */
+.hero-background-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* 이미지 전체가 보이되 비율 유지 */
+  object-position: center;
+  opacity: 0;
+  transition: opacity 1.5s ease-in-out;
+  z-index: 0;
+}
+
+/* 활성화된 배경 이미지만 보이기 */
+.hero-background-img.active {
+  opacity: 1;
 }
 
 /* 오버레이 (텍스트 가독성을 위한 반투명 배경) */
 .hero-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
   background-color: rgba(0, 0, 0, 0.4);
   display: flex;
   align-items: center;
@@ -39,12 +57,12 @@
   padding: 2rem;
 }
 
-/* 오버레이 내부 콘텐츠 */
+/* 히어로 콘텐츠 */
 .hero-overlay .hero-content {
   text-align: center;
   color: white;
   max-width: 800px;
-  z-index: 1;
+  z-index: 2;
 }
 
 .hero-overlay .hero-title {
@@ -71,78 +89,59 @@
   margin-bottom: 2rem;
 }
 
+/* Contact 버튼 */
 .hero-contact-btn {
-  display: block;
+  display: inline-block;
   background-color: #195da6;
   color: white;
-  padding: 0.5rem 1rem;
+  padding: 0.75rem 2rem;
   border-radius: 8px;
   text-decoration: none;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   font-weight: 600;
   transition: all 0.3s ease;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-  text-shadow: none;
-  width: 150px;
-  height: 40px;
-  text-align: center;
-  margin: 0 auto;
 }
 
-
-/* Hero Section */
-.hero-section {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 3rem;
-  align-items: center;
-  margin-bottom: 4rem;
-  padding: 2rem 0;
+.hero-contact-btn:hover {
+  background-color: #164a85;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
-.hero-content {
+/* 하단 인디케이터 */
+.hero-indicators {
+  position: absolute;
+  bottom: 40px;
+  left: 50%;
+  transform: translateX(-50%);
   display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
+  gap: 12px;
+  z-index: 3;
 }
 
-.hero-title {
-  font-size: 3rem;
-  font-weight: bold;
-  color: #2d3748;
-  margin: 0;
-  line-height: 1.2;
+.hero-indicator {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: 2px solid white;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  padding: 0;
 }
 
-.hero-subtitle {
-  font-size: 1.5rem;
-  color: #4a5568;
-  font-weight: 600;
-  margin: 0;
+.hero-indicator.active {
+  background: white;
 }
 
-.hero-description {
-  font-size: 1.1rem;
-  color: #718096;
-  line-height: 1.6;
-  margin: 0;
+.hero-indicator:hover {
+  background: rgba(255, 255, 255, 0.7);
 }
 
-.hero-image {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.lab-image {
-  width: 100%;
-  max-width: 500px;
-  height: auto;
-  border-radius: 12px;
-  box-shadow: 0 8px 16px rgba(0,0,0,0.3);
-}
-
-/* Features Section */
+/* ========================================
+   3. Features Section (연구 분야)
+   ======================================== */
 .features-section {
   margin-bottom: 4rem;
   padding: 2rem;
@@ -167,14 +166,14 @@
   border: 1px solid #ddd;
   border-radius: 12px;
   padding: 2rem;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
   text-align: center;
 }
 
 .feature-card:hover {
   transform: translateY(-4px);
-  box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
 }
 
 .feature-icon {
@@ -196,7 +195,9 @@
   margin: 0;
 }
 
-/* Board Section */
+/* ========================================
+   4. Board Section (News & Notice)
+   ======================================== */
 .board-section {
   margin-bottom: 2rem;
   padding: 2rem;
@@ -213,15 +214,16 @@
   border: 1px solid #e2e8f0;
   border-radius: 8px;
   padding: 1.5rem;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
   transition: border-color 0.2s ease, box-shadow 0.2s ease;
 }
 
 .board-card:hover {
   border-color: #cbd5e0;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.12);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12);
 }
 
+/* Board 헤더 */
 .board-header {
   display: flex;
   justify-content: space-between;
@@ -250,6 +252,7 @@
   color: #2b6cb0;
 }
 
+/* Board 리스트 */
 .board-list {
   display: flex;
   flex-direction: column;
@@ -273,10 +276,8 @@
 .board-item:hover {
   background-color: #f7fafc;
   transform: translateY(-1px);
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
-
-
 
 .board-item-title {
   font-size: 0.95rem;
@@ -304,29 +305,42 @@
   color: #718096;
 }
 
-/* 반응형 디자인 */
+/* ========================================
+   5. 반응형 디자인 (모바일)
+   ======================================== */
 @media (max-width: 768px) {
+  /* 히어로 섹션 */
   .fullscreen-hero {
     height: 80vh;
   }
   
+  .hero-background-img {
+    object-fit: contain; /* 모바일에서도 전체 이미지 보이게 */
+  }
+  
   .hero-overlay .hero-title {
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
   
   .hero-overlay .hero-subtitle {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
   }
   
   .hero-overlay .hero-description {
-    font-size: 1rem;
+    font-size: 0.9rem;
   }
   
   .hero-contact-btn {
-    padding: 0.4rem 0.4rem;
-    font-size: 0.8rem;
+    padding: 0.5rem 1.5rem;
+    font-size: 1rem;
+  }
+
+  /* 인디케이터 */
+  .hero-indicators {
+    bottom: 20px;
   }
   
+  /* Features 섹션 */
   .features-section,
   .board-section {
     padding: 1rem;
@@ -336,6 +350,7 @@
     grid-template-columns: 1fr;
   }
   
+  /* Board 섹션 */
   .board-grid {
     grid-template-columns: 1fr;
     gap: 1.5rem;

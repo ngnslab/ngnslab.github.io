@@ -74,7 +74,7 @@ export default function Lecture() {
       <h1 className="lecture-title">Lecture</h1>
       {lectures.map((yearData, yearIndex) => (
         <section key={yearIndex} className="lecture-section">
-          <h2 className="lecture-year-title">{yearData.year}년 강의</h2>
+          <h2 className="lecture-year-title">{yearData.year}년 2학기 강의</h2>
           <div className="lecture-table-wrapper">
             <table className="lecture-table">
               <thead>
