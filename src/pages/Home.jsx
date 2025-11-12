@@ -13,7 +13,6 @@ export default function Home() {
   const heroImages = [
     '/images/home/6G_1.png', 
     '/images/home/6G_2.png'
-
   ];
 
   useEffect(() => {
