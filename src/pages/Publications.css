@@ -137,6 +137,37 @@ em.journal-name {
   color: #2b6cb0 !important;
 }
 
+.pdf-button {
+  display: inline-block;
+  margin-right: 0.65rem;
+  padding: 0.15rem 0.55rem;
+  border-radius: 999px;
+  background: linear-gradient(135deg, #2563eb, #1d4ed8);
+  color: #ffffff;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  vertical-align: baseline;
+  box-shadow: 0 1px 3px rgba(29, 78, 216, 0.35);
+  transition: transform 0.15s ease, box-shadow 0.15s ease, background 0.15s ease;
+}
+
+.pdf-button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 10px rgba(29, 78, 216, 0.28);
+  background: linear-gradient(135deg, #3b82f6, #2563eb);
+  color: #ffffff;
+}
+
+.pdf-button:active {
+  transform: translateY(0);
+}
+
+.doi-link {
+  color: #1e3a8a;
+}
+
 /* 반응형 디자인 */
 @media (max-width: 768px) {
   .publications-container {

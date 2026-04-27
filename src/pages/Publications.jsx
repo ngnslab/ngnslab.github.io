@@ -2,11 +2,63 @@
 import './Publications.css';
 import { useEffect, useState } from 'react';
 
+function parseBibtexFields(bibtex) {
+  if (!bibtex || typeof bibtex !== 'string') return {};
+
+  const parsed = {};
+  const source = bibtex.replace(/\r?\n/g, ' ');
+  const fieldRegex = /([A-Za-z-]+)\s*=\s*(\{[^{}]*\}|"[^"]*"|[^,]+)\s*,?/g;
+  let match = fieldRegex.exec(source);
+
+  while (match) {
+    const key = match[1].trim().toLowerCase();
+    let value = match[2].trim();
+
+    if (
+      (value.startsWith('{') && value.endsWith('}')) ||
+      (value.startsWith('"') && value.endsWith('"'))
+    ) {
+      value = value.slice(1, -1).trim();
+    }
+
+    parsed[key] = value;
+    match = fieldRegex.exec(source);
+  }
+
+  return parsed;
+}
+
+function normalizePaperEntry(paper) {
+  const bib = parseBibtexFields(paper?.bibtex);
+
+  return {
+    ...paper,
+    authors: paper?.authors || bib.author || '',
+    title: paper?.title || bib.title || '',
+    journal: paper?.journal || bib.journal || '',
+    volume: paper?.volume || bib.volume || '',
+    issue: paper?.issue || bib.number || '',
+    pages: paper?.pages || bib.pages || bib['article-number'] || '',
+    month: paper?.month || bib.month || '',
+    year: paper?.year || bib.year || '',
+    doi: paper?.doi || bib.doi || '',
+  };
+}
+
+function hasText(value) {
+  return typeof value === 'string' ? value.trim() !== '' : value !== null && value !== undefined;
+}
+
+function safeText(value) {
+  return typeof value === 'string' ? value.trim() : value;
+}
+
 export default function Publications() {
   const [internationalPapers, setInternationalPapers] = useState([]);
   const [domesticPapers, setDomesticPapers] = useState([]);
   const [internationalConferences, setInternationalConferences] = useState([]);
   const [domesticConferences, setDomesticConferences] = useState([]);
+  const [internationalStandardization, setInternationalStandardization] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
 
@@ -17,10 +69,11 @@ export default function Publications() {
         return res.json();
       })
       .then(data => {
-        setInternationalPapers(data.internationalPapers || []);
-        setDomesticPapers(data.domesticPapers || []);
+        setInternationalPapers((data.internationalPapers || []).map(normalizePaperEntry));
+        setDomesticPapers((data.domesticPapers || []).map(normalizePaperEntry));
         setInternationalConferences(data.internationalConferences || []);
         setDomesticConferences(data.domesticConferences || []);
+        setInternationalStandardization(data.internationalStandardization || []);
         setLoading(false);
       })
       .catch(err => {
@@ -30,76 +83,139 @@ export default function Publications() {
   }, []);
 
   if (loading) {
-    return <div className="professor-container"><h1 className="professor-title">Publications</h1><div style={{color:'#4a5568'}}>로딩 중...</div></div>;
+    return <div className="professor-container"><h1 className="professor-title">Research Achievements</h1><div style={{color:'#4a5568'}}>로딩 중...</div></div>;
   }
   if (error) {
-    return <div className="professor-container"><h1 className="professor-title">Publications</h1><div style={{color:'red'}}>에러: {error}</div></div>;
+    return <div className="professor-container"><h1 className="professor-title">Research Achievements</h1><div style={{color:'red'}}>에러: {error}</div></div>;
   }
+
+  const renderPdfButton = (filePath) => {
+    if (!filePath) return null;
+    return (
+      <a
+        className="pdf-button"
+        href={encodeURI(filePath)}
+        target="_blank"
+        rel="noreferrer"
+      >
+        PDF
+      </a>
+    );
+  };
 
   // 표준 학술 논문 인용 형식으로 렌더링하는 함수
   const renderPaper = (paper) => {
+    const authors = safeText(paper.authors);
+    const title = safeText(paper.title);
+    const journal = safeText(paper.journal);
+    const volume = safeText(paper.volume);
+    const issue = safeText(paper.issue);
+    const pages = safeText(paper.pages);
+    const month = safeText(paper.month);
+    const year = safeText(paper.year);
+    const doi = safeText(paper.doi);
+    const doiHref = hasText(doi)
+      ? (doi.startsWith('http://') || doi.startsWith('https://') ? doi : `https://doi.org/${doi}`)
+      : '';
+
     return (
       <>
+        {renderPdfButton(paper.filePath)}
         {/* 저자 */}
-        {paper.authors && <span>{paper.authors}, </span>}
+        {hasText(authors) && <span>{authors}, </span>}
         
         {/* 제목 */}
-        {paper.title && <span>{paper.title}, </span>}
+        {hasText(title) && <span>{title}, </span>}
         
         {/* 저널명 (이탤릭) */}
-        {paper.journal && (
+        {hasText(journal) && (
           <span style={{
             fontStyle: 'italic', 
             color: '#4a5568', 
             fontWeight: 'normal',
             fontFamily: '"Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif'
           }}>
-            {paper.journal}
+            {journal}
           </span>
         )}
         
         {/* 볼륨/호수 정보가 저널명에 포함되어 있지 않은 경우 */}
-        {paper.volume && <span>, {paper.volume}</span>}
-        {paper.issue && <span>, no.{paper.issue}</span>}
+        {hasText(volume) && <span>, v.{volume}</span>}
+        {hasText(issue) && <span>, no.{issue}</span>}
         
         {/* 페이지 */}
-        {paper.pages && <span>, pp.{paper.pages}</span>}
+        {hasText(pages) && <span>, pp.{pages}</span>}
         
         {/* 날짜 */}
-        {paper.month && paper.year && <span>, {paper.month} {paper.year}</span>}
-        {!paper.month && paper.year && <span>, {paper.year}</span>}
+        {hasText(month) && hasText(year) && <span>, {month} {year}</span>}
+        {!hasText(month) && hasText(year) && <span>, {year}</span>}
+        {hasText(doiHref) && (
+          <>
+            {' '}
+            <a className="doi-link" href={doiHref} target="_blank" rel="noreferrer">[DOI]</a>
+          </>
+        )}
       </>
     );
   };
 
   // 학회 논문 인용 형식으로 렌더링하는 함수
   const renderConference = (conference) => {
+    const authors = safeText(conference.authors);
+    const title = safeText(conference.title);
+    const confName = safeText(conference.conference);
+    const volume = safeText(conference.volume);
+    const pages = safeText(conference.pages);
+    const date = safeText(conference.date);
+
     return (
       <>
+        {renderPdfButton(conference.filePath)}
         {/* 저자 */}
-        {conference.authors && <span>{conference.authors}, </span>}
+        {hasText(authors) && <span>{authors}, </span>}
         
         {/* 제목 */}
-        {conference.title && <span>"{conference.title}", </span>}
+        {hasText(title) && <span>"{title}", </span>}
         
         {/* 학회명 */}
-        {conference.conference && <span>{conference.conference}</span>}
+        {hasText(confName) && <span>{confName}</span>}
         
         {/* 볼륨 */}
-        {conference.volume && <span>, {conference.volume}</span>}
+        {hasText(volume) && <span>, v.{volume}</span>}
         
         {/* 페이지 */}
-        {conference.pages && <span>, {conference.pages}</span>}
+        {hasText(pages) && <span>, {pages}</span>}
         
         {/* 날짜 */}
-        {conference.date && <span>, {conference.date}</span>}
+        {hasText(date) && <span>, {date}</span>}
+      </>
+    );
+  };
+
+  const renderStandard = (standard) => {
+    const title = safeText(standard.title);
+    const status = safeText(standard.status);
+    const date = safeText(standard.date);
+    const standardScope = [
+      safeText(standard.organization),
+      safeText(standard.studyGroup),
+      safeText(standard.workingParty),
+      safeText(standard.question),
+    ].filter(hasText).join(' ');
+
+    return (
+      <>
+        {hasText(title) && <span>{title}</span>}
+        {hasText(standardScope) && <span>, {standardScope}</span>}
+        {hasText(status) && <span> ({status})</span>}
+        {hasText(date) && <span>, {date}</span>}
       </>
     );
   };
 
   return (
     <div className="professor-container">
-      <h1 className="professor-title">Publications</h1>
+      <h1 className="professor-title">Research Achievements</h1>
       {/* 국외 논문 */}
       <section className="biography-section">
         <h2 className="section-title">International Journal</h2>
@@ -148,6 +264,18 @@ export default function Publications() {
             <li key={idx} className="publication-item">
               <span className="publication-content">
                 {renderConference(conference)}
+              </span>
+            </li>
+          ))}
+        </ul>
+      </section>
+      <section className="biography-section">
+        <h2 className="section-title">International Standardization</h2>
+        <ul className="publication-list">
+          {internationalStandardization.map((standard, idx) => (
+            <li key={idx} className="publication-item">
+              <span className="publication-content">
+                {renderStandard(standard)}
               </span>
             </li>
           ))}
