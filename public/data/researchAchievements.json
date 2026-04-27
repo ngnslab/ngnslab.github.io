@@ -8,7 +8,7 @@
       "year": "",
       "month": "March",
       "bibtex": "AUTHOR = {Kim, Min-Gyu and Kim, Jonghyun}, TITLE = {Column-Wise Autoencoder Representation Learning for Intrusion Detection in Multi-MEC Edge Networks}, JOURNAL = {Applied Sciences}, VOLUME = {16}, YEAR = {2026}, NUMBER = {6}, ARTICLE-NUMBER = {3055}, URL = {https://www.mdpi.com/2076-3417/16/6/3055}, ISSN = {2076-3417}, DOI = {10.3390/app16063055}",
-      "filePath": "/docs/Research achievements/SCI(E)/(2026) [국제SCI] Column-Wise Autoencoder Representation Learning for Intrusion Detection~.pdf"
+      "filePath": "/docs/pdf/SCI(E)/(2026) [국제SCI] Column-Wise Autoencoder Representation Learning for Intrusion Detection~.pdf"
     },
     {
         "title": "Descriptor: 5G Wireless Network Intrusion Detection Dataset (5G-NIDD)",
@@ -304,7 +304,7 @@
       "year": 2026,
       "month": "February",
       "doi": "https://dx.doi.org/10.34139/JSCS.2026.16.1.1",
-      "filePath": "/docs/Research achievements/KCI/(2026) [국내학술지] 6G NTN 보안 위협 분석 및 대응 기술 연구 동향 분석.pdf"
+      "filePath": "/docs/pdf/KCI/(2026) [국내학술지] 6G NTN 보안 위협 분석 및 대응 기술 연구 동향 분석.pdf"
     },
     {
       "title": "5G/6G C-ITS 환경에서의 차량 수준 평가 기반 Prediction-AE CAM 변조 공격 탐지 모델 연구",
@@ -316,7 +316,7 @@
       "year": 2026,
       "month": "February",
       "doi": "https://doi.org/10.13089/JKIISC.2026.36.1.227",
-      "filePath": "/docs/Research achievements/KCI/(2026) [국내학술지] 5G6G C-ITS 환경에서의 차량 수준 평가 기반 Prediction-AE CAM 변조 공격 탐지 모델 연구.pdf"
+      "filePath": "/docs/pdf/KCI/(2026) [국내학술지] 5G6G C-ITS 환경에서의 차량 수준 평가 기반 Prediction-AE CAM 변조 공격 탐지 모델 연구.pdf"
     },
     {
         "title": "Design of a Security Architecture and Prototype Implementation for UxNB in 6G Mobile Networks",
@@ -1048,7 +1048,7 @@
       "conference": "한국정보통신학회 춘계학술대회",
       "pages": "",
       "date": "2026.05",
-      "filePath": "/docs/Research achievements/Domestic Conference/(2026) [국내학술발표] IoT 클래스 불균형 환경에서 Dual-Head 앙상블 기반 GraphSAGE 침입 탐지 모델 개선.pdf"
+      "filePath": "/docs/pdf/Domestic Conference/(2026) [국내학술발표] IoT 클래스 불균형 환경에서 Dual-Head 앙상블 기반 GraphSAGE 침입 탐지 모델 개선.pdf"
     },
     {
       "authors": "최준서, 김민규, 김종현",
@@ -1056,7 +1056,7 @@
       "conference": "한국정보보호학회 동계학술대회",
       "pages": "",
       "date": "2025.11",
-      "filePath": "/docs/Research achievements/Domestic Conference/(2025) [국내학술발표] 5G 코어망 환경에서의 머신러닝 기반 트래픽 처리량 예측.pdf"
+      "filePath": "/docs/pdf/Domestic Conference/(2025) [국내학술발표] 5G 코어망 환경에서의 머신러닝 기반 트래픽 처리량 예측.pdf"
     },
     {
       "authors": "김민규, 김민규, 김종현",
@@ -1064,7 +1064,7 @@
       "conference": "한국정보보호학회 동계학술대회",
       "pages": "",
       "date": "2025.11",
-      "filePath": "/docs/Research achievements/Domestic Conference/(2025) [국내학술발표] 경량 해시 함수 기반 BSG 구조의 개선 방안.pdf"
+      "filePath": "/docs/pdf/Domestic Conference/(2025) [국내학술발표] 경량 해시 함수 기반 BSG 구조의 개선 방안.pdf"
     },
     {
       "authors": "차한솔, 김가경, 김종현",
@@ -1072,7 +1072,7 @@
       "conference": "한국정보보호학회 동계학술대회",
       "pages": "",
       "date": "2025.11",
-      "filePath": "/docs/Research achievements/Domestic Conference/(2025) [국내학술발표] Open-RAN 환경 메타학습과 강화 학습 기반 차분 프라이버시 시스템 최적화.pdf"
+      "filePath": "/docs/pdf/Domestic Conference/(2025) [국내학술발표] Open-RAN 환경 메타학습과 강화 학습 기반 차분 프라이버시 시스템 최적화.pdf"
     },
     {
       "authors": "서예린, 김준식, 김민규, 김종현",
@@ -1080,7 +1080,7 @@
       "conference": "한국정보보호학회 동계학술대회",
       "pages": "",
       "date": "2025.11",
-      "filePath": "/docs/Research achievements/Domestic Conference/(2025) [국내학술발표] 이동통신환경에서 비식별 메타데이터 기반 IMSI Catcher 탐지 성능 비교 연구.pdf"
+      "filePath": "/docs/pdf/Domestic Conference/(2025) [국내학술발표] 이동통신환경에서 비식별 메타데이터 기반 IMSI Catcher 탐지 성능 비교 연구.pdf"
     },
     {
       "authors": "김준식, 서예린, 김민규, 김종현",
@@ -1088,7 +1088,7 @@
       "conference": "한국인터넷정보학회 추계학술대회",
       "pages": "",
       "date": "2025.10",
-      "filePath": "/docs/Research achievements/Domestic Conference/(2025) [국내학술발표] 5G6G V2X 환경에서의 Prediction-AutoEncoder 기반 CAM 변조 공격 탐지 모델.pdf"
+      "filePath": "/docs/pdf/Domestic Conference/(2025) [국내학술발표] 5G6G V2X 환경에서의 Prediction-AutoEncoder 기반 CAM 변조 공격 탐지 모델.pdf"
     },
     {
       "authors": "서예린, 김준식, 김민규, 김종현",
@@ -1096,7 +1096,7 @@
       "conference": "한국인터넷정보학회 추계학술대회",
       "pages": "",
       "date": "2025.10",
-      "filePath": "/docs/Research achievements/Domestic Conference/(2025) [국내학술발표] 6G Open RAN 환경에서 내부 행위 및 C&C 트래픽 기반 xApp 이상 탐지 모델 성능 분석.pdf"
+      "filePath": "/docs/pdf/Domestic Conference/(2025) [국내학술발표] 6G Open RAN 환경에서 내부 행위 및 C&C 트래픽 기반 xApp 이상 탐지 모델 성능 분석.pdf"
     },
     {
       "authors": "김준식, 김종현",
@@ -1290,7 +1290,7 @@
       "question": "Q2",
       "status": "채택",
       "date": "2025",
-      "filePath": "/docs/Research achievements/International Standardization/(2025) [국제표준 - 채택] T25-SG17-251203-TD-WP2-0101!R1!MSW-E.pdf"
+      "filePath": "/docs/pdf/International Standardization/(2025) [국제표준 - 채택] T25-SG17-251203-TD-WP2-0101!R1!MSW-E.pdf"
     },
     {
       "title": "4th Revised baseline text for XSTR.IMT2030-sec-con Security Consideration for IMT-2030 Networks",
@@ -1300,7 +1300,7 @@
       "question": "Q2",
       "status": "채택",
       "date": "2026",
-      "filePath": "/docs/Research achievements/International Standardization/(2026) [국제표준 - 채택] T25-SG17-260402-TD-WP2-0161!R1!MSW-E.pdf"
+      "filePath": "/docs/pdf/International Standardization/(2026) [국제표준 - 채택] T25-SG17-260402-TD-WP2-0161!R1!MSW-E.pdf"
     }
   ]
 }
