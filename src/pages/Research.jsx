@@ -25,17 +25,16 @@ export default function Research() {
   }, []);
 
   if (loading) {
-    return <div className="professor-container"><h1 className="professor-title">Research</h1><div style={{color:'#4a5568'}}>로딩 중...</div></div>;
+    return <div className="professor-container"><h1 className="professor-title">Research Projects</h1><div style={{color:'#4a5568'}}>로딩 중...</div></div>;
   }
   if (error) {
-    return <div className="professor-container"><h1 className="professor-title">Research</h1><div style={{color:'red'}}>에러: {error}</div></div>;
+    return <div className="professor-container"><h1 className="professor-title">Research Projects</h1><div style={{color:'red'}}>에러: {error}</div></div>;
   }
   if (!data) return null;
 
   return (
     <div className="professor-container">
-      <h1 className="professor-title">Research & Projects</h1>
-      {/* Project */}
+      <h1 className="professor-title">Research Projects</h1>
       <section className="biography-section">
         <h2 className="section-title">Ongoing Projects</h2>
         <ResearchList
@@ -48,46 +47,6 @@ export default function Research() {
         <ResearchList
           items={data.completedProjects}
           renderItem={p => <>{p.title}, {p.description}, {p.period}</>}
-        />
-      </section>
-      {/* Patent */}
-      <section className="biography-section">
-        <h2 className="section-title">International Patents</h2>
-        <ResearchList
-          items={data.internationalPatents}
-          renderItem={p => (
-            <>
-              {p.title}
-              {p.country ? ` (${p.country})` : ''}
-              {p.applicationNumber ? `, Application No. ${p.applicationNumber}` : ''}
-              {p.applicationDate ? `, ${p.applicationDate}` : ''}
-              {p.patentNumber ? `, Patent No. ${p.patentNumber}` : ''}
-              {p.patentDate ? `, ${p.patentDate}` : ''}
-            </>
-          )}
-        />
-      </section>
-      <section className="biography-section">
-        <h2 className="section-title">Domestic Patents</h2>
-        <ResearchList
-          items={data.domesticPatents}
-          renderItem={p => (
-            <>
-              {p.title}
-              {p.applicationNumber ? `, 출원번호 ${p.applicationNumber}` : ''}
-              {p.applicationDate ? `, ${p.applicationDate}` : ''}
-              {p.patentNumber ? `, 등록번호 ${p.patentNumber}` : ''}
-              {p.patentDate ? `, ${p.patentDate}` : ''}
-            </>
-          )}
-        />
-      </section>
-      {/* 기술이전 */}
-      <section className="biography-section">
-        <h2 className="section-title">Technology Transfers</h2>
-        <ResearchList
-          items={data.technologyTransfers}
-          renderItem={t => <>{t.title} ({t.year})</>}
         />
       </section>
     </div>
