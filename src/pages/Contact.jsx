@@ -12,14 +12,15 @@ export default function Contact() {
             <div className="contact-item">
               <div className="contact-details">
                 <h3>위치</h3>
-                <p>세종대학교 광개토관 407A</p>
+                <p>세종대학교 대양AI센터 308호</p>
               </div>
             </div>
             
             <div className="contact-item">
               <div className="contact-details">
                 <h3>이메일</h3>
-                <p><a href="mailto:kjh@sejong.ac.kr" className="contact-link">kjh@sejong.ac.kr</a></p>
+                <p>Professor: <a href="mailto:kjh@sejong.ac.kr" className="contact-link">kjh@sejong.ac.kr</a></p>
+                <p>Lab: <a href="mailto:kjh@sejong.ac.kr" className="contact-link">ngnslab@gmail.com</a></p>
               </div>
             </div>
             
@@ -38,7 +39,7 @@ export default function Contact() {
           <h2 className="contact-section-title">Location</h2>
           <div style={{ marginTop: "2.5rem", width: "100%" }}>
           <iframe 
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3163.2102393893542!2d127.07059607619276!3d37.55011022506931!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca4daa73c863f%3A0xd6bd626e0463b230!2z7IS47KKF64yA7ZWZ6rWQIOq0keqwnO2GoOq0gA!5e0!3m2!1sko!2skr!4v1758009932804!5m2!1sko!2skr" 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d790.7921750251086!2d127.07511366963116!3d37.551088998252695!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca54f4e5dc7ab%3A0xafd9d9f79e77d003!2z7IS47KKF64yA7ZWZ6rWQIOuMgOyWkSBBSeyEvO2EsA!5e0!3m2!1sko!2skr!4v1777257733633!5m2!1sko!2skr" 
             width="600" 
             height="400" 
             style={{border:0}} 
