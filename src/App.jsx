@@ -3,6 +3,7 @@ import './App.css'
 
 // Component import
 import NavBar from './components/Navbar'
+import FloatingToc from './components/FloatingToc'
 
 // page import 
 import Home from './pages/Home'
@@ -49,7 +50,7 @@ function App() {
   return (
     <Router>
       <NavBar />
-      <div style={{ paddingTop: "70px" }}>
+      <div style={{ paddingTop: "70px" }} data-page-content>
         <Routes>
           <Route path='/' element={<Home />} />
           <Route path='/member' element={<Member members={members} />} />
@@ -64,6 +65,7 @@ function App() {
           <Route path='/contact' element={<Contact />} />
         </Routes>
       </div>
+      <FloatingToc />
     </Router>
   )
 }

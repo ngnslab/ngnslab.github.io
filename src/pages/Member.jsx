@@ -43,8 +43,7 @@ export default function Member({ members }) {
       {/* 교수님 */}
       <h2 className="member-role-title">Professor</h2>
       <Professor></Professor>
-      
-      <h2 className="member-role-title">Students</h2>
+
       {/* PhD 학생들 */}
       <section className="member-section">
         <h2 className="member-role-title">PhD Students</h2>
