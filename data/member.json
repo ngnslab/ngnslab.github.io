@@ -1,0 +1,92 @@
+[
+  {
+    "name": "김민규",
+    "image": "/images/members/Mingyu.jpg",
+    "position": "PhD Student",
+    "interests": ["5G 보안", "AI 응용 보안" , "네트워크 보안"]
+  },
+  {
+    "name": "김태준 (Part-time)",
+    "image": "/images/members/default.png",
+    "position": "PhD Student",
+    "interests": ["네트워크 보안", "5G 보안", "AI 보안"]
+  },
+  {
+    "name": "신규섭 (Part-time)",
+    "image": "/images/members/Gyuseob.jpeg",
+    "position": "Master Student",
+    "interests": ["UAV 보안", "딥러닝", "IoT 보안"]
+  },
+  {
+    "name": "김준식",
+    "image": "/images/members/Junsik.png",
+    "position": "Undergraduate Student",
+    "period": "2025.07 ~ 2025.12",
+    "isCurrent": false,
+    "interests": ["웹 보안", "모바일 보안", "암호학"]
+  },
+  {
+    "name": "서예린",
+    "image": "/images/members/Yerin.jpeg",
+    "position": "Undergraduate Student",
+    "period": "2025.07 ~ 2026.02",
+    "isCurrent": false,
+    "interests": ["웹 보안", "모바일 보안", "암호학"]
+  },
+  {
+    "name": "차한솔",
+    "image": "/images/members/Hansol.jpg",
+    "position": "Undergraduate Student",
+    "period": "2025.09 ~",
+    "isCurrent": true,
+    "interests": ["웹 보안", "모바일 보안", "암호학"]
+  },
+  {
+    "name": "김가경",
+    "image": "/images/members/Gagyeong.jpg",
+    "position": "Internship Student",
+    "period": "2025.07 ~",
+    "isCurrent": true,
+    "interests": ["웹 보안", "모바일 보안", "암호학"]
+  },
+  {
+    "name": "김민규",
+    "image": "/images/members/Mingyu2.jpeg",
+    "position": "Internship Student",
+    "period": "2025.07 ~ 2025.12",
+    "isCurrent": false,
+    "interests": ["웹 보안", "모바일 보안", "암호학"]
+  },
+  {
+    "name": "박성혁",
+    "image": "/images/members/Sunghyeok.jpeg",
+    "position": "Internship Student",
+    "period": "2025.07 ~ 2025.09",
+    "isCurrent": false,
+    "interests": ["웹 보안", "모바일 보안", "암호학"]
+  },
+  {
+    "name": "최준서",
+    "image": "/images/members/default.png",
+    "position": "Internship Student",
+    "period": "2025.07 ~ 2025.12",
+    "isCurrent": false,
+    "interests": ["웹 보안", "모바일 보안", "암호학"]
+  },
+  {
+    "name": "최동진",
+    "image": "/images/members/dongjin.jpg",
+    "position": "Internship Student",
+    "period": "2026.01 ~",
+    "isCurrent": true,
+    "interests": ["리버싱", "네트워크", "악성코드 분석", "앱 개발/분석"]
+  },
+  {
+    "name": "김민석",
+    "image": "/images/members/minseok.jpg",
+    "position": "Internship Student",
+    "period": "2026.02 ~",
+    "isCurrent": true,
+    "interests": ["AI 보안"]
+  }
+]
