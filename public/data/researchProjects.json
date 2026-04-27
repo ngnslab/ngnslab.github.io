@@ -1,6 +1,11 @@
 {
   "ongoingProjects": [
     {
+      "title": "Developing a Simulator for Cyber Defense Maturity Assessment and Autonomous Security",
+      "description": "IITP (Institute of Information & Communications Technology Planning & Evaluation)",
+      "period": "2026.04.01. ~ 2029.03.31." 
+    },
+    {
       "title": "Development of Security Threat Response and Privacy Protection Technologies and International Cooperation for Establishing a Trusted Global Ecosystem in 6G NTN",
       "description": "IITP (Institute of Information & Communications Technology Planning & Evaluation)",
       "period": "2025.07.01. ~ 2027.12.31."
