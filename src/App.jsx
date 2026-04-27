@@ -53,8 +53,8 @@ function App() {
         <Routes>
           <Route path='/' element={<Home />} />
           <Route path='/member' element={<Member members={members} />} />
-          <Route path='/research' element={<Research />} />
-          <Route path='/publications' element={<Publications />} />
+          <Route path='/research-projects' element={<Research />} />
+          <Route path='/research-achievements' element={<Publications />} />
           <Route path='/activities' element={<Activities />} />
           <Route path='/lecture' element={<Lecture />} />
           <Route path='/news' element={<News />} />

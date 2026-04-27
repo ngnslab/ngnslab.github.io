@@ -2,6 +2,27 @@
 import './Publications.css';
 import { useEffect, useState } from 'react';
 
+function debugLog({ runId, hypothesisId, location, message, data }) {
+  // #region agent log
+  fetch('http://127.0.0.1:7246/ingest/8b7f06c0-5883-445f-beb0-30c38188b1ef', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+      'X-Debug-Session-Id': 'b8a8df',
+    },
+    body: JSON.stringify({
+      sessionId: 'b8a8df',
+      runId,
+      hypothesisId,
+      location,
+      message,
+      data,
+      timestamp: Date.now(),
+    }),
+  }).catch(() => {});
+  // #endregion
+}
+
 function parseBibtexFields(bibtex) {
   if (!bibtex || typeof bibtex !== 'string') return {};
 
@@ -63,7 +84,7 @@ export default function Publications() {
   const [error, setError] = useState(null);
 
   useEffect(() => {
-    fetch('/data/publications.json')
+    fetch('/data/researchAchievements.json')
       .then(res => {
         if (!res.ok) throw new Error('데이터를 불러오지 못했습니다');
         return res.json();
@@ -74,6 +95,29 @@ export default function Publications() {
         setInternationalConferences(data.internationalConferences || []);
         setDomesticConferences(data.domesticConferences || []);
         setInternationalStandardization(data.internationalStandardization || []);
+        // #region agent log
+        debugLog({
+          runId: 'pre-fix',
+          hypothesisId: 'H4',
+          location: 'src/pages/Publications.jsx:95',
+          message: 'Loaded achievements data counts',
+          data: {
+            internationalPapers: (data.internationalPapers || []).length,
+            domesticPapers: (data.domesticPapers || []).length,
+            internationalConferences: (data.internationalConferences || []).length,
+            domesticConferences: (data.domesticConferences || []).length,
+            internationalStandardization: (data.internationalStandardization || []).length,
+            linkedPdfEntries:
+              [
+                ...(data.internationalPapers || []),
+                ...(data.domesticPapers || []),
+                ...(data.internationalConferences || []),
+                ...(data.domesticConferences || []),
+                ...(data.internationalStandardization || []),
+              ].filter(item => Boolean(item?.filePath)).length,
+          },
+        });
+        // #endregion
         setLoading(false);
       })
       .catch(err => {
@@ -91,12 +135,57 @@ export default function Publications() {
 
   const renderPdfButton = (filePath) => {
     if (!filePath) return null;
+    const encodedPath = encodeURI(filePath);
     return (
       <a
         className="pdf-button"
-        href={encodeURI(filePath)}
+        href={encodedPath}
         target="_blank"
         rel="noreferrer"
+        onClick={() => {
+          // #region agent log
+          debugLog({
+            runId: 'pre-fix',
+            hypothesisId: 'H2',
+            location: 'src/pages/Publications.jsx:130',
+            message: 'PDF button clicked with raw and encoded path',
+            data: { filePath, encodedPath },
+          });
+          // #endregion
+
+          // #region agent log
+          fetch(encodedPath, { method: 'HEAD' })
+            .then(res => {
+              debugLog({
+                runId: 'pre-fix',
+                hypothesisId: 'H1',
+                location: 'src/pages/Publications.jsx:142',
+                message: 'PDF HEAD request result',
+                data: {
+                  filePath,
+                  encodedPath,
+                  ok: res.ok,
+                  status: res.status,
+                  redirected: res.redirected,
+                  finalUrl: res.url,
+                },
+              });
+            })
+            .catch(err => {
+              debugLog({
+                runId: 'pre-fix',
+                hypothesisId: 'H3',
+                location: 'src/pages/Publications.jsx:157',
+                message: 'PDF HEAD request failed',
+                data: {
+                  filePath,
+                  encodedPath,
+                  errorMessage: err?.message || 'unknown error',
+                },
+              });
+            });
+          // #endregion
+        }}
       >
         PDF
       </a>

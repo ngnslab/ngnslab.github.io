@@ -1066,7 +1066,7 @@
       "date": "2025.11",
       "filePath": "/docs/Research achievements/Domestic Conference/(2025) [국내학술발표] 경량 해시 함수 기반 BSG 구조의 개선 방안.pdf"
     },
-     {
+    {
       "authors": "차한솔, 김가경, 김종현",
       "title": "Open-RAN 환경 메타학습과 강화 학습 기반 차분 프라이버시 시스템 최적화",
       "conference": "한국정보보호학회 동계학술대회",
@@ -1088,7 +1088,7 @@
       "conference": "한국인터넷정보학회 추계학술대회",
       "pages": "",
       "date": "2025.10",
-      "filePath": "/docs/Research achievements/Domestic Conference/(2025) [국내학술발표] 5G/6G V2X 환경에서의 Prediction-AutoEncoder 기반 CAM 변조 공격 탐지 모델.pdf"
+      "filePath": "/docs/Research achievements/Domestic Conference/(2025) [국내학술발표] 5G6G V2X 환경에서의 Prediction-AutoEncoder 기반 CAM 변조 공격 탐지 모델.pdf"
     },
     {
       "authors": "서예린, 김준식, 김민규, 김종현",
@@ -1103,8 +1103,7 @@
       "title": "상호 위장 기반 MTD 모델의 시뮬레이션 및 게임이론적 평가",
       "conference": "한국정보보호학회 하계종합학술발표회",
       "pages": "pp.1000-1002",
-      "date": "2025.06",
-      "filePath": "/docs/Research achievements/Domestic Conference/(2025) [국내학술발표] 상호 위장 기반 MTD 모델의 시뮬레이션 및 게임이론적 평가.pdf"
+      "date": "2025.06"
     },
     {
       "authors": "김수창, 김종현",

@@ -9,8 +9,8 @@ export default function NavBar() {
   const menu = [
     { to: "/", label: "Home" },
     { to: "/member", label: "Member" },
-    { to: "/research", label: "Research Projects" },
-    { to: "/publications", label: "Research Achievements" },
+    { to: "/research-projects", label: "Research Projects" },
+    { to: "/research-achievements", label: "Research Achievements" },
     { to: "/activities", label: "Activities" },
     { to: "/lecture", label: "Lecture" },
     { to: "/news", label: "News" },
