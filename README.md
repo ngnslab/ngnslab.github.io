@@ -1,24 +1,26 @@
 # NGNS Lab 웹사이트 유지보수 가이드
 
-NGNS Lab 공식 웹사이트(`https://ngnslab.github.io`) 유지보수를 위한 문서입니다.  
-처음 참여하는 사람도 이 문서만 보면 **실행, 수정, 배포, 점검**까지 진행할 수 있도록 정리했습니다.
+NGNS Lab 공식 웹사이트([https://ngnslab.github.io](https://ngnslab.github.io)) 유지보수를 위한 문서입니다.
+처음 참여하는 사람도 이 문서만 보고 **실행, 수정, 점검, 배포**까지 진행할 수 있도록 핵심 절차만 정리합니다.
 
-## 1. 기술 스택과 핵심 정보
+## 1. 프로젝트 요약
 
 - 프레임워크: `React 19` + `Vite 5`
 - 라우팅: `react-router-dom v7` (`HashRouter`)
-- 배포 방식: `gh-pages -d dist` (GitHub Pages)
+- 스타일: 페이지별 CSS 파일
+- 배포: GitHub Pages (`gh-pages -d dist`)
 - 주요 데이터: `public/data/*.json`
+- 공식 문의: `ngnslab@gmail.com`
 
 ## 2. 빠른 시작
 
-### 2.1 필수 도구
+### 필수 도구
 
 - Node.js 18 이상
 - npm 9 이상
-- Git 최신 버전
+- Git
 
-### 2.2 설치 및 실행
+### 설치 및 실행
 
 ```bash
 git clone https://github.com/ngnslab/ngnslab.github.io.git
@@ -27,46 +29,72 @@ npm install
 npm run dev
 ```
 
-개발 서버 기본 주소: `http://localhost:5173`
+개발 서버 기본 주소는 `http://localhost:5173`입니다.
 
-## 3. 프로젝트 구조(유지보수 관점)
+### 자주 쓰는 명령
+
+```bash
+npm run dev       # 개발 서버 실행
+npm run build     # 배포 전 빌드 확인
+npm run preview   # 빌드 결과 미리보기
+npm run deploy    # dist를 gh-pages 브랜치로 배포
+```
+
+## 3. 프로젝트 구조
 
 ```text
 ngnslab.github.io/
 ├── public/
 │   ├── data/                 # 페이지에서 읽는 JSON 데이터
 │   ├── images/               # 정적 이미지
-│   └── docs/ 또는 /docs/     # PDF/문서 자산(경로 매칭 중요)
+│   ├── docs/                 # PDF/문서 자산
+│   └── lab/                  # 홈 화면 등에서 쓰는 연구실 이미지
 ├── src/
-│   ├── components/           # 공통 UI (예: Navbar, Card)
-│   ├── pages/                # 페이지 단위 컴포넌트
-│   ├── App.jsx               # 라우팅/전체 페이지 연결
-│   └── main.jsx              # 엔트리 포인트
-├── dist/                     # 빌드 결과물(배포 대상)
-├── package.json              # 스크립트/의존성
+│   ├── components/           # 공통 UI
+│   ├── pages/                # 페이지 단위 컴포넌트와 CSS
+│   ├── App.jsx               # 라우팅 연결
+│   └── main.jsx              # 앱 진입점
+├── dist/                     # 빌드 결과물, 배포 대상
+├── package.json              # 스크립트와 의존성
 └── vite.config.js            # Vite 설정
 ```
 
-## 4. 페이지 수정 시 작업 순서
+## 4. 수정 작업 순서
 
-1. 대상 페이지 컴포넌트 수정 (`src/pages/...`)
-2. 필요한 경우 데이터 JSON 수정 (`public/data/...`)
-3. 필요한 경우 이미지/PDF 자산 추가 (`public/images`, `docs`)
-4. 로컬 확인 (`npm run dev`)
-5. 빌드 확인 (`npm run build`)
+1. 수정할 페이지와 연결 데이터를 먼저 확인합니다.
+2. 페이지 컴포넌트 또는 CSS를 수정합니다. 예: `src/pages/Lecture.jsx`, `src/pages/Lecture.css`
+3. 필요한 경우 JSON 데이터를 함께 수정합니다. 예: `public/data/member.json`
+4. 이미지, PDF 등 정적 자산이 필요하면 `public/images`, `public/docs`, `public/lab` 아래에 추가합니다.
+5. 로컬에서 화면을 확인합니다.
+6. 배포 전 `npm run build`를 실행합니다.
 
-## 5. 데이터 파일 가이드
+## 5. 페이지별 주요 수정 위치
 
-### 5.1 `member.json` (멤버 페이지)
+| 페이지 | 주요 파일 |
+| --- | --- |
+| Home | `src/pages/Home.jsx`, `src/pages/Home.css`, `public/images/home`, `public/lab` |
+| Member | `src/pages/Member.jsx`, `src/pages/Member.css`, `public/data/member.json`, `public/images/members` |
+| Research | `src/pages/Research.jsx`, `src/pages/Research.css`, `public/data/researchProjects.json` |
+| Publications | `src/pages/Publications.jsx`, `src/pages/Publications.css`, `public/data/researchAchievements.json`, `public/docs` |
+| Activities | `src/pages/Activities.jsx`, `src/pages/Activities.css`, `public/data/activities.json` |
+| Lecture | `src/pages/Lecture.jsx`, `src/pages/Lecture.css` |
+| News | `src/pages/News.jsx`, `src/pages/NewsDetail.jsx`, `public/data/news.json`, `public/images/news` |
+| Notice | `src/pages/Notice.jsx`, `src/pages/NoticeDetail.jsx`, `public/data/notice.json` |
+| Contact | `src/pages/Contact.jsx`, `src/pages/Contact.css` |
+| 공통 메뉴 | `src/components/Navbar.jsx`, `src/components/Navbar.css` |
 
-현재 페이지에서 실사용하는 주요 필드:
+## 6. 데이터 파일 가이드
 
-- `name`: 표시 이름 (`(Part-time)` 포함 가능)
+### `member.json`
+
+멤버 페이지에서 주로 사용하는 필드입니다.
+
+- `name`: 표시 이름
 - `image`: 이미지 경로
 - `position`: 예) `PhD Student`, `Master Student`, `Undergraduate Student`, `Internship Student`
-- `interests`: 관심분야 배열
-- `period`(선택): 활동 기간
-- `isCurrent`(선택): 재적 여부 (`true/false`)
+- `interests`: 관심 분야 배열
+- `period`: 활동 기간
+- `isCurrent`: 현재 소속 여부 (`true` 또는 `false`)
 
 예시:
 
@@ -81,9 +109,9 @@ ngnslab.github.io/
 }
 ```
 
-### 5.2 `researchAchievements.json` (연구실적 페이지)
+### `researchAchievements.json`
 
-섹션별 키:
+연구실적 페이지의 주요 섹션 키입니다.
 
 - `internationalPapers`
 - `domesticPapers`
@@ -91,35 +119,28 @@ ngnslab.github.io/
 - `domesticConferences`
 - `internationalStandardization`
 
-논문/학회 항목은 `title`, `authors`, `journal`/`conference`, `year` 등을 사용하고,  
-PDF 버튼 노출이 필요하면 `filePath`를 함께 입력합니다.
+논문과 학회 항목은 `title`, `authors`, `journal` 또는 `conference`, `year` 등을 사용합니다.
+PDF 버튼이 필요하면 `filePath`를 함께 입력합니다.
 
-### 5.3 `researchProjects.json` (연구과제 페이지)
+### `researchProjects.json`
 
-현재 화면 기준 핵심 섹션:
+연구과제 페이지는 다음 섹션을 기준으로 표시됩니다.
 
 - `ongoingProjects`
 - `completedProjects`
 
-각 항목은 `title`, `description`, `period`를 기본으로 사용합니다.
+각 항목은 보통 `title`, `description`, `period`를 사용합니다.
 
-## 6. 커밋 규칙(페이지 중심)
+## 7. 커밋 기준
 
-### 6.1 기본 원칙
+### 기본 원칙
 
-- 한 커밋에는 한 페이지(또는 한 목적)의 변경만 담습니다.
-- 페이지와 함께 반영되는 JSON/이미지/PDF는 같은 커밋에 묶습니다.
-- 커밋 메시지는 코드 내부 구현보다 **웹에서 보이는 변화** 중심으로 작성합니다.
+- 한 커밋에는 한 페이지 또는 한 목적의 변경만 담습니다.
+- 화면에 함께 반영되는 JSON, 이미지, PDF는 같은 커밋에 묶습니다.
+- 관련 없는 페이지 변경을 한 커밋에 섞지 않습니다.
+- 커밋 메시지는 내부 구현보다 사용자가 웹에서 보는 변화를 중심으로 작성합니다.
 
-### 6.2 페이지별 권장 스테이징 범위
-
-- Member: `src/pages/Member.jsx`, `src/pages/Member.css`, `public/data/member.json`, 관련 이미지
-- Publications: `src/pages/Publications.jsx`, `src/pages/Publications.css`, `public/data/researchAchievements.json`, 관련 `docs`
-- Research: `src/pages/Research.jsx`, `public/data/researchProjects.json`
-- Contact: `src/pages/Contact.jsx`
-- 공통 메뉴: `src/components/Navbar.jsx`
-
-### 6.3 커밋 메시지 형식
+### 메시지 형식
 
 ```text
 type(scope): 페이지에서 보이는 변경 요약
@@ -128,239 +149,12 @@ type(scope): 페이지에서 보이는 변경 요약
 예시:
 
 - `feat(member): 멤버 페이지 표시 구조 및 이력 구분 개선`
-- `feat(publications): PDF/DOI 노출 및 표준화 섹션 추가`
-- `refactor(research): 연구 프로젝트 중심으로 섹션 단순화`
+- `feat(publications): PDF와 DOI 접근 버튼 추가`
+- `refactor(research): 연구 프로젝트 섹션 구조 단순화`
 
-## 7. GitHub Pages 배포 절차
+## 8. 배포 절차
 
-이 저장소는 `dist`를 `gh-pages` 브랜치로 배포합니다.
-
-```bash
-npm run build
-npm run deploy
-```
-
-중요:
-
-- `npm run build` 없이 `npm run deploy`만 실행하면 이전 결과가 배포될 수 있습니다.
-- 배포 후 `gh-pages` 브랜치 최신 커밋과 실제 페이지 반영 여부를 함께 확인하세요.
-
-## 8. 배포 전 점검 체크리스트
-
-```bash
-git diff --staged --name-only
-npm run build
-```
-
-확인 항목:
-
-- 커밋이 페이지 단위로 분리되어 있는가
-- 스테이징 파일이 의도한 범위와 일치하는가
-- 커밋 메시지가 사용자 관점의 변경사항을 설명하는가
-- 빌드가 오류 없이 완료되는가
-
-## 9. 문제 해결(자주 발생)
-
-### 9.1 의존성 설치 문제
-
-```bash
-npm cache clean --force
-# macOS/Linux
-rm -rf node_modules package-lock.json
-# Windows PowerShell
-Remove-Item -Recurse -Force node_modules, package-lock.json
-npm install
-```
-
-### 9.2 라우팅/페이지 이동 문제
-
-- `src/App.jsx`의 `HashRouter` 및 라우트 경로 확인
-- `src/components/Navbar.jsx` 메뉴 링크 경로 확인
-
-### 9.3 빌드 오류
-
-```bash
-npm run build --verbose
-```
-
-## 10. 참고 링크
-
-- 웹사이트: [https://ngnslab.github.io](https://ngnslab.github.io)
-- 저장소: [https://github.com/ngnslab/ngnslab.github.io](https://github.com/ngnslab/ngnslab.github.io)
-- React 문서: [https://react.dev/](https://react.dev/)
-- Vite 문서: [https://vitejs.dev/](https://vitejs.dev/)
-
-## 11. 문의
-
-- 이메일: `ngnslab@gmail.com`
-
----
-
-NGNS Lab - Network Generation Network Security Lab
-# NGNS Lab - React 웹사이트
-
-NGNS Lab의 공식 웹사이트입니다. React + Vite를 사용하여 구축되었으며, 연구실 소개, 멤버 정보, 뉴스, 공지사항 등을 제공합니다.
-
-## 프로젝트 개요
-
-- **Framework**: React 19 + Vite 5
-- **Routing**: React Router v7 (HashRouter)
-- **Styling**: CSS3
-- **Deployment**: GitHub Pages (`gh-pages -d dist`)
-
-## 주요 기능
-
-- **Homepage**: Lab introduction and key information
-- **Members**: Faculty and student information
-- **Research**: Research areas and projects
-- **Publications**: Papers, conferences, standardization achievements
-- **News**: Lab updates and announcements
-- **Notices**: Important notices and schedules
-- **Contact**: Lab location and contact information
-
-## Development Environment Setup
-
-### 1. Prerequisites
-
-- **Node.js**: 18.0.0 or higher
-- **npm**: 9.0.0 or higher
-- **Git**: Latest version
-
-### 2. Node.js Installation
-
-#### Windows
-1. Download LTS version from [Node.js official site](https://nodejs.org/)
-2. Run installer and complete installation
-3. Verify version in PowerShell:
-   ```bash
-   node --version
-   npm --version
-   ```
-
-#### macOS
-```bash
-# Using Homebrew
-brew install node
-
-# Or using nvm
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.0/install.sh | bash
-nvm install --lts
-nvm use --lts
-```
-
-#### Linux (Ubuntu/Debian)
-```bash
-curl -fsSL https://deb.nodesource.com/setup_lts.x | sudo -E bash -
-sudo apt-get install -y nodejs
-```
-
-### 3. Project Clone and Installation
-
-```bash
-# Clone repository
-git clone https://github.com/ngnslab/ngnslab.github.io.git
-cd ngnslab.github.io
-
-# Install dependencies
-npm install
-```
-
-## Development Server
-
-```bash
-# Start development server (http://localhost:5173)
-npm run dev
-
-# Or run on specific port
-npm run dev -- --port 3000
-```
-
-## Project Build
-
-```bash
-# Production build
-npm run build
-
-# Preview build result
-npm run preview
-```
-
-## Deployment Guide
-
-### GitHub Pages Deployment
-
-1. **Build project**:
-   ```bash
-   npm run build
-   ```
-
-2. **Execute deployment**:
-   ```bash
-   npm run deploy
-   ```
-
-3. **배포 후 확인**:
-   - GitHub 저장소의 `gh-pages` 브랜치가 최신 커밋으로 갱신되었는지 확인
-   - Pages URL에서 변경된 화면이 반영되었는지 확인
-
-## 커밋 규칙 및 GitHub Pages 배포 절차
-
-이 프로젝트는 웹페이지 변경 이력을 빠르게 파악할 수 있도록 페이지 중심 커밋 전략을 사용합니다.
-
-### 1) 페이지 중심 커밋 규칙
-
-- 하나의 커밋은 하나의 페이지 또는 하나의 명확한 UI 목적만 다룹니다.
-- 화면에 함께 반영되는 데이터는 페이지 코드와 함께 스테이징합니다. (`public/data/*.json`)
-- 관련 없는 페이지 변경은 한 커밋에 섞지 않습니다. (예: `Member` + `Research`)
-- 커밋 메시지는 내부 구현보다 **사용자가 웹에서 보는 변화**를 중심으로 작성합니다.
-
-### 2) 페이지별 권장 커밋 범위
-
-- `Member` 페이지:
-  - `src/pages/Member.jsx`, `src/pages/Member.css`
-  - `public/data/member.json`
-  - `public/images/members/` 내 관련 이미지
-- `Publications` 페이지:
-  - `src/pages/Publications.jsx`, `src/pages/Publications.css`
-  - `public/data/researchAchievements.json`
-  - 페이지에 연결되는 문서 자산 `docs/` (PDF 링크/내용 갱신 시)
-- `Research` 페이지:
-  - `src/pages/Research.jsx`
-  - `public/data/researchProjects.json`
-- `Contact` 페이지:
-  - `src/pages/Contact.jsx`
-- 공통 네비게이션 변경:
-  - `src/components/Navbar.jsx`
-
-### 3) 커밋 메시지 작성 형식
-
-다음 형식을 기본으로 사용합니다.
-
-```text
-type(scope): 페이지에서 보이는 변경 요약
-```
-
-권장 예시:
-
-- `feat(member): 멤버 페이지 표시 구조 및 이력 노출 개선`
-- `feat(publications): 연구실적 페이지 PDF/DOI 접근성 및 표준화 섹션 추가`
-- `refactor(research): 연구 프로젝트 중심으로 화면 단순화`
-
-본문은 3~6줄로 아래 내용을 포함합니다.
-
-1. 어떤 섹션명/레이아웃이 바뀌었는지
-2. 사용자가 새로 확인하거나 접근할 수 있는 정보가 무엇인지
-3. UI와 함께 갱신된 데이터/문서 소스가 무엇인지
-
-### 4) GitHub Pages 배포 담당자 체크리스트
-
-이 저장소는 아래 방식으로 `dist`를 GitHub Pages에 배포합니다.
-
-```bash
-gh-pages -d dist
-```
-
-따라서 배포는 반드시 아래 순서를 지킵니다.
+이 저장소는 `dist` 폴더를 `gh-pages` 브랜치로 배포합니다.
 
 ```bash
 npm run build
@@ -369,223 +163,80 @@ npm run deploy
 
 중요 사항:
 
-- `npm run build`: 최신 정적 결과물을 `dist`에 생성
-- `npm run deploy`: 현재 `dist`를 GitHub Pages로 배포
-- 빌드 없이 배포하면 이전 결과물이 올라갈 수 있음
+- `npm run build` 없이 `npm run deploy`만 실행하면 이전 빌드 결과가 배포될 수 있습니다.
+- `npm run deploy`는 내부적으로 `gh-pages -d dist`를 실행합니다.
+- 배포 후 GitHub의 `gh-pages` 브랜치 최신 커밋과 실제 웹사이트 반영 여부를 함께 확인합니다.
 
-### 5) Push 전 최종 확인
-
-Push 전에 아래 명령으로 점검합니다.
+## 9. 배포 전 체크리스트
 
 ```bash
+git status --short
 git diff --staged --name-only
 npm run build
 ```
 
 확인 항목:
 
-- 각 커밋에 의도한 페이지 관련 파일만 포함되었는지
-- 커밋 메시지가 웹페이지 기준 변경사항을 명확히 설명하는지
-- 배포 전 빌드가 정상적으로 완료되는지
+- 의도한 파일만 수정 또는 스테이징되었는가
+- 페이지 코드와 연결 데이터가 함께 반영되었는가
+- 공개 저장소에 올리면 안 되는 정보가 포함되지 않았는가
+- 빌드가 오류 없이 완료되는가
 
-### Vercel Deployment
+## 10. 공개 저장소 주의사항
 
-1. Login to [Vercel](https://vercel.com)
-2. Click "New Project"
-3. Connect GitHub repository
-4. Complete automatic deployment setup
+이 저장소는 public repository입니다. 커밋 전에는 다음 항목을 확인합니다.
 
-### Netlify Deployment
+- API 키, 토큰, 비밀번호, private key를 커밋하지 않습니다.
+- `.env` 파일이나 개인 설정 파일을 커밋하지 않습니다.
+- 내부 회의록, 비공개 연구 자료, 미공개 개인정보가 포함된 문서를 올리지 않습니다.
+- 개인 이메일, 전화번호, 학번 등은 공개 목적이 명확할 때만 포함합니다.
+- 예시 이메일은 실제 계정처럼 오해되지 않도록 문맥을 명확히 둡니다. 예: `prof@university.ac.kr`
 
-1. Login to [Netlify](https://netlify.com)
-2. Click "New site from Git"
-3. Connect GitHub repository
-4. Build command: `npm run build`
-5. Publish directory: `dist`
+간단한 점검 명령:
 
-## Project Structure
-
-```
-NGNS/
-├── public/                 # Static files
-│   ├── data/              # JSON data files
-│   │   ├── member.json    # Member information
-│   │   ├── news.json      # News data
-│   │   └── ...
-│   └── images/            # Image files
-├── src/                   # Source code
-│   ├── components/        # Reusable components
-│   ├── pages/            # Page components
-│   ├── App.jsx           # Main app component
-│   └── main.jsx          # App entry point
-├── dist/                  # Build output (npm run build 시 생성)
-├── package.json           # Project configuration
-└── vite.config.js         # Vite configuration
+```bash
+rg -n "password|secret|token|api[_-]?key|private[_-]?key|client[_-]?secret|ghp_|github_pat_|sk-" .
 ```
 
-## Key Configuration Files
+## 11. 문제 해결
 
-### package.json
-```json
-{
-  "name": "ngns",
-  "private": true,
-  "version": "0.0.0",
-  "type": "module",
-  "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "lint": "eslint .",
-    "preview": "vite preview",
-    "deploy": "gh-pages -d dist"
-  },
-  "dependencies": {
-    "react": "^19.1.0",
-    "react-dom": "^19.1.0",
-    "react-router-dom": "^7.7.1"
-  },
-  "devDependencies": {
-    "@eslint/js": "^9.30.1",
-    "@tailwindcss/postcss": "^4.1.11",
-    "@types/react": "^19.1.8",
-    "@types/react-dom": "^19.1.6",
-    "@vitejs/plugin-react": "^4.7.0",
-    "eslint": "^9.30.1",
-    "eslint-plugin-react-hooks": "^5.2.0",
-    "eslint-plugin-react-refresh": "^0.4.20",
-    "gh-pages": "^6.3.0",
-    "globals": "^16.3.0",
-    "vite": "^5.4.20"
-  }
-}
+### 의존성 설치 문제
+
+```bash
+npm cache clean --force
+Remove-Item -Recurse -Force node_modules, package-lock.json
+npm install
 ```
 
-### vite.config.js
-```javascript
-import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
+### 개발 서버 포트 충돌
 
-export default defineConfig({
-  base: '/', // GitHub Pages 사용자 페이지는 루트 도메인 사용
-  plugins: [react()],
-})
+```bash
+npm run dev -- --port 3001
 ```
 
-## Data Management
+### 라우팅 또는 페이지 이동 문제
 
-### JSON File Structure
+- `src/App.jsx`에서 `HashRouter`와 라우트 경로를 확인합니다.
+- `src/components/Navbar.jsx`의 메뉴 링크가 라우트 경로와 일치하는지 확인합니다.
 
-#### member.json
-```json
-[
-  {
-    "id": 1,
-    "name": "Prof. Kim",
-    "position": "Professor",
-    "email": "prof@university.ac.kr",
-    "research": ["Network Security", "Blockchain"],
-    "image": "/images/members/prof.jpg"
-  }
-]
+### 빌드 오류
+
+```bash
+npm run build --verbose
 ```
 
-#### news.json
-```json
-[
-  {
-    "id": 1,
-    "date": "2024-01-15",
-    "category": "Research",
-    "title": "Research Title",
-    "description": "Brief description",
-    "content": "Detailed content",
-    "image": "/lab/lab.png"
-  }
-]
-```
+## 12. 참고 링크
 
-## Customization
+- 웹사이트: [https://ngnslab.github.io](https://ngnslab.github.io)
+- 저장소: [https://github.com/ngnslab/ngnslab.github.io](https://github.com/ngnslab/ngnslab.github.io)
+- React 문서: [https://react.dev](https://react.dev)
+- Vite 문서: [https://vitejs.dev](https://vitejs.dev)
+- React Router 문서: [https://reactrouter.com](https://reactrouter.com)
 
-### Color Theme Change
-Modify CSS variables in `src/index.css`:
-```css
-:root {
-  --primary-color: #2563eb;
-  --secondary-color: #64748b;
-  --accent-color: #f59e0b;
-}
-```
+## 13. 문의
 
-### Font Change
-Add Google Fonts:
-```css
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap');
-
-body {
-  font-family: 'Noto Sans KR', sans-serif;
-}
-```
-
-## Troubleshooting
-
-### Common Issues
-
-1. **Dependency installation failure**:
-   ```bash
-   npm cache clean --force
-   # macOS/Linux
-   rm -rf node_modules package-lock.json
-   # Windows PowerShell
-   Remove-Item -Recurse -Force node_modules, package-lock.json
-   npm install
-   ```
-
-2. **Port conflict**:
-   ```bash
-   npm run dev -- --port 3001
-   ```
-
-3. **Build failure**:
-   ```bash
-   npm run build --verbose
-   ```
-
-4. **Routing issues**:
-   - `src/App.jsx`에서 `HashRouter` 사용 여부 확인
-   - 라우트 경로 변경 시 `Navbar` 링크도 함께 점검
-
-### Developer Tools
-
-- **React Developer Tools**: Install browser extension
-- **Console logs**: Check debugging information during development
-- **Network tab**: Monitor API calls and data loading status
-
-## Additional Resources
-
-- [React Official Documentation](https://react.dev/)
-- [Vite Official Documentation](https://vitejs.dev/)
-- [React Router Documentation](https://reactrouter.com/)
-- [CSS Guide](https://developer.mozilla.org/ko/docs/Web/CSS)
-
-## Contributing
-
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
-## License
-
-This project is distributed under the MIT License.
-
-## Contact
-
-- **Email**: ngnslab@gmail.com
-- **Website**: https://ngnslab.github.io
-- **GitHub**: https://github.com/ngnslab/ngnslab.github.io
+- 이메일: `ngnslab@gmail.com`
 
 ---
 
-**NGNS Lab** - Network Generation Network Security Lab  
-*Providing the best environment for innovative network security research.*
+NGNS Lab - Next Generation Network Security Lab
