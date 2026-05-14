@@ -43,6 +43,15 @@
   text-align: center;
   color: #4a5568;
   background: #ffffff;
+  white-space: nowrap;
+}
+
+.lecture-table .course-name-cell {
+  text-align: left;
+  font-weight: 600;
+  color: #2b6cb0;
+  white-space: normal;
+  min-width: 220px;
 }
 
 .lecture-table tbody tr:last-child td {
