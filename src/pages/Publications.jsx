@@ -133,12 +133,12 @@ export default function Publications() {
     return <div className="professor-container"><h1 className="professor-title">Research Achievements</h1><div style={{color:'red'}}>에러: {error}</div></div>;
   }
 
-  const renderPdfButton = (filePath) => {
+  const renderPdfButton = (filePath, label = 'PDF', variant = '') => {
     if (!filePath) return null;
     const encodedPath = encodeURI(filePath);
     return (
       <a
-        className="pdf-button"
+        className={`pdf-button${variant ? ` ${variant}` : ''}`}
         href={encodedPath}
         target="_blank"
         rel="noreferrer"
@@ -187,7 +187,7 @@ export default function Publications() {
           // #endregion
         }}
       >
-        PDF
+        {label}
       </a>
     );
   };
@@ -260,6 +260,7 @@ export default function Publications() {
     return (
       <>
         {renderPdfButton(conference.filePath)}
+        {renderPdfButton(conference.awardPath, 'Award', 'award-button')}
         {/* 저자 */}
         {hasText(authors) && <span>{authors}, </span>}
         

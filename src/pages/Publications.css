@@ -160,6 +160,16 @@ em.journal-name {
   color: #ffffff;
 }
 
+.award-button {
+  background: linear-gradient(135deg, #1e40af, #2563eb);
+  box-shadow: 0 1px 3px rgba(30, 64, 175, 0.32);
+}
+
+.award-button:hover {
+  background: linear-gradient(135deg, #2563eb, #1d4ed8);
+  box-shadow: 0 4px 10px rgba(30, 64, 175, 0.28);
+}
+
 .pdf-button:active {
   transform: translateY(0);
 }

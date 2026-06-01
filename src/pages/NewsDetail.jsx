@@ -91,6 +91,7 @@ export default function NewsDetail() {
 
   // 이미지가 여러 개인지 확인
   const hasMultipleImages = news.image && news.image.length > 1;
+  const awardPdfPath = news.awardPath ? encodeURI(news.awardPath) : '';
 
   return (
     <div className="news-detail-container">
@@ -155,6 +156,16 @@ export default function NewsDetail() {
                   </div>
                 </>
               )}
+            </div>
+          )}
+
+          {awardPdfPath && (
+            <div className="news-award-pdf">
+              <iframe
+                src={awardPdfPath}
+                title={`${news.title} 상장 PDF`}
+                className="news-award-pdf-viewer"
+              />
             </div>
           )}
 
