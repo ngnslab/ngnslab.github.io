@@ -22,8 +22,10 @@ export default function Home() {
       fetch('/data/notice.json').then(res => res.json())
     ])
     .then(([newsData, noticeData]) => {
-      setNews(newsData.slice(0, 5));
-      setNotices(noticeData.slice(0, 5));
+      const latestNews = [...newsData].sort((a, b) => new Date(b.date) - new Date(a.date));
+      const latestNotices = [...noticeData].sort((a, b) => new Date(b.date) - new Date(a.date));
+      setNews(latestNews.slice(0, 5));
+      setNotices(latestNotices.slice(0, 5));
       setLoading(false);
     })
     .catch(err => {
@@ -43,9 +45,13 @@ export default function Home() {
     return () => clearInterval(interval);
   }, [heroImages.length]);
 
-  const formatDate = (dateString) => {
+  const formatBoardDate = (dateString) => {
     const date = new Date(dateString);
-    return date.toLocaleDateString('ko-KR', { month: 'short', day: 'numeric' });
+    return date.toLocaleDateString('ko-KR', {
+      year: 'numeric',
+      month: 'short',
+      day: 'numeric'
+    });
   };
 
   return (
@@ -135,7 +141,7 @@ export default function Home() {
                     style={{ cursor: item.id ? 'pointer' : 'default' }}
                   >
                     <h3 className="board-item-title">{item.title}</h3>
-                    <span className="board-date">{formatDate(item.date)}</span>
+                    <span className="board-date">{formatBoardDate(item.date)}</span>
                   </div>
                 ))
               )}
@@ -160,7 +166,7 @@ export default function Home() {
                     style={{ cursor: item.id ? 'pointer' : 'default' }}
                   >
                     <h3 className="board-item-title">{item.title}</h3>
-                    <span className="board-date">{formatDate(item.date)}</span>
+                    <span className="board-date">{formatBoardDate(item.date)}</span>
                   </div>
                 ))
               )}
