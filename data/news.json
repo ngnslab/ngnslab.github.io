@@ -34,5 +34,18 @@
       "/images/news/news3-1.jpeg" 
     ],
     "link": "https://ngnslab.github.io/#/notice/1"
+  },
+  {
+    "id": 4,
+    "date": "2026-05-01",
+    "category": "연구",
+    "title": "한국정보통신학회 2026 춘계학술대회 참가 및 우수논문상 수상",
+    "description": "",
+    "content": "",
+    "image": [
+      "/images/news/news4-1.jpg",
+      "/images/news/news4-2.jpg"
+    ],
+    "awardPath": "/docs/pdf/Domestic Conference/(2026) 한국정보통신학회 학생우수논문상 (차한솔).pdf"
   }
 ]
