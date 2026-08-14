@@ -69,8 +69,8 @@
     "name": "김가경",
     "image": "/images/members/Gagyeong.jpg",
     "position": "Internship Student",
-    "period": "2025.07 ~",
-    "isCurrent": true,
+    "period": "2025.07 ~ 2026.06",
+    "isCurrent": false,
     "interests": ["웹 보안", "모바일 보안", "암호학"]
   },
   {
