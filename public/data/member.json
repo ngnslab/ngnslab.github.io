@@ -18,6 +18,14 @@
     "interests": ["UAV 보안", "딥러닝", "IoT 보안"]
   },
   {
+    "name": "김승관",
+    "image": "/images/members/default.png",
+    "position": "Master Student",
+    "period": "2026.09 ~",
+    "isCurrent": true,
+    "interests": []
+  },
+  {
     "name": "김준식",
     "image": "/images/members/Junsik.png",
     "position": "Undergraduate Student",
@@ -40,6 +48,22 @@
     "period": "2025.09 ~",
     "isCurrent": true,
     "interests": ["웹 보안", "모바일 보안", "암호학"]
+  },
+  {
+    "name": "박수진",
+    "image": "/images/members/default.png",
+    "position": "Undergraduate Student",
+    "period": "2026.07 ~",
+    "isCurrent": true,
+    "interests": []
+  },
+  {
+    "name": "박영서",
+    "image": "/images/members/default.png",
+    "position": "Undergraduate Student",
+    "period": "2026.08 ~",
+    "isCurrent": true,
+    "interests": []
   },
   {
     "name": "김가경",
