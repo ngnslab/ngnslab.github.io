@@ -1,6 +1,16 @@
 {
   "internationalPapers": [
     {
+      "title": "Hybrid Distributed Learning With Knowledge Distillation for Resource-Efficient Intrusion Detection in Distributed Networks",
+      "authors": "Park, C., Park, K., Song, J., Kim, S. & Kim, J.",
+      "journal": "IEEE Internet of Things Journal",
+      "pages": "1-23",
+      "year": 2026,
+      "month": "June",
+      "doi": "10.1109/JIOT.2026.3703835",
+      "filePath": "/docs/pdf/SCI(E)/(2026) JIOT.2026.3703835.pdf"
+    },
+    {
       "title": "",
       "authors": "",
       "journal": "",
