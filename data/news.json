@@ -47,5 +47,17 @@
       "/images/news/news4-2.jpg"
     ],
     "awardPath": "/docs/pdf/Domestic Conference/(2026) 한국정보통신학회 학생우수논문상 (차한솔).pdf"
+  },
+  {
+    "id": 5,
+    "date": "2026-09-08",
+    "category": "연구",
+    "title": "IEEE IEACon 2026 참가 및 논문 발표",
+    "description": "",
+    "content": "차한솔(Cha Hansol)이 2026년 9월 7~8일 말레이시아 쿠알라룸푸르 JW Marriott Hotel에서 개최된 2026 IEEE Industrial Electronics and Applications Conference (IEACon 2026)에 참가하여 \"Dual-Head GraphSAGE Ensemble with Reconstruction and Discriminative Learning for Class Imbalanced IoT Intrusion Detection\" 논문을 발표하였습니다.",
+    "image": [
+      "/images/news/news5-1.jpg",
+      "/images/news/news5-2.jpg"
+    ]
   }
 ]
