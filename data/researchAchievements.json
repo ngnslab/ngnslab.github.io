@@ -627,6 +627,13 @@
     {
       "authors": "Cha, H. & Kim, J.",
       "title": "Dual-Head GraphSAGE Ensemble with Reconstruction and Discriminative Learning for Class-Imbalanced IoT Intrusion Detection",
+      "conference": "7th IEEE Industrial Electronics and Applications Conference, IEACon",
+      "date": "September 2026",
+      "filePath": "/docs/pdf/International Conference/(2026) IEACon Dual-Head GraphSAGE.pdf"
+    },
+    {
+      "authors": "Cha, H. & Kim, J.",
+      "title": "Dual-Head GraphSAGE Ensemble with Reconstruction and Discriminative Learning for Class-Imbalanced IoT Intrusion Detection",
       "conference": "2026 IEEE Industrial Electronics and Applications Conference, IEACon",
       "date": "September 2026",
       "filePath": "/docs/pdf/International Conference/IEACon2026-Cha-Hansol.pdf"
