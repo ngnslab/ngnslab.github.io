@@ -625,6 +625,13 @@
 ],
   "internationalConferences": [
     {
+      "authors": "Cha, H. & Kim, J.",
+      "title": "Dual-Head GraphSAGE Ensemble with Reconstruction and Discriminative Learning for Class-Imbalanced IoT Intrusion Detection",
+      "conference": "2026 IEEE Industrial Electronics and Applications Conference, IEACon",
+      "date": "September 2026",
+      "filePath": "/docs/pdf/International Conference/IEACon2026-Cha-Hansol.pdf"
+    },
+    {
       "authors": "Park, J., Kim, J., Woo, S., Park, K., Kim, J. & Lee, J.",
       "title": "Experimental Approach to Internal Security Threats for 5G-Advanced Core Networks",
       "conference": "35th IEEE International Symposium on Personal, Indoor and Mobile Radio Communications, PIMRC",
