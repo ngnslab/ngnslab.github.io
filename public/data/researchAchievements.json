@@ -1060,6 +1060,22 @@
   ],
   "domesticConferences": [
     {
+      "authors": "김민석, 차한솔, 김민규, 김종현",
+      "title": "APT 행위 맥락 기반 보조 카탈로그를 활용한 CTI 보고서의 TTP 매핑 성능 향상",
+      "conference": "한국인터넷정보학회 추계학술대회",
+      "pages": "",
+      "date": "2026.10",
+      "filePath": "/docs/pdf/Domestic Conference/(2026) [국내학술발표] APT 행위 맥락 기반 보조 카탈로그를 활용한 CTI 보고서의 TTP 매핑 성능 향상.pdf"
+    },
+    {
+      "authors": "최동진, 차한솔, 김민규, 김종현",
+      "title": "RAG-PoisonMatch: 생성 매칭 RAG 포이즈닝 탐지 데이터셋 구축 및 공격 유효성 검증",
+      "conference": "한국인터넷정보학회 추계학술대회",
+      "pages": "",
+      "date": "2026.10",
+      "filePath": "/docs/pdf/Domestic Conference/(2026) [국내학술발표] RAG-PoisonMatch 생성 매칭 RAG 포이즈닝 탐지 데이터셋 구축 및 공격 유효성 검증.pdf"
+    },
+    {
       "authors": "차한솔, 김종현",
       "title": "IoT 클래스 불균형 환경에서 Dual-Head 앙상블 기반 GraphSAGE 침입 탐지 모델 개선",
       "conference": "한국정보통신학회 춘계학술대회",
