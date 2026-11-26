@@ -1,6 +1,15 @@
 {
   "internationalPapers": [
     {
+      "title": "AccordScale: Feature Skew Mitigation in Slice-Based FL-IDS",
+      "authors": "Kim, M.-G. & Kim, J.",
+      "journal": "IEEE Access",
+      "year": 2026,
+      "month": "November",
+      "doi": "10.1109/ACCESS.2026.3752176",
+      "filePath": "/docs/pdf/SCI(E)/AccordScale-IEEE-Access-2026.pdf"
+    },
+    {
       "title": "Hybrid Distributed Learning With Knowledge Distillation for Resource-Efficient Intrusion Detection in Distributed Networks",
       "authors": "Park, C., Park, K., Song, J., Kim, S. & Kim, J.",
       "journal": "IEEE Internet of Things Journal",
