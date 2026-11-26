@@ -59,7 +59,8 @@ function normalizePaperEntry(paper) {
     journal: paper?.journal || bib.journal || '',
     volume: paper?.volume || bib.volume || '',
     issue: paper?.issue || bib.number || '',
-    pages: paper?.pages || bib.pages || bib['article-number'] || '',
+    pages: paper?.pages || bib.pages || '',
+    articleNumber: paper?.articleNumber || bib['article-number'] || '',
     month: paper?.month || bib.month || '',
     year: paper?.year || bib.year || '',
     doi: paper?.doi || bib.doi || '',
@@ -72,6 +73,33 @@ function hasText(value) {
 
 function safeText(value) {
   return typeof value === 'string' ? value.trim() : value;
+}
+
+function citationAuthors(value) {
+  if (!value || /[가-힣]/.test(value)) return value;
+  const names = [];
+  const pattern = /([A-Za-z][A-Za-z '-]*),?\s+((?:[A-Z]\.(?:-[A-Z]\.)?\s*)+|[A-Z][a-z]+(?:-[A-Z][a-z]+)?)(?=\s*(?:,|&|and\b|$))/g;
+  let match;
+  while ((match = pattern.exec(value)) !== null) {
+    const given = match[2].trim();
+    const initials = given.includes('.') ? given : given.split('-').map(part => `${part[0]}.`).join('-');
+    names.push(`${initials} ${match[1].trim().replace(/^and\s+/, '')}`);
+  }
+  if (!names.length || value.replace(pattern, '').replace(/\band\b|[,&\s]/g, '')) return value;
+  return names.length === 1 ? names[0] : `${names.slice(0, -1).join(', ')}${names.length > 2 ? ',' : ''} and ${names.at(-1)}`;
+}
+
+const months = ['Jan.', 'Feb.', 'Mar.', 'Apr.', 'May', 'Jun.', 'Jul.', 'Aug.', 'Sep.', 'Oct.', 'Nov.', 'Dec.'];
+function citationDate(value) {
+  if (!value) return '';
+  const numeric = String(value).match(/^(\d{4})\.(\d{2})$/);
+  if (numeric) return `${months[Number(numeric[2]) - 1]} ${numeric[1]}`;
+  return String(value).replace(/January|February|March|April|May|June|July|August|September|October|November|December/g,
+    month => months[['January','February','March','April','May','June','July','August','September','October','November','December'].indexOf(month)]);
+}
+
+function citationNumber(value) {
+  return String(value ?? '').replace(/^(?:vol\.|v\.|no\.|pp\.|p\.)\s*/i, '').trim();
 }
 
 export default function Publications() {
@@ -194,7 +222,7 @@ export default function Publications() {
 
   // 표준 학술 논문 인용 형식으로 렌더링하는 함수
   const renderPaper = (paper) => {
-    const authors = safeText(paper.authors);
+    const authors = citationAuthors(safeText(paper.authors));
     const title = safeText(paper.title);
     const journal = safeText(paper.journal);
     const volume = safeText(paper.volume);
@@ -214,7 +242,7 @@ export default function Publications() {
         {hasText(authors) && <span>{authors}, </span>}
         
         {/* 제목 */}
-        {hasText(title) && <span>{title}, </span>}
+        {hasText(title) && <span>“{title},” </span>}
         
         {/* 저널명 (이탤릭) */}
         {hasText(journal) && (
@@ -229,14 +257,16 @@ export default function Publications() {
         )}
         
         {/* 볼륨/호수 정보가 저널명에 포함되어 있지 않은 경우 */}
-        {hasText(volume) && <span>, v.{volume}</span>}
-        {hasText(issue) && <span>, no.{issue}</span>}
+        {hasText(volume) && <span>, Vol. {citationNumber(volume)}</span>}
+        {hasText(issue) && <span>, No. {citationNumber(issue)}</span>}
         
         {/* 페이지 */}
-        {hasText(pages) && <span>, pp.{pages}</span>}
+        {hasText(paper.articleNumber) && <span>, Art. no. {paper.articleNumber}</span>}
+        {!hasText(paper.articleNumber) && hasText(pages) && <span>, pp. {citationNumber(pages)}</span>}
+        {paper.status === 'early-access' && <span>, early access</span>}
         
         {/* 날짜 */}
-        {hasText(month) && hasText(year) && <span>, {month} {year}</span>}
+        {hasText(month) && hasText(year) && <span>, {citationDate(`${month} ${year}`)}</span>}
         {!hasText(month) && hasText(year) && <span>, {year}</span>}
         {hasText(doiHref) && (
           <>
@@ -250,7 +280,7 @@ export default function Publications() {
 
   // 학회 논문 인용 형식으로 렌더링하는 함수
   const renderConference = (conference) => {
-    const authors = safeText(conference.authors);
+    const authors = citationAuthors(safeText(conference.authors));
     const title = safeText(conference.title);
     const confName = safeText(conference.conference);
     const volume = safeText(conference.volume);
@@ -265,19 +295,19 @@ export default function Publications() {
         {hasText(authors) && <span>{authors}, </span>}
         
         {/* 제목 */}
-        {hasText(title) && <span>"{title}", </span>}
+        {hasText(title) && <span>“{title},” </span>}
         
         {/* 학회명 */}
         {hasText(confName) && <span>{confName}</span>}
         
         {/* 볼륨 */}
-        {hasText(volume) && <span>, v.{volume}</span>}
+        {hasText(volume) && <span>, Vol. {citationNumber(volume)}</span>}
         
         {/* 페이지 */}
-        {hasText(pages) && <span>, {pages}</span>}
+        {hasText(pages) && <span>, pp. {citationNumber(pages)}</span>}
         
         {/* 날짜 */}
-        {hasText(date) && <span>, {date}</span>}
+        {hasText(date) && <span>, {citationDate(date)}</span>}
       </>
     );
   };
